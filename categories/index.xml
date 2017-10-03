@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Cecilia Lee</title>
-    <link>http://cecilialee.github.io/categories/</link>
+    <link>https://cecilialee.github.io/categories/</link>
     <description>Recent content in Categories on Cecilia Lee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://cecilialee.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cecilialee.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Development</title>
-      <link>http://cecilialee.github.io/categories/development/</link>
+      <link>https://cecilialee.github.io/categories/development/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://cecilialee.github.io/categories/development/</guid>
+      <guid>https://cecilialee.github.io/categories/development/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Golang</title>
-      <link>http://cecilialee.github.io/categories/golang/</link>
+      <link>https://cecilialee.github.io/categories/golang/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://cecilialee.github.io/categories/golang/</guid>
+      <guid>https://cecilialee.github.io/categories/golang/</guid>
       <description></description>
     </item>
     
