@@ -1,0 +1,9 @@
+baseURL = "https://github.com/cecilialee/cecilialee.github.io"
+languageCode = "en-us"
+title = "Cecilia Lee"
+theme = "hugo-theme-cactus-plus"
+
+[params]
+	name = "Cecilia Lee"
+	description = "A Data Science Journal"
+	bio = "A Data Science Journal"
