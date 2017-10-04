@@ -141,7 +141,7 @@ h2 {
 
 .profile #wrapper {
     padding: 60px 40px 0px;
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto;
 }
 
@@ -226,15 +226,15 @@ nav.main-nav a.cta {
 }
 
 #wrapper {
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto;
-    padding: 60px 40px 100px 40px;
+    padding: 60px 15px 100px 15px;
 }
 
 #wrapper.home {
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto;
-    padding: 0px 40px 20px 40px;
+    padding: 0px 15px 20px 15px;
 }
 
 .home #avatar {
@@ -352,7 +352,7 @@ em, i {
     margin: -5px 0 0 0;
     color: #b2b9be;
     font-size: 13px;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
     display: inline-block;
 }
 
@@ -362,7 +362,7 @@ em, i {
     color: #b2b9be;
     font-size: 13px;
     text-transform: lowercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     margin-top: 0px;
     display: block;
 }
@@ -370,7 +370,7 @@ em, i {
 #post-list h2 {
     font: normal 17px/1.5em "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #aaa;
-    max-width: 400px;
+    max-width: 700px;
     margin-top: 2px;
 }
 
@@ -901,7 +901,7 @@ a.symbol:hover {
 #TableOfContents a code{
   font-family: Menlo, Monaco, Courier;
   background-color: #fff;
-  font-size: 12px;
+  font-size: 13px;
   padding: 2px 3px;
   font-weight: 100;
 }
