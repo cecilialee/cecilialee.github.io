@@ -141,7 +141,7 @@ h2 {
 
 .profile #wrapper {
     padding: 60px 40px 0px;
-    max-width: 700px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -226,15 +226,15 @@ nav.main-nav a.cta {
 }
 
 #wrapper {
-    max-width: 700px;
+    max-width: 600px;
     margin: 0 auto;
-    padding: 60px 15px 100px 15px;
+    padding: 60px 20px 100px 20px;
 }
 
 #wrapper.home {
-    max-width: 700px;
+    max-width: 600px;
     margin: 0 auto;
-    padding: 0px 15px 20px 15px;
+    padding: 0px 20px 20px 20px;
 }
 
 .home #avatar {
@@ -370,7 +370,7 @@ em, i {
 #post-list h2 {
     font: normal 17px/1.5em "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #aaa;
-    max-width: 700px;
+    max-width: 600px;
     margin-top: 2px;
 }
 
