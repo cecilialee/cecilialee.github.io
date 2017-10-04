@@ -33,6 +33,16 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
     </item>
     
     <item>
+      <title>Markdown Syntax Guide</title>
+      <link>https://cecilialee.github.io/post/markdown-syntax/</link>
+      <pubDate>Wed, 04 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://cecilialee.github.io/post/markdown-syntax/</guid>
+      <description>Philosophy  Markdown is intended to be as easy-to-read and easy-to-write as is feasible. Readability, however, is emphasized above all else. A Markdown-formatted document should be publishable as-is, as plain text, without looking like it&amp;rsquo;s been marked up with tags or formatting instructions. Markdown&amp;rsquo;s syntax is intended for one purpose: to be used as a format for writing for the web.
+ Notice You can use CMD + 4 or CMD + R to preview the result.</description>
+    </item>
+    
+    <item>
       <title>(Hu)go Template Primer</title>
       <link>https://cecilialee.github.io/post/goisforlovers/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>

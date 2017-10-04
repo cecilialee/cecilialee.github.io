@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Markdown on Cecilia Lee</title>
+    <link>https://cecilialee.github.io/tags/markdown/</link>
+    <description>Recent content in Markdown on Cecilia Lee</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 04 Oct 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://cecilialee.github.io/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Markdown Syntax Guide</title>
+      <link>https://cecilialee.github.io/post/markdown-syntax/</link>
+      <pubDate>Wed, 04 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://cecilialee.github.io/post/markdown-syntax/</guid>
+      <description>Philosophy  Markdown is intended to be as easy-to-read and easy-to-write as is feasible. Readability, however, is emphasized above all else. A Markdown-formatted document should be publishable as-is, as plain text, without looking like it&amp;rsquo;s been marked up with tags or formatting instructions. Markdown&amp;rsquo;s syntax is intended for one purpose: to be used as a format for writing for the web.
+ Notice You can use CMD + 4 or CMD + R to preview the result.</description>
+    </item>
+    
+  </channel>
+</rss>
