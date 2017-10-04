@@ -176,6 +176,7 @@ h2 {
 }
 
 nav.main-nav {
+    letter-spacing: 1px;
     padding: 20px 20px 0;
     background: #fff;
     background: rgba(255, 255, 255, .90);
@@ -188,7 +189,7 @@ nav.main-nav a {
     top: 8px;
     right: 6px;
     padding: 8px 12px;
-    color: #5badf0;
+    color: #AAAAAA;
     font-size: 13px;
     line-height: 1.35;
     border-radius: 3px;
@@ -212,7 +213,7 @@ nav.main-nav a.cta {
       top: 8px;
       right: 6px;
       padding: 8px 8px;
-      color: #5badf0;
+      color: #AAAAAA;
       font-size: 13px;
       line-height: 1.35;
       border-radius: 3px;
