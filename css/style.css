@@ -496,7 +496,7 @@ Post List
 }
 
 #post-list li+li {
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 #post-list a {
