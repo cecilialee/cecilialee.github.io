@@ -104,8 +104,13 @@ table {
 
 /* Spacing */
 
-.post h1, h3, h4, h5, p, #post-body ul, #post-list li, #post-body ol, pre {
-    margin-bottom: 20px;
+.post h1, h3, h4, h5, p, #post-body ul, #post-list li, #post-body ol{
+    margin-bottom: 10px;
+}
+
+pre {
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 
@@ -165,7 +170,7 @@ h2 {
     font-size: 20px;
     font-weight: 300;
     color: #aaa;
-    margin-top: 10px;
+    margin-top: 6px;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-style: normal;
 }
@@ -330,13 +335,13 @@ em, i {
 }
 
 .post h1 {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: #222;
     font: 300 32px/1.4em "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .post h2 {
-    margin-bottom: 40px;
+    margin-bottom: 15px;
     font: 300 24px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #111;
 }
@@ -355,9 +360,9 @@ em, i {
     margin: -5px 0 40px 0;
     color: #b2b9be;
     font-size: 13px;
-    text-transform: uppercase;
+    text-transform: lowercase;
     letter-spacing: 2px;
-    margin-top: 5px;
+    margin-top: 0px;
     display: block;
 }
 
@@ -895,7 +900,7 @@ a.symbol:hover {
 #TableOfContents a code{
   font-family: Menlo, Monaco, Courier;
   background-color: #fff;
-  font-size: 11px;
+  font-size: 12px;
   padding: 2px 3px;
   font-weight: 100;
 }
