@@ -12,65 +12,38 @@
     
     
     <item>
-      <title>Development</title>
-      <link>https://cecilialee.github.io/tags/development/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <title>Api</title>
+      <link>https://cecilialee.github.io/tags/api/</link>
+      <pubDate>Sun, 08 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://cecilialee.github.io/tags/development/</guid>
+      <guid>https://cecilialee.github.io/tags/api/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Go</title>
-      <link>https://cecilialee.github.io/tags/go/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <title>Python</title>
+      <link>https://cecilialee.github.io/tags/python/</link>
+      <pubDate>Sun, 08 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://cecilialee.github.io/tags/go/</guid>
+      <guid>https://cecilialee.github.io/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Golang</title>
-      <link>https://cecilialee.github.io/tags/golang/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <title>Requests</title>
+      <link>https://cecilialee.github.io/tags/requests/</link>
+      <pubDate>Sun, 08 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://cecilialee.github.io/tags/golang/</guid>
+      <guid>https://cecilialee.github.io/tags/requests/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Hugo</title>
-      <link>https://cecilialee.github.io/tags/hugo/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <title>Web Scraping</title>
+      <link>https://cecilialee.github.io/tags/web-scraping/</link>
+      <pubDate>Sun, 08 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://cecilialee.github.io/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Markdown</title>
-      <link>https://cecilialee.github.io/tags/markdown/</link>
-      <pubDate>Wed, 04 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://cecilialee.github.io/tags/markdown/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Templates</title>
-      <link>https://cecilialee.github.io/tags/templates/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://cecilialee.github.io/tags/templates/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Themes</title>
-      <link>https://cecilialee.github.io/tags/themes/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://cecilialee.github.io/tags/themes/</guid>
+      <guid>https://cecilialee.github.io/tags/web-scraping/</guid>
       <description></description>
     </item>
     
