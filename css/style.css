@@ -26,6 +26,8 @@ blockquote:before, blockquote:after, q:before, q:after {
     content: none;
 }
 
+
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -126,18 +128,6 @@ body {
     color: #666;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
-}
-
-h1 {
-    font-size: 30px;
-    letter-spacing: -1px;
-    color: #222;
-    font-weight: bold;
-}
-
-h2 {
-    font: italic 19px/1.3em Georgia, serif;
-    color: #bbb;
 }
 
 .profile #wrapper {
@@ -283,9 +273,13 @@ li {
 }
 
 ul>li {
-    list-style-type: circle;
+    list-style-type: None;
 }
 
+ul>li:before {
+    content: '– ';
+    padding-right: 10px;
+}
 
 /* Line Height */
 
@@ -300,7 +294,7 @@ ul>li {
 
 b, strong {
     font-weight: 500;
-    color: #1E2025;
+    color: #444;
 }
 
 em, i {
@@ -338,22 +332,26 @@ em, i {
     text-align: center;
 }
 
-.post h1 {
+h1, h2, h3, h4, h5, h6 {
     margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.post h1 {
     color: #222;
-    font: 300 32px/1.4em "Roboto", "Helvetica Neue Light", Helvetica, Arial, sans-serif;
+    font: 300 34px/1.5 "Roboto", "Helvetica Neue Light", Helvetica, Arial, sans-serif;
+    letter-spacing: -1px;
 }
 
 .post h2 {
-    margin-top: 20px;
     margin-bottom: 15px;
-    font: 300 24px/1.5 "Roboto", "Helvetica Neue Light", Helvetica, Arial, sans-serif;
+    font-size: 26px;
+    font: 300 28px/1.5 "Roboto", "Helvetica Neue Light", Helvetica, Arial, sans-serif;
     color: #111;
 }
 
 .post h2.headline {    /* post date time */
-    margin: -5px 0 0 0;
+    margin: 5px 0 0 0;
     color: #aaa;
     font-size: 16px;
     letter-spacing: 1px;
@@ -377,31 +375,30 @@ em, i {
     margin-top: 5px;
 }
 
-h3, h4, h5 {
-    color: #333;
-}
-
 h3 {
-    font-size: 21px;
+    font-size: 25px;
     font-weight: 400;
+    color: #444;
 }
 
 h4 {
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 25px;
+    font-weight: 300;
+    color: #222;
 }
 
 h5 {
-    font-size: 15px;
-    font-weight: bold;
+    font-size: 22px;
+    font-weight: 400;
+    color: #333;
 }
 
 h6 {
-    font-size: 13px;
-    font-weight: bold;
-    color: #666;
+    font-size: 21px;
+    font-weight: 500;
+    color: #555;
     margin-bottom: 6px;
-}
+} 
 
 p.small {
     color: #ccc;
@@ -413,7 +410,8 @@ p.small {
 }
 
 blockquote {
-    padding-left: 15px;
+    padding-top: 10px;
+    padding-left: 25px;
     border-left: 3px solid #eee;
 }
 
@@ -427,10 +425,10 @@ hr {
 
 table {
     width: 100%;
-    margin: 40px 0;
+    margin-top: 5px;
+    margin-bottom: 25px;
     border-collapse: collapse;
-    font-size: 13px;
-    line-height: 1.5em;
+    line-height: 1em;
 }
 
 th, td {
@@ -458,8 +456,7 @@ thead th, th {
     text-align: left;
     padding: 10px 15px;
     height: 20px;
-    font-size: 13px;
-    font-weight: bold;
+    font-weight: 400;
     color: #444;
     border-bottom: 1px solid #dadadc;
     cursor: default;
@@ -470,17 +467,6 @@ img {
     width: 100%;
     max-width: 100%;
     border-radius: 3px;
-}
-
-
-/* Made with Cactus Badge */
-
-#badge {
-    position: absolute;
-    bottom: 8px;
-    right: 8px;
-    height: 48px;
-    width: 48px;
 }
 
 
@@ -922,9 +908,5 @@ a.symbol:hover {
 }
 
 .page-tags .tags a {
-    color: #666;
-}
-
-.page-tags .tags:hover a {
-    color: #BAAF9E;
+    color: #aaa;
 }
