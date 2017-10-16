@@ -107,8 +107,13 @@ table {
 
 /* Spacing */
 
-.post h1, h3, h4, h5, p, #post-body ul, #post-list li, #post-body ol{
+#post-body ul, #post-list li, #post-body ol{
     margin-bottom: 0px;
+    line-height: 1.4;
+}
+
+.post h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
 }
 
 pre {
@@ -209,7 +214,7 @@ nav.main-nav a.cta {
       padding: 8px 8px;
       color: #AAAAAA;
       font-size: 16 px;
-      line-height: 1.35;
+      line-height: 1.4;
       border-radius: 3px;
   }
 }
@@ -284,7 +289,7 @@ ul>li {
 /* Line Height */
 
 #post-body, p {
-    line-height: 1.5;
+    line-height: 1.4;
     padding-bottom: 15px;
 }
 #post-body p > a {
@@ -496,7 +501,8 @@ Post List
 #post-list .title-des {    /* post-list title, description */
     color: #333;
     display: block;
-    font: 400 22px/1.3 "Roboto", "Helvetica Neue Light", helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 22px;
     padding-bottom: 20px;
 }
 
@@ -504,7 +510,7 @@ Post List
     float: right;
     position: relative;
     top: 1px;
-    font: 300 18px/1.3 "Roboto", "Helvetica Neue Light", helvetica, Arial, sans-serif;
+    font: 300 18px/1.4 "Roboto", "Helvetica Neue Light", helvetica, Arial, sans-serif;
     color: #bbb;
 }
 
