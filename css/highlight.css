@@ -3,7 +3,7 @@
 
 code {
     background: #F6F6F6;
-    font-size: 0.9em;
+    font-size: 0.85em;
     font-weight: 400;
     padding: 1px 3px 3px 3px;
     border: none;
@@ -14,7 +14,7 @@ code {
 }
 
 pre code {
-    font-size: 0.9em;
+    font-size: 0.85em;
     font-weight: 300;
     word-wrap: break-word;
     -webkit-font-smoothing: subpixel-antialiased;
