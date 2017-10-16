@@ -659,6 +659,10 @@ h1.archive {
     margin-bottom: 0px;
 }
 
+.archive h3 {
+    font-size: 22px;
+}
+
 h2.month {
     width: 100%;
     font: bold 13px/1 "Roboto", "Helvetica Neue Light", helvetica, Arial, sans-serif;
