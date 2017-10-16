@@ -350,6 +350,10 @@ em, i {
     margin-bottom: 20px;
 }
 
+.post h1.post-title {
+    margin-bottom: 5px;
+}
+
 .post h2 {
     margin-bottom: 15px;
     font-size: 26px;
