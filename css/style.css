@@ -1,7 +1,9 @@
 /* Reset */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i');
+
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-    border: 0;
+    border: 0; 
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
@@ -109,7 +111,7 @@ table {
 }
 
 pre {
-    margin-top: 15px;
+    margin-top: 5px;
     margin-bottom: 25px;
 }
 
@@ -121,7 +123,7 @@ html, body {
 }
 
 body {
-    font: 18px/1 "Helvetica Neue Light", Helvetica, Arial, sans-serif;
+    font: 300 18px/1 "Roboto", "Helvetica Neue Light", Helvetica, Arial, sans-serif;
     color: #666;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
@@ -151,34 +153,35 @@ h2 {
     position: relative;
 }
 
+/*
 .profile #avatar {
     display: inline-block;
     width: 80px;
     height: 80px;
     border-radius: 50%;
     margin-bottom: 20px;
-}
+}*/
 
-.profile h1 {
-    font-weight: 400;
-    letter-spacing: 0px;
-    font-size: 22px;
+.profile h1 {     /* Cecilia Lee */
+    font-weight: 300;
+    font-size: 24px;
     color: #222;
 }
 
-.profile h2 {
-    font-size: 18px;
+.profile h2  {    /* Description */
+    font-size: 20px;
     font-weight: 300;
+    letter-spacing: -1px;
     color: #aaa;
     margin-top: 5px;
-    font-family: 'Helvetica Neue Light', Helvetica, Arial, sans-serif;
+    font-family: 'Roboto', 'Helvetica Neue Light', Helvetica, Arial, sans-serif;
     font-style: normal;
 }
 
 nav.main-nav {
-    letter-spacing: 1px;
+    //letter-spacing: 1px;
     padding: 20px 20px 0;
-    background: #fff;
+    background: #fff; 
     background: rgba(255, 255, 255, .90);
     margin: 0 auto;
     text-align: right;
@@ -189,9 +192,9 @@ nav.main-nav a {
     top: 8px;
     right: 6px;
     padding: 8px 12px;
-    color: #AAAAAA;
-    font-size: 14px;
-    line-height: 1.35;
+    color: #ccc;
+    font-size: 16px;
+    letter-spacing: .5px;
     border-radius: 3px;
 }
 
@@ -214,7 +217,7 @@ nav.main-nav a.cta {
       right: 6px;
       padding: 8px 8px;
       color: #AAAAAA;
-      font-size: 14 px;
+      font-size: 16 px;
       line-height: 1.35;
       border-radius: 3px;
   }
@@ -228,13 +231,11 @@ nav.main-nav a.cta {
 #wrapper {
     max-width: 800px;      /*-- change site width --*/
     margin: 0 auto;
-    padding: 60px 40px 100px 40px;
+    padding: 60px 20px 20px 20px;    /*-- change site width --*/
 }
 
 #wrapper.home {
-    max-width: 800px;      /*-- change site width --*/
-    margin: 0 auto;
-    padding: 0px 20px 20px 20px;     /*-- change site width --*/
+    padding-top: 0px;
 }
 
 .home #avatar {
@@ -250,14 +251,14 @@ nav.main-nav a.cta {
 
 /*Accent color*/
 
-a, #title, #post-list a:hover, #title:hover {
+a, #title {
     text-decoration: none;
-    color: #5badf0;
-    color: #5694f1;
+    color: #BAAF9E;
 }
 
 p a {
-    color: #5694f1;
+    color: #BAAF9E;
+    font-weight: 400;
 }
 
 
@@ -289,7 +290,7 @@ ul>li {
 
 #post-body, p {
     line-height: 1.5;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 #post-body p > a {
   word-break: break-word;
@@ -314,12 +315,6 @@ em, i {
     padding-bottom: 20px;
 }
 
-.description {
-    float: right;
-    font: italic 14px/1.4em Georgia, serif;
-    color: #aaa;
-}
-
 .home h1 {
     font-size: 30px;
     letter-spacing: -1px;
@@ -328,8 +323,14 @@ em, i {
 }
 
 .home h2 {
-    font: italic 19px/1.3em Georgia, serif;
     color: #bbb;
+}
+
+.home p {    /* About */
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+    color: #aaa;
 }
 
 .post header {
@@ -340,41 +341,39 @@ em, i {
     margin-top: 20px;
     margin-bottom: 10px;
     color: #222;
-    font: 300 32px/1.4em "Helvetica Neue Light", Helvetica, Arial, sans-serif;
+    font: 300 32px/1.4em "Roboto", "Helvetica Neue Light", Helvetica, Arial, sans-serif;
 }
 
 .post h2 {
     margin-top: 20px;
     margin-bottom: 15px;
-    font: 300 24px/1.5 "Helvetica Neue Light", Helvetica, Arial, sans-serif;
+    font: 300 24px/1.5 "Roboto", "Helvetica Neue Light", Helvetica, Arial, sans-serif;
     color: #111;
 }
 
-.post h2.headline {
-    font: normal 13px/1.5em "Helvetica Neue Light", Helvetica, Arial, sans-serif;
+.post h2.headline {    /* post date time */
     margin: -5px 0 0 0;
-    color: #b2b9be;
-    font-size: 13px;
-    letter-spacing: 0px;
+    color: #aaa;
+    font-size: 16px;
+    letter-spacing: .5px;
     display: inline-block;
 }
 
 .post h2.headline .tags {
-    font: normal 13px/1.5em "Helvetica Neue Light", Helvetica, Arial, sans-serif;
     margin: -5px 0 40px 0;
-    color: #b2b9be;
-    font-size: 13px;
+    color: #aaa;
+    font-size: 16px;
     text-transform: lowercase;
-    letter-spacing: 1px;
+    letter-spacing: .5px;
     margin-top: 0px;
     display: block;
 }
 
 #post-list h2 {
-    font: normal 18px/1.5em "Helvetica Neue Light", Helvetica, Arial, sans-serif;
+    font: 300 18px/1.5em "Roboto", "Helvetica Neue Light", Helvetica, Arial, sans-serif;
     color: #aaa;
     max-width: 800px;      /*-- change site width --*/
-    margin-top: 3px;
+    margin-top: 5px;
 }
 
 h3, h4, h5 {
@@ -404,8 +403,9 @@ h6 {
 }
 
 p.small {
-    color: #bbb;
+    color: #ccc;
     font-size: 14px;
+    font-weight: 400;
     line-height: 1.5;
     display: block;
     text-align: center;
@@ -503,17 +503,17 @@ Post List
     padding-top: 10px;
 }
 
-#post-list a {
+#post-list a {    /* post-list title */
     color: #333;
     display: block;
-    font: 400 21px/1.3 "Helvetica Neue Light", helvetica, Arial, sans-serif;
+    font: 400 22px/1.3 "Roboto", "Helvetica Neue Light", helvetica, Arial, sans-serif;
 }
 
 #post-list .dates {
     float: right;
     position: relative;
     top: 1px;
-    font: 300 18px/1.3 "Helvetica Neue Light", helvetica, Arial, sans-serif;
+    font: 300 18px/1.3 "Roboto", "Helvetica Neue Light", helvetica, Arial, sans-serif;
     color: #bbb;
 }
 
@@ -533,9 +533,9 @@ Post List
 }
 
 #archive-link:hover {
-    background: #5694f1;
+    background: #BAAF9E;
     color: #fff;
-    box-shadow: 0 0 0 1px #5694f1;
+    box-shadow: 0 0 0 1px #BAAF9E;
 }
 
 #archive-link span {
@@ -545,7 +545,7 @@ Post List
 }
 
 #footer {
-    margin-top: 100px;
+    margin-top: 70px;
 }
 
 
@@ -663,7 +663,7 @@ h1.archive {
 
 h2.month {
     width: 100%;
-    font: bold 13px/1 "Helvetica Neue Light", helvetica, Arial, sans-serif;
+    font: bold 13px/1 "Roboto", "Helvetica Neue Light", helvetica, Arial, sans-serif;
     text-transform: uppercase;
     margin-top: 40px;
     margin-bottom: 10px;
@@ -677,7 +677,7 @@ h2.month {
 
 #archive-list a {
     display: block;
-    font: bold 17px/1.7 "Helvetica Neue Light", helvetica, Arial, sans-serif;
+    font: bold 17px/1.7 "Roboto", "Helvetica Neue Light", helvetica, Arial, sans-serif;
     color: #333;
 }
 
@@ -685,12 +685,12 @@ h2.month {
     float: right;
     position: relative;
     top: 1px;
-    font: 300 17px/1.7 "Helvetica Neue Light", helvetica, Arial, sans-serif;
+    font: 300 17px/1.7 "Roboto", "Helvetica Neue Light", helvetica, Arial, sans-serif;
     color: #bbb;
 }
 
 #archive-list li a:hover, #archive-list li:hover .dates {
-    color: #5694f1;
+    color: #BAAF9E;
 }
 
 #post-meta img.avatar {
@@ -708,13 +708,13 @@ h2.month {
 }
 
 #post-list.archive.readmore h3 {
-    font: 400 21px "Helvetica Neue Light", Helvetica, Arial, sans-serif;
+    font: 300 21px "Roboto", "Helvetica Neue Light", Helvetica, Arial, sans-serif;
     margin-bottom: 30px;
 }
 
 #post-list.archive.readmore a {
-    font: 400 16px/1.6 "Helvetica Neue Light", helvetica, Arial, sans-serif;
-    color: #5694f1;
+    font: 300 16px/1.6 "Roboto", "Helvetica Neue Light", helvetica, Arial, sans-serif;
+    color: #BAAF9E;
 }
 
 #post-list.archive.readmore a:hover {
@@ -722,7 +722,7 @@ h2.month {
 }
 
 #post-list.archive.readmore .dates {
-    font: 300 16px/1.6 "Helvetica Neue Light", helvetica, Arial, sans-serif;
+    font: 300 16px/1.6 "Roboto", "Helvetica Neue Light", helvetica, Arial, sans-serif;
 }
 
 #disqus_thread, #ds-thread {
@@ -760,9 +760,6 @@ h2.month {
     .post {
         margin: 40px 0;
     }
-    #footer {
-        margin-top: 60px;
-    }
     #post-list, #archive-list {
         margin-top: 0;
     }
@@ -778,18 +775,6 @@ h2.month {
     #post-list-footer {
         margin-top: 20px;
         padding-top: 40px;
-    }
-    h1 {
-        font-size: 26px;
-    }
-    .post h2.headline {
-        font-size: 13px;
-    }
-    .post h1 {
-        font-size: 24px;
-    }
-    .post h2 {
-        font-size: 20px;
     }
 }
 
@@ -824,11 +809,11 @@ h2.month {
 }
 
 .archive .post-item:hover {
-    color: #5694f1;
+    color: #BAAF9E;
     transition: 0.3s ease-out;
 }
 .archive .post-item:hover .post-link {
-    color: #5694f1;
+    color: #BAAF9E;
 }
 
 .fa.fa-heart:hover {
@@ -921,10 +906,10 @@ a.symbol:hover {
 }
 
 .page-tags .tags {
-    font: "Helvetica Neue Light", Helvetica, Arial, sans-serif;
+    font: "Roboto", "Helvetica Neue Light", Helvetica, Arial, sans-serif;
+    font-weight: 300;
     margin: 10px 15px;
     text-transform: lowercase;
-    letter-spacing: 1px;
     display: inline-block;
 }
 
@@ -933,5 +918,5 @@ a.symbol:hover {
 }
 
 .page-tags .tags:hover a {
-    color: #5694f1;
+    color: #BAAF9E;
 }
