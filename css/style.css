@@ -339,7 +339,7 @@ em, i {
 
 .post h1 {
     color: #222;
-    font: 300 34px/1.5 "Roboto", "Helvetica Neue Light", Helvetica, Arial, sans-serif;
+    font-size: 34px;
     letter-spacing: -1px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -348,7 +348,6 @@ em, i {
 .post h2 {
     margin-bottom: 15px;
     font-size: 26px;
-    font: 300 28px/1.5 "Roboto", "Helvetica Neue Light", Helvetica, Arial, sans-serif;
     color: #111;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -373,7 +372,8 @@ em, i {
 }
 
 #post-list h2 {
-    font: 300 18px/1.5em "Roboto", "Helvetica Neue Light", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
     color: #aaa;
     max-width: 800px;      /*-- change site width --*/
     margin-top: 5px;
