@@ -6,28 +6,28 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font: inherit;
     vertical-align: baseline;
     margin: 0;
-    padding: 0
+    padding: 0;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-    display: block
+    display: block;
 }
 
 body {
-    line-height: 1
+    line-height: 1;
 }
 
 blockquote, q {
-    quotes: none
+    quotes: none;
 }
 
 blockquote:before, blockquote:after, q:before, q:after {
-    content: none
+    content: none;
 }
 
 table {
     border-collapse: collapse;
-    border-spacing: 0
+    border-spacing: 0;
 }
 
 *, *:before, *:after {
@@ -105,12 +105,12 @@ table {
 /* Spacing */
 
 .post h1, h3, h4, h5, p, #post-body ul, #post-list li, #post-body ol{
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 pre {
     margin-top: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 
@@ -121,7 +121,7 @@ html, body {
 }
 
 body {
-    font: 16px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: 18px/1 "Helvetica Neue Light", Helvetica, Arial, sans-serif;
     color: #666;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
@@ -141,7 +141,7 @@ h2 {
 
 .profile #wrapper {
     padding: 60px 40px 0px;
-    max-width: 700px;      /*-- change site width --*/
+    max-width: 800px;      /*-- change site width --*/
     margin: 0 auto;
 }
 
@@ -167,11 +167,11 @@ h2 {
 }
 
 .profile h2 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
     color: #aaa;
-    margin-top: 6px;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin-top: 5px;
+    font-family: 'Helvetica Neue Light', Helvetica, Arial, sans-serif;
     font-style: normal;
 }
 
@@ -190,7 +190,7 @@ nav.main-nav a {
     right: 6px;
     padding: 8px 12px;
     color: #AAAAAA;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1.35;
     border-radius: 3px;
 }
@@ -214,7 +214,7 @@ nav.main-nav a.cta {
       right: 6px;
       padding: 8px 8px;
       color: #AAAAAA;
-      font-size: 13px;
+      font-size: 14 px;
       line-height: 1.35;
       border-radius: 3px;
   }
@@ -226,15 +226,15 @@ nav.main-nav a.cta {
 }
 
 #wrapper {
-    max-width: 700px;      /*-- change site width --*/
+    max-width: 800px;      /*-- change site width --*/
     margin: 0 auto;
     padding: 60px 40px 100px 40px;
 }
 
 #wrapper.home {
-    max-width: 700px;      /*-- change site width --*/
+    max-width: 800px;      /*-- change site width --*/
     margin: 0 auto;
-    padding: 0px 40px 20px 40px;
+    padding: 0px 20px 20px 20px;     /*-- change site width --*/
 }
 
 .home #avatar {
@@ -288,7 +288,8 @@ ul>li {
 /* Line Height */
 
 #post-body, p {
-    line-height: 1.7;
+    line-height: 1.5;
+    padding-bottom: 10px;
 }
 #post-body p > a {
   word-break: break-word;
@@ -336,19 +337,21 @@ em, i {
 }
 
 .post h1 {
+    margin-top: 20px;
     margin-bottom: 10px;
     color: #222;
-    font: 300 32px/1.4em "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: 300 32px/1.4em "Helvetica Neue Light", Helvetica, Arial, sans-serif;
 }
 
 .post h2 {
+    margin-top: 20px;
     margin-bottom: 15px;
-    font: 300 24px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: 300 24px/1.5 "Helvetica Neue Light", Helvetica, Arial, sans-serif;
     color: #111;
 }
 
 .post h2.headline {
-    font: normal 13px/1.5em "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: normal 13px/1.5em "Helvetica Neue Light", Helvetica, Arial, sans-serif;
     margin: -5px 0 0 0;
     color: #b2b9be;
     font-size: 13px;
@@ -357,7 +360,7 @@ em, i {
 }
 
 .post h2.headline .tags {
-    font: normal 13px/1.5em "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: normal 13px/1.5em "Helvetica Neue Light", Helvetica, Arial, sans-serif;
     margin: -5px 0 40px 0;
     color: #b2b9be;
     font-size: 13px;
@@ -368,10 +371,10 @@ em, i {
 }
 
 #post-list h2 {
-    font: normal 17px/1.5em "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: normal 18px/1.5em "Helvetica Neue Light", Helvetica, Arial, sans-serif;
     color: #aaa;
-    max-width: 700px;      /*-- change site width --*/
-    margin-top: 2px;
+    max-width: 800px;      /*-- change site width --*/
+    margin-top: 3px;
 }
 
 h3, h4, h5 {
@@ -379,7 +382,7 @@ h3, h4, h5 {
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 21px;
     font-weight: 400;
 }
 
@@ -406,7 +409,7 @@ p.small {
     line-height: 1.5;
     display: block;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 blockquote {
@@ -503,14 +506,14 @@ Post List
 #post-list a {
     color: #333;
     display: block;
-    font: bold 19px/1.7 "Helvetica Neue", helvetica, Arial, sans-serif;
+    font: 400 21px/1.3 "Helvetica Neue Light", helvetica, Arial, sans-serif;
 }
 
 #post-list .dates {
     float: right;
     position: relative;
     top: 1px;
-    font: 300 17px/1.8 "Helvetica Neue", helvetica, Arial, sans-serif;
+    font: 300 18px/1.3 "Helvetica Neue Light", helvetica, Arial, sans-serif;
     color: #bbb;
 }
 
@@ -660,7 +663,7 @@ h1.archive {
 
 h2.month {
     width: 100%;
-    font: bold 13px/1 "Helvetica Neue", helvetica, Arial, sans-serif;
+    font: bold 13px/1 "Helvetica Neue Light", helvetica, Arial, sans-serif;
     text-transform: uppercase;
     margin-top: 40px;
     margin-bottom: 10px;
@@ -674,7 +677,7 @@ h2.month {
 
 #archive-list a {
     display: block;
-    font: bold 17px/1.7 "Helvetica Neue", helvetica, Arial, sans-serif;
+    font: bold 17px/1.7 "Helvetica Neue Light", helvetica, Arial, sans-serif;
     color: #333;
 }
 
@@ -682,7 +685,7 @@ h2.month {
     float: right;
     position: relative;
     top: 1px;
-    font: 300 17px/1.7 "Helvetica Neue", helvetica, Arial, sans-serif;
+    font: 300 17px/1.7 "Helvetica Neue Light", helvetica, Arial, sans-serif;
     color: #bbb;
 }
 
@@ -705,12 +708,12 @@ h2.month {
 }
 
 #post-list.archive.readmore h3 {
-    font: 400 20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: 400 21px "Helvetica Neue Light", Helvetica, Arial, sans-serif;
     margin-bottom: 30px;
 }
 
 #post-list.archive.readmore a {
-    font: 400 16px/1.6 "Helvetica Neue", helvetica, Arial, sans-serif;
+    font: 400 16px/1.6 "Helvetica Neue Light", helvetica, Arial, sans-serif;
     color: #5694f1;
 }
 
@@ -719,7 +722,7 @@ h2.month {
 }
 
 #post-list.archive.readmore .dates {
-    font: 300 16px/1.6 "Helvetica Neue", helvetica, Arial, sans-serif;
+    font: 300 16px/1.6 "Helvetica Neue Light", helvetica, Arial, sans-serif;
 }
 
 #disqus_thread, #ds-thread {
@@ -792,7 +795,7 @@ h2.month {
 
 .archive {
     margin: 0 0 50px 0;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .archive .post-item {
@@ -810,9 +813,8 @@ h2.month {
 
 @media screen and (max-width: 768px) {
     .archive .post-time {
-        margin: 5px 0;
+        margin: 0px 0px 10px 0px;
         width: auto;
-        font-size: 13px;
         display: block;
     }
 }
@@ -919,7 +921,7 @@ a.symbol:hover {
 }
 
 .page-tags .tags {
-    font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: "Helvetica Neue Light", Helvetica, Arial, sans-serif;
     margin: 10px 15px;
     text-transform: uppercase;
     letter-spacing: 1px;
