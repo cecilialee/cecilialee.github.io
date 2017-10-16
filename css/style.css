@@ -365,18 +365,18 @@ em, i {
 .post h2.headline {    /* post date time */
     margin: 5px 0 0 0;
     color: #aaa;
-    font-size: 16px;
+    font-size: 18px;
     letter-spacing: 1px;
     display: inline-block;
 }
 
 .post h2.headline .tags {
-    margin: -5px 0 40px 0;
+    margin: 5px 0 40px 0;
     color: #aaa;
-    font-size: 16px;
+    font-size: 18px;
     text-transform: lowercase;
     letter-spacing: 1px;
-    margin-top: 0px;
+    margin-top: 2px;
     display: block;
 }
 
