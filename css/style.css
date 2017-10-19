@@ -504,7 +504,7 @@ Post List
     padding-top: 10px;
 }
 
-#post-list .title-des {    /* post-list title, description */
+#post-list .post-list-row {    /* post-list title, description */
     color: #333;
     display: block;
     font-weight: 400;
