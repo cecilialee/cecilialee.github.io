@@ -798,10 +798,14 @@ h2.month {
     font-size: 18px;
 }
 
+.archive h3 {
+    padding-bottom: 10px;
+}
+
 .archive .post-item {
-    padding: 10px 0px;
+    line-height: 1;
     overflow-x: hidden;
-    white-space:nowrap;
+    #white-space:nowrap;
 }
 
 .archive .post-time {
@@ -813,7 +817,7 @@ h2.month {
 
 @media screen and (max-width: 768px) {
     .archive .post-time {
-        margin: 0px 0px 10px 0px;
+        padding-bottom: 5px;
         width: auto;
         display: block;
     }
@@ -821,6 +825,11 @@ h2.month {
 
 .archive .post-link {
     color: #8a8a8a;
+    line-height: 1.4;
+}
+
+.archive .post-item {
+    padding-bottom: 10px;
 }
 
 .archive .post-item:hover {
