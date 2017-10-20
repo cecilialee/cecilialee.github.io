@@ -168,6 +168,7 @@ body {
     font-size: 20px;
     font-weight: 300;
     padding-top: 4px;
+    padding-bottom: 15px;
     letter-spacing: -1px;
     color: #aaa;
     font-family: 'Roboto', 'Helvetica Neue Light', Helvetica, Arial, sans-serif;
@@ -509,6 +510,7 @@ Post List
     display: block;
     font-weight: 400;
     font-size: 22px;
+    padding-bottom: 10px;
 }
 
 #post-list .dates {
