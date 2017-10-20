@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://cecilialee.github.io/post/quick-fix-github-gh001-large-files-detected-with-bfg-repo-cleaner/</loc>
+    <lastmod>2017-10-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cecilialee.github.io/post/currencylayer-api-quick-start-parse-exchange-rates-with-requests-in-python/</loc>
     <lastmod>2017-10-08T00:00:00+00:00</lastmod>
   </url>
@@ -30,13 +35,25 @@
   
   <url>
     <loc>https://cecilialee.github.io/</loc>
-    <lastmod>2017-10-08T00:00:00+00:00</lastmod>
+    <lastmod>2017-10-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cecilialee.github.io/tags/git/</loc>
+    <lastmod>2017-10-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cecilialee.github.io/tags/github/</loc>
+    <lastmod>2017-10-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://cecilialee.github.io/post/</loc>
-    <lastmod>2017-10-08T00:00:00+00:00</lastmod>
+    <lastmod>2017-10-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Github on Cecilia Lee</title>
+    <link>https://cecilialee.github.io/tags/github/</link>
+    <description>Recent content in Github on Cecilia Lee</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 20 Oct 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://cecilialee.github.io/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Quick Fix GITHUB &#39;GH001: Large files detected&#39; with BFG Repo-Cleaner</title>
+      <link>https://cecilialee.github.io/post/quick-fix-github-gh001-large-files-detected-with-bfg-repo-cleaner/</link>
+      <pubDate>Fri, 20 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://cecilialee.github.io/post/quick-fix-github-gh001-large-files-detected-with-bfg-repo-cleaner/</guid>
+      <description>Recently I’ve accidentally committed a large data file to Git while working on a data wrangling project. When I tried to push it to Github using push -u origin master, it failed of remote error: GH001: Large files detected because the large data file exceeded Github&amp;rsquo;s 100MB file size limit.
+Here’s a view of the full error code:
+remote: error: GH001: Large files detected. You may want to try Git Large File Storage — https://git-lfs.</description>
+    </item>
+    
+  </channel>
+</rss>
