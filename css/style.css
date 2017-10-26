@@ -137,7 +137,7 @@ body {
 
 .profile #wrapper {
     padding: 60px 40px 0px;
-    max-width: 800px;      /*-- change site width --*/
+    max-width: 600px;      /*-- change site width --*/
     margin: 0 auto;
 }
 
@@ -227,7 +227,7 @@ nav.main-nav a.cta {
 }
 
 #wrapper {
-    max-width: 800px;      /*-- change site width --*/
+    max-width: 700px;      /*-- change site width --*/
     margin: 0 auto;
     padding: 60px 20px 20px 20px;    /*-- change site width --*/
 }
@@ -386,7 +386,7 @@ em, i {
     font-weight: 300;
     font-size: 18px;
     color: #aaa;
-    max-width: 800px;      /*-- change site width --*/
+    max-width: 700px;      /*-- change site width --*/
     margin-top: 5px;
     line-height: 1.4;
 }
@@ -490,7 +490,10 @@ img {
 Post List
 =========================================== */
 
-#post-list, #archive-list {
+#post-list, .archive {
+    max-width: 550px;    /* post-list site width */
+    margin: 0 auto;
+    padding-bottom: 50px;
 }
 
 #post-list li, #archive-list li {
@@ -511,6 +514,7 @@ Post List
     font-weight: 400;
     font-size: 22px;
     padding-bottom: 10px;
+    line-height: 1.3;
 }
 
 #post-list .dates {
@@ -519,6 +523,7 @@ Post List
     top: 1px;
     font: 300 18px/1.4 "Roboto", "Helvetica Neue Light", helvetica, Arial, sans-serif;
     color: #bbb;
+    padding-left: 5px;    /* avoid stick to post-list-title /
 }
 
 /*
@@ -803,9 +808,9 @@ h2.month {
 }
 
 .archive .post-item {
-    line-height: 1;
+    line-height: 1.4;
     overflow-x: hidden;
-    #white-space:nowrap;
+    //white-space:nowrap;
 }
 
 .archive .post-time {
