@@ -6,10 +6,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cecilia Lee - Sample post</title>
+  <title>Cecilia Lee - Fix Github 'GH001: Large files detected' with BFG Repo-Cleaner</title>
   <meta name="author" content="Cecilia Lee" />
   <meta name="description" content="The blog of Cecilia Lee" />
-  <link rel="canonical" href="http://cecilialee.github.io//blog/2013/08/20/sample-post.html" />
+  <link rel="canonical" href="http://cecilialee.github.io//blog/2017/10/20/quick-fix-github-gh001.html" />
 
   <link href="//fonts.googleapis.com/css?family=Open+Sans:600,800" rel="stylesheet" type="text/css">
   <link rel="shortcut icon" href="/favicon.png">
@@ -133,50 +133,38 @@
 
     <div class="eleven columns content">
       <p class="meta">
-  August 20, 2013
+  October 20, 2017
   <a href="/">
     <i class="home fa fa-home"></i>
   </a>
 </p>
 
-<h1 class="title">Sample post</h1>
+<h1 class="title">Fix Github 'GH001: Large files detected' with BFG Repo-Cleaner</h1>
 
 <div id="post">
-  <p>Tattooed roof party <em>vinyl</em> freegan single-origin coffee wayfarers tousled, umami yr 
-meggings hella selvage. Butcher bespoke seitan, cornhole umami gentrify put a bird 
-on it occupy trust fund. Umami whatever kitsch, locavore fingerstache Tumblr pork belly
-<a href="#">keffiyeh</a>. Chia Echo Park Pitchfork, Blue Bottle <a href="#">hashtag</a> stumptown skateboard selvage 
-mixtape. Echo Park retro butcher banjo cardigan, seitan flannel Brooklyn paleo fixie 
-Truffaut. Forage mustache Thundercats next level disrupt. Bicycle rights forage tattooed
-chia, <strong>wayfarers</strong> swag raw denim hashtag biodiesel occupy gastropub!</p>
+  <p>Recently I’ve accidentally committed a large data file to Git while working on a data wrangling project. When I tried to push it to Github using <code>push -u origin master</code>, it failed of <code>remote error: GH001: Large files detected</code> because the large data file exceeded Github’s 100MB file size limit.</p>
 
-<hr />
+<p>Here’s a view of the full error code:</p>
 
-<h1 id="its-all-in-the-game">It’s all in the game.</h1>
+<div class="highlight"><pre><code class="language-text" data-lang="text">remote: error: GH001: Large files detected. You may want to try Git Large File Storage — https://git-lfs.github.com.
+remote: error: Trace: s9116d865251981c96d8dd2cdf7ef464
+remote: error: See http://git.io/iEPt8g for more information.
+remote: error: File sample/large/data/file/path.json is 679.95 MB; this exceeds GitHub’s file size limit of 100.00 MB</code></pre></div>
 
-<h2 id="you-come-at-the-king-you-best-not-miss">You come at the king, you best not miss.</h2>
+<p>I can’t solve this by simply deleting the large file repository, as it has already been commited. The situation was even worsen since I’ve made few more commits ahead of the origin after this faultful commit.</p>
 
-<h3 id="be-subtle-with-it-man-you-know-what-subtle-means">Be subtle with it, man. You know what subtle means?</h3>
+<p>Fortunately, there is a quick fix solution using a simple script called <a href="https://rtyley.github.io/bfg-repo-cleaner/">BFG Repo-Cleaner</a>. The main objective of BFG Repo-Cleaner is to remove large or troublesome files from our Git repository history. It works like <code>git-filter-branch</code>, but simpler, easier, and faster.</p>
 
-<p>VHS post-ironic cred <strong>bespoke</strong> banjo. Yr wayfarers literally gentrify, flexitarian fap 
-dreamcatcher plaid cornhole Intelligentsia paleo. Beard try-hard direct trade, shabby chic 
-Helvetica <code>look ma, I can code</code>. Lo-fi American Apparel tattooed <a href="#">Vice</a> tofu, yr vinyl. 
-Williamsburg butcher hella mumblecore fixie mlkshk, cliche wolf keytar mixtape kitsch banh mi 
-salvia. High Life Odd Future <em>chambray</em> kale chips hoodie, cray pop-up. Helvetica narwhal 
-iPhone try-hard jean shorts.</p>
+<p>Here is a step by step guide:</p>
 
-<blockquote>
-  <p>This is a quote from someone famous about productivity</p>
-</blockquote>
+<ol>
+  <li>First we download the cleaner from it’s website. Here is a link to the latest version: <a href="http://repo1.maven.org/maven2/com/madgag/bfg/1.12.16/bfg-1.12.16.jar">bfg-1.12.16.jar</a>. </li>
+  <li>The only requirement to run the script is to have the <a href="http://java.com/en/download/manual.jsp">Java Runtime Environment</a> (Java 7 or above) installed. Note that it’s a script to be run in the <strong>command line</strong>. The following commands should be submitted in terminal (or equivalent).</li>
+  <li>Before cleaning, we make a backup of our repository to ensure we don’t lose anything by running <code>git clone --mirror git://example.com/some-big-repo.git</code>. This is a bare repo, which means our normal files won’t be visible, but it’s a full copy of the Git database of our repository.</li>
+  <li>Now we can clean our Git repository history by running <code>java -jar bfg.jar --strip-blobs-bigger-than 100M some-big-repo.git</code>.</li>
+</ol>
 
-<p>Syntax highlighting with Solarized theme.</p>
-
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">class</span> <span class="nc">User</span> <span class="o">&lt;</span> <span class="no">ActiveRecord</span><span class="o">::</span><span class="no">Base</span>
-  <span class="n">attr_accessible</span> <span class="ss">:email</span><span class="p">,</span> <span class="ss">:name</span>
-
-  <span class="o">.</span><span class="n">.</span><span class="o">.</span> <span class="n">tons</span> <span class="n">of</span> <span class="n">other</span> <span class="n">crap</span> <span class="o">.</span><span class="n">.</span><span class="o">.</span>
-
-<span class="k">end</span></code></pre></div>
+<p>Viola! Problem fixed. We should now be able to push our commits to Github again.</p>
 
 
 </div>
@@ -186,7 +174,7 @@ iPhone try-hard jean shorts.</p>
   <ul class="posts">
     
     <li>
-      <span>20 Oct 2017 &raquo;</span> <a href="/blog/2017/10/20/quick-fix-github-gh001.html">Fix Github 'GH001: Large files detected' with BFG Repo-Cleaner</a>
+      <span>20 Aug 2013 &raquo;</span> <a href="/blog/2013/08/20/sample-post.html">Sample post</a>
     </li>
     
     <li>
@@ -198,15 +186,15 @@ iPhone try-hard jean shorts.</p>
   <h3>Tags</h3>
   <span>
     
-      <a href="/tag/code.html" rel="tag"> 
-         code 
+      <a href="/tag/git.html" rel="tag"> 
+         git 
         
           ,
         
       </a>
 
-      <a href="/tag/jekyll.html" rel="tag"> 
-         jekyll 
+      <a href="/tag/github.html" rel="tag"> 
+         github 
         
         .
         

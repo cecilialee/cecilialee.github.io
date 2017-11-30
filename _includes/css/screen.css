@@ -11,7 +11,7 @@ body {
   font-size: 16px;
   background-color: white;
   color: #222222;
-  line-height: 24px;
+  line-height: 22px;
   margin: 0;
   border-top: 7px solid {{ site.data.theme.highlight_color }};
 }
@@ -28,12 +28,12 @@ h1.title {
 
 h1 {
   font-size: 32px;
-  line-height: 40px;
+  line-height: 32px;
 }
 
 h2 {
   font-size: 24px;
-  line-height: 30px;
+  line-height: 24px;
 }
 
 h3 {
@@ -87,8 +87,9 @@ ul.posts li {
 ul.posts span {
   font-family: 'Lucida Console', 'Andale Mono', monospace;
   color: #aaa;
-  padding-right: 5px;
-  font-size:14px;
+  padding-right: 10px;
+  font-size:15px;
+  letter-spacing: -0.5px;
 }
 
 .meta {
@@ -108,11 +109,12 @@ nav h1, nav h2 {
 }
 
 #bio {
+  color: #777;
   margin-top: 10px;
   margin-bottom: 15px;
-  border: dotted #ddd;
-  border-width: 1px 0;
   padding-top: 15px;
+  //border: dotted #ddd;
+  //border-width: 1px 0;
 }
 
 #social {
@@ -121,17 +123,17 @@ nav h1, nav h2 {
 }
 
 #tags {
-  margin-top: 80px;
+  margin-top: 10px;
   margin-bottom: 50px;
   font-size: 13px;
-  padding-top: 15px ;
-  border-top: dotted #ddd;
-  border-width: 1px 0;
+  padding-top: 15px;
+  //border-top: dotted #ddd;
+  //border-width: 1px 0;
 }
 
-#post pre {
+#post pre {    
   border: 1px solid #ddd;
-  background-color: #eef;
+  background-color: #eee;
   padding: 0 .4em;
   margin-bottom: 20px !important;
 }
@@ -143,7 +145,7 @@ nav h1, nav h2 {
 
 #post code {
   border: 1px solid #ddd;
-  background-color: #eef;
+  background-color: #eee;
   font-size: 85%;
   padding: 0 .2em;
 }
@@ -167,7 +169,7 @@ nav h1, nav h2 {
 
 .content {
   font: 400 16px/22px "open sans", sans-serif;
-  border-left: 1px solid #DDD;
+  //border-left: 1px solid #DDD;
   padding-left: 40px;
   padding-top: 25px;
   min-height: 400px;
@@ -180,8 +182,10 @@ nav h1, nav h2 {
 .footer {
   font-size: 80%;
   color: #666;
-  border-top: 4px solid #EEE;
+  //border-top: 4px solid #EEE;
   overflow: hidden;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .aside {
@@ -248,6 +252,7 @@ i.fa-hn {
   margin-top: 5px;
   font-size: 11px;
   text-align: center;
+  display: none;
 }
 
 .footnotes {
