@@ -1,4 +1,4 @@
 ---
 layout: tag
-title: syntax
+title: api
 ---

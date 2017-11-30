@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cecilia Lee - Get Exchange Rates with currencylayer API in Python</title>
+  <meta name="author" content="Cecilia Lee" />
+  <meta name="description" content="The blog of Cecilia Lee" />
+  <link rel="canonical" href="http://cecilialee.github.io//blog/2017/10/08/get-currency-exhange-rates-with-currenylayerapi-in-python.html" />
+
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:600,800" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="/favicon.png">
+  <link rel="alternate" type="application/atom+xml" title="Cecilia Lee" href="http://cecilialee.github.io//atom.xml" />
+
+  <link rel="stylesheet" href="/assets/css/all.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <div class="four columns sidebar">
+      <nav>
+  <h1>Data Science Journal</h1>
+  <!-- 
+  <a href="/">
+    
+    <img src="/logo.png" id="logo" alt="Blog logo"/>
+    
+  </a>
+  -->
+  <h2>by <a href="/">Cecilia Lee</a>.</h2>
+  <div id="bio">
+    <p>Having a background the art market, this is a blog to share my dedicated journey to study Data Science.</p>
+  </div>
+  <div id="social">
+    <!--Follow me:-->
+<div id="stalker">
+  
+  <a title="cecilialee on Github" href="https://github.com/cecilialee">
+    <i class="fa fa-github-square"></i>
+  </a>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <a title="cecilialeehs on Twitter" href="https://twitter.com/cecilialeehs">
+    <i class="fa fa-twitter-square"></i>
+  </a>
+  
+
+  
+  <a title="Cecilia Lee on Facebook" href="https://facebook.com/cecilialeehoishan">
+    <i class="fa fa-facebook-square"></i>
+  </a>
+  
+
+  
+
+  
+  <a title="Cecilia Lee on LinkedIn" href="https://www.linkedin.com/in/cecilia-lee-8b1a60a3">
+    <i class="fa fa-linkedin-square"></i>
+  </a>
+  
+
+  
+
+  
+
+  
+  <a title="Atom feed" id="atom" href="/atom.xml">
+    <i class="fa fa-rss-square"></i>
+  </a>
+  
+</div>
+
+  </div>
+
+  <div id="tags">
+    <span>
+  
+  
+  
+    <a href="/tag/api.html" rel="tag">
+      api 
+  
+    ,
+  
+    </a>
+  
+    <a href="/tag/git.html" rel="tag">
+      git 
+  
+    ,
+  
+    </a>
+  
+    <a href="/tag/github.html" rel="tag">
+      github 
+  
+    ,
+  
+    </a>
+  
+    <a href="/tag/python.html" rel="tag">
+      python 
+  
+    .
+    
+    </a>
+  
+
+</span>
+  </div>
+</nav>
+
+    </div>
+
+    <div class="eleven columns content">
+      <p class="meta">
+  October 08, 2017
+  <a href="/">
+    <i class="home fa fa-home"></i>
+  </a>
+</p>
+
+<h1 class="title">Get Exchange Rates with currencylayer API in Python</h1>
+
+<div id="post">
+  <p>There’re a fairly large number of APIs offering real-time and historical currency exchange rate out there. <a href="https://currencylayer.com/">currencylayer API</a> is one of the best. It’s an easy-to-use JSON API supporting 168 currencies, delivering accurate, reliable and consistent currency exchange rates.</p>
+
+<p>This article aims to share the basics of using the currencylayer API in Python with the Requests library to get live and historical quotes.</p>
+
+<p>(For comparisons in currency exchange rate APIs, see <a href="http://www.freecurrencyconverterapi.com/">Free and Paid Currency Converter API Comparison</a>.)</p>
+
+<h2 id="get-currencylayer-api">1. Get currencylayer API</h2>
+
+<p>To get started, we first need to get our currencylayer API access key from its website. </p>
+
+<p>The sign up procedure is very simple. From currencylayer’s homepage, we navigate to <a href="https://currencylayer.com/product">Start using the API</a> and select the <a href="https://currencylayer.com/signup?plan=1">Free Plan</a>. The free plan supports live and historical quotes of 1,000 API Requests per month.</p>
+
+<p>After creating an account, we log in to our <a href="https://currencylayer.com/dashboard">Account Dashboard</a> and there we find our API Access Key. </p>
+
+<h2 id="import-requests-library">2. Import Requests Library</h2>
+
+<p>To access the API in python, we need to import the <a href="http://docs.python-requests.org/">Requests</a> library.</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">requests</span></code></pre></div>
+
+<p>For those who are new to Requests, it is a simple and elegant Python HTTP library to grab, post, stream, and connect to secure web pages. If you don’t have it installed, you may easily install it with the <code>pip install requests</code> command.</p>
+
+<p>We also store our currenclayer API key as a variable for easier access.</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">api</span> <span class="o">=</span> <span class="s">&#39;2639ccac02d7c15359d45f9a2bc9d8ea&#39;</span></code></pre></div>
+
+<h2 id="get-live-quote">3. Get Live Quote</h2>
+
+<p>Now we’re all set. Let’s try to get a live quote with our API key.</p>
+
+<p>This is the “live” request URL as documented on currencylayer’s website.</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">apilayer</span><span class="o">.</span><span class="n">net</span><span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">live</span>
+
+    <span class="err">?</span> <span class="n">access_key</span> <span class="o">=</span> <span class="n">YOUR_ACCESS_KEY</span>
+    <span class="o">&amp;</span> <span class="n">currencies</span> <span class="o">=</span> <span class="n">USD</span><span class="p">,</span><span class="n">AUD</span><span class="p">,</span><span class="n">CAD</span><span class="p">,</span><span class="n">PLN</span><span class="p">,</span><span class="n">MXN</span>
+    <span class="o">&amp;</span> <span class="n">format</span> <span class="o">=</span> <span class="mi">1</span></code></pre></div>
+
+<p>We’ll use the <code>requests.get</code> method to get the JSON response. </p>
+
+<p>First, we store all the values of the required parameters in a dict. We should input all our target currencies as a string, seperated by a ‘<code>,</code>’.</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">params</span> <span class="o">=</span> <span class="p">{</span><span class="s">&#39;access_key&#39;</span><span class="p">:</span> <span class="n">api</span><span class="p">,</span> <span class="s">&#39;currencies&#39;</span><span class="p">:</span> <span class="s">&#39;USD,EUR,CNY,HKD&#39;</span><span class="p">,</span> <span class="s">&#39;format&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">}</span></code></pre></div>
+
+<p>We create a response object <code>r</code> using <code>requests.get</code>.</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">&#39;http://apilayer.net/api/live&#39;</span><span class="p">,</span> <span class="n">params</span> <span class="o">=</span> <span class="n">params</span><span class="p">)</span></code></pre></div>
+
+<p>We encode our response in json using the <code>r.json</code> method. And here we get our live quote stored in a dict.</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">livequote</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()</span></code></pre></div>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># livequote</span>
+<span class="p">{</span><span class="s">u&#39;privacy&#39;</span><span class="p">:</span> <span class="s">u&#39;https://currencylayer.com/privacy&#39;</span><span class="p">,</span>
+ <span class="s">u&#39;quotes&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s">u&#39;USDCNY&#39;</span><span class="p">:</span> <span class="mf">6.653204</span><span class="p">,</span>
+  <span class="s">u&#39;USDEUR&#39;</span><span class="p">:</span> <span class="mf">0.852304</span><span class="p">,</span>
+  <span class="s">u&#39;USDHKD&#39;</span><span class="p">:</span> <span class="mf">7.804504</span><span class="p">,</span>
+  <span class="s">u&#39;USDUSD&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">},</span>
+ <span class="s">u&#39;source&#39;</span><span class="p">:</span> <span class="s">u&#39;USD&#39;</span><span class="p">,</span>
+ <span class="s">u&#39;success&#39;</span><span class="p">:</span> <span class="bp">True</span><span class="p">,</span>
+ <span class="s">u&#39;terms&#39;</span><span class="p">:</span> <span class="s">u&#39;https://currencylayer.com/terms&#39;</span><span class="p">,</span>
+ <span class="s">u&#39;timestamp&#39;</span><span class="p">:</span> <span class="mi">1507467546</span><span class="p">}</span></code></pre></div>
+
+<p>We can easily access our stored data using Python dict methods.</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">livequote</span><span class="p">[</span><span class="s">&#39;quotes&#39;</span><span class="p">][</span><span class="s">&#39;USDCNY&#39;</span><span class="p">]</span></code></pre></div>
+
+<h2 id="get-historical-quote">4. Get Historical Quote</h2>
+
+<p>It’s equally easy to get a historical quote with our API key.</p>
+
+<p>The request URL is changed as below. We just need to change the url and pass an extra parameter of date to our request.</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">apilayer</span><span class="o">.</span><span class="n">net</span><span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">historical</span>
+
+    <span class="err">?</span> <span class="n">access_key</span> <span class="o">=</span> <span class="n">YOUR_ACCESS_KEY</span>
+    <span class="o">&amp;</span> <span class="n">date</span> <span class="o">=</span> <span class="n">YYYY</span><span class="o">-</span><span class="n">MM</span><span class="o">-</span><span class="n">DD</span>
+    <span class="o">&amp;</span> <span class="n">currencies</span> <span class="o">=</span> <span class="n">USD</span><span class="p">,</span><span class="n">AUD</span><span class="p">,</span><span class="n">CAD</span><span class="p">,</span><span class="n">PLN</span><span class="p">,</span><span class="n">MXN</span>
+    <span class="o">&amp;</span> <span class="n">format</span> <span class="o">=</span> <span class="mi">1</span></code></pre></div>
+
+<p>We use the same requests method to get the JSON-encoded dict of the exchange rate on a historical date.</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">params</span> <span class="o">=</span> <span class="p">{</span><span class="s">&#39;access_key&#39;</span><span class="p">:</span> <span class="n">api</span><span class="p">,</span> <span class="s">&#39;date&#39;</span><span class="p">:</span> <span class="s">&#39;2017-10-01&#39;</span><span class="p">,</span> <span class="s">&#39;currencies&#39;</span><span class="p">:</span> <span class="s">&#39;USD,EUR,CNY,HKD&#39;</span><span class="p">,</span> <span class="s">&#39;format&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">}</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">&#39;http://apilayer.net/api/historical&#39;</span><span class="p">,</span> <span class="n">params</span> <span class="o">=</span> <span class="n">params</span><span class="p">)</span>
+<span class="n">histquote</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()</span></code></pre></div>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># histquote</span>
+<span class="p">{</span><span class="s">u&#39;date&#39;</span><span class="p">:</span> <span class="s">u&#39;2017-10-01&#39;</span><span class="p">,</span>
+ <span class="s">u&#39;historical&#39;</span><span class="p">:</span> <span class="bp">True</span><span class="p">,</span>
+ <span class="s">u&#39;privacy&#39;</span><span class="p">:</span> <span class="s">u&#39;https://currencylayer.com/privacy&#39;</span><span class="p">,</span>
+ <span class="s">u&#39;quotes&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s">u&#39;USDCNY&#39;</span><span class="p">:</span> <span class="mf">6.653198</span><span class="p">,</span>
+  <span class="s">u&#39;USDEUR&#39;</span><span class="p">:</span> <span class="mf">0.846697</span><span class="p">,</span>
+  <span class="s">u&#39;USDHKD&#39;</span><span class="p">:</span> <span class="mf">7.810304</span><span class="p">,</span>
+  <span class="s">u&#39;USDUSD&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">},</span>
+ <span class="s">u&#39;source&#39;</span><span class="p">:</span> <span class="s">u&#39;USD&#39;</span><span class="p">,</span>
+ <span class="s">u&#39;success&#39;</span><span class="p">:</span> <span class="bp">True</span><span class="p">,</span>
+ <span class="s">u&#39;terms&#39;</span><span class="p">:</span> <span class="s">u&#39;https://currencylayer.com/terms&#39;</span><span class="p">,</span>
+ <span class="s">u&#39;timestamp&#39;</span><span class="p">:</span> <span class="mi">1506902399</span><span class="p">}</span></code></pre></div>
+
+</div>
+
+<div id="related">
+  <h3>Related Posts</h3>
+  <ul class="posts">
+    
+    <li>
+      <span>20 Oct 2017 &raquo;</span> <a href="/blog/2017/10/20/quick-fix-github-gh001-large-files-detected-with-bfg-repo-cleaner.html">Fix Github 'GH001: Large files detected' with BFG Repo-Cleaner</a>
+    </li>
+    
+  </ul>
+
+  <h3>Tags</h3>
+  <span>
+    
+      <a href="/tag/api.html" rel="tag"> 
+         api 
+        
+          ,
+        
+      </a>
+
+      <a href="/tag/python.html" rel="tag"> 
+         python 
+        
+        .
+        
+      </a>
+
+  </span>
+</div>
+
+
+
+      <div class="footer">
+        <div class="disclaimer">
+  
+  <p>
+    The postings on this site are my own and don't necessarily represent my 
+    employer’s positions, strategies or opinions.
+  </p>
+  
+
+  <p>
+    © Cecilia Lee, 2017 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/swanson/lagom">Lagom theme</a>
+  </p>
+</div>
+
+      </div>
+    </div>
+  </div>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-xxxx-x']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>

@@ -4,18 +4,12 @@
 "categories": ["blog"],
 "tags": ["git","github"],
 "title": "Fix Github 'GH001: Large files detected' with BFG Repo-Cleaner",
-"url": "/blog/2017/10/20/quick-fix-github-gh001.html"},
+"url": "/blog/2017/10/20/quick-fix-github-gh001-large-files-detected-with-bfg-repo-cleaner.html"},
 
-{"date": "Tue, 20 Aug 2013 00:00:00 +0800",
+{"date": "Sun, 08 Oct 2017 00:00:00 +0800",
 "categories": ["blog"],
-"tags": ["code","jekyll"],
-"title": "Sample post",
-"url": "/blog/2013/08/20/sample-post.html"},
-
-{"date": "Mon, 12 Aug 2013 00:00:00 +0800",
-"categories": ["blog"],
-"tags": ["jekyll","syntax"],
-"title": "Another sample",
-"url": "/blog/2013/08/12/another-sample.html"},
+"tags": ["api","python"],
+"title": "Get Exchange Rates with currencylayer API in Python",
+"url": "/blog/2017/10/08/get-currency-exhange-rates-with-currenylayerapi-in-python.html"},
 
 false]
