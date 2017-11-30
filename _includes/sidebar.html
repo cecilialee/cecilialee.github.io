@@ -1,0 +1,23 @@
+<nav>
+  <h1>Data Science Journal</h1>
+  <!-- 
+  <a href="/">
+    {% if site.data.theme.social.gravatar %}
+    <img src="http://www.gravatar.com/avatar/{{ site.data.theme.social.gravatar }}?s=200" id="gravatar" alt="My photo"/>
+    {% else %}
+    <img src="/logo.png" id="logo" alt="Blog logo"/>
+    {% endif %}
+  </a>
+  -->
+  <h2>by <a href="/">{{ site.data.theme.name }}</a>.</h2>
+  <div id="bio">
+    <p>Coming from a Fine Art background, this is a blog to share my dedicated journey of entering the Data Science field.</p>
+  </div>
+  <div id="social">
+    {% include social.html %}
+  </div>
+
+  <div id="tags">
+    {% include tags.html %}
+  </div>
+</nav>
