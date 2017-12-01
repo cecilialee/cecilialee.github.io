@@ -1,8 +1,14 @@
 <!--Follow me:-->
 <div id="stalker">
+  {% if site.data.theme.social.email %}
+  <a title="{{ site.data.theme.social.email }} on Email" href="mailto:{{ site.data.theme.social.email }}">
+    <i class="fa fa-envelope"></i>
+  </a>
+  {% endif %}
+
   {% if site.data.theme.social.github %}
   <a title="{{ site.data.theme.social.github }} on Github" href="https://github.com/{{ site.data.theme.social.github }}">
-    <i class="fa fa-github-square"></i>
+    <i class="fa fa-github-alt"></i>
   </a>
   {% endif %}
 
@@ -32,19 +38,25 @@
 
   {% if site.data.theme.social.twitter %}
   <a title="{{ site.data.theme.social.twitter }} on Twitter" href="https://twitter.com/{{ site.data.theme.social.twitter }}">
-    <i class="fa fa-twitter-square"></i>
+    <i class="fa fa-twitter"></i>
+  </a>
+  {% endif %}
+
+    {% if site.data.theme.social.medium %}
+  <a title="{{ site.data.theme.social.medium }} on Medium" href="https://medium.com/@{{ site.data.theme.social.medium }}">
+    <i class="fa fa-medium"></i>
   </a>
   {% endif %}
 
   {% if site.data.theme.social.linkedin %}
   <a title="{{ site.data.theme.name }} on LinkedIn" href="https://www.linkedin.com/in/{{ site.data.theme.social.linkedin }}">
-    <i class="fa fa-linkedin-square"></i>
+    <i class="fa fa-linkedin-square fa-fw"></i>
   </a>
   {% endif %}
 
   {% if site.data.theme.social.facebook %}
   <a title="{{ site.data.theme.name }} on Facebook" href="https://facebook.com/{{ site.data.theme.social.facebook }}">
-    <i class="fa fa-facebook-square"></i>
+    <i class="fa fa-facebook-square fa-fw"></i>
   </a>
   {% endif %}
 
