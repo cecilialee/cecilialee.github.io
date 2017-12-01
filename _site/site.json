@@ -8,7 +8,7 @@
 
 {"date": "Sun, 08 Oct 2017 00:00:00 +0800",
 "categories": ["blog"],
-"tags": ["api","python"],
+"tags": ["api","python","requests"],
 "title": "Get Exchange Rates with currencylayer API in Python",
 "url": "/blog/2017/10/08/get-currency-exhange-rates-with-currenylayerapi-in-python.html"},
 

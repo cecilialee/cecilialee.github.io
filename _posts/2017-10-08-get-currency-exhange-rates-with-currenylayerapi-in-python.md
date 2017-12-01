@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Get Exchange Rates with currencylayer API in Python"
-tags: [api, python]
+tags: [api, python, requests]
 categories:
 - blog
 ---

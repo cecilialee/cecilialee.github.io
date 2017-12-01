@@ -138,6 +138,10 @@ nav h1, nav h2 {
   border-width: 1px 0;
 }
 
+#post {
+  padding-top: 10px;
+}
+
 #post pre {    
   border: 1px solid #ddd;
   background-color: #eee;
@@ -286,3 +290,5 @@ sup {
   vertical-align: super;
   font-size: smaller;
 }
+
+
