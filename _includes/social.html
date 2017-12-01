@@ -36,6 +36,12 @@
   </a>
   {% endif %}
 
+  {% if site.data.theme.social.linkedin %}
+  <a title="{{ site.data.theme.name }} on LinkedIn" href="https://www.linkedin.com/in/{{ site.data.theme.social.linkedin }}">
+    <i class="fa fa-linkedin-square"></i>
+  </a>
+  {% endif %}
+
   {% if site.data.theme.social.facebook %}
   <a title="{{ site.data.theme.name }} on Facebook" href="https://facebook.com/{{ site.data.theme.social.facebook }}">
     <i class="fa fa-facebook-square"></i>
@@ -45,12 +51,6 @@
   {% if site.data.theme.social.tumblr %}
   <a title="{{ site.data.theme.name }} on tumblr" href="https://{{ site.data.theme.social.tumblr }}.tumblr.com">
     <i class="fa fa-tumblr-square"></i>
-  </a>
-  {% endif %}
-
-  {% if site.data.theme.social.linkedin %}
-  <a title="{{ site.data.theme.name }} on LinkedIn" href="https://www.linkedin.com/in/{{ site.data.theme.social.linkedin }}">
-    <i class="fa fa-linkedin-square"></i>
   </a>
   {% endif %}
 
