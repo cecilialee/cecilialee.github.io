@@ -877,6 +877,17 @@ sup {
   font-size: smaller;
 }
 
+#search-result {
+  list-style-type: none;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+#search-result-tags {
+  color: #aaa;
+}
+
+
 
 /*
 * Skeleton V1.1
