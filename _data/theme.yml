@@ -21,8 +21,6 @@ social:
   #flickr: johndoe
 
 
-# Site
-title: Data Science Journal
 
 # "Hi, I'm _______"
 name: Cecilia Lee
@@ -37,3 +35,6 @@ show_disclaimer: false
 
 # Toggle link/icon to view atom feed (/atom.xml) in sidebar
 show_atom_feed: true
+
+# Disqus
+comments: true
