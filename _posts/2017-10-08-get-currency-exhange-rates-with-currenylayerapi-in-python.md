@@ -25,9 +25,9 @@ After creating an account, we log in to our [Account Dashboard](https://currency
 To access the API in python, we need to import the [Requests](http://docs.python-requests.org/) library.
 
 
-{% highlight python %}
+```python
 import requests
-{% endhighlight %}
+```
 
 For those who are new to Requests, it is a simple and elegant Python HTTP library to grab, post, stream, and connect to secure web pages. If you don't have it installed, you may easily install it with the `pip install requests` command.
 
@@ -56,26 +56,26 @@ We'll use the `requests.get` method to get the JSON response.
 First, we store all the values of the required parameters in a dict. We should input all our target currencies as a string, seperated by a '`,`'.
 
 
-{% highlight python %}
+```python
 params = {'access_key': api, 'currencies': 'USD,EUR,CNY,HKD', 'format': 1}
-{% endhighlight %}
+```
 
 We create a response object `r` using `requests.get`.
 
 
-{% highlight python %}
+```python
 r = requests.get('http://apilayer.net/api/live', params = params)
-{% endhighlight %}
+```
 
 We encode our response in json using the `r.json` method. And here we get our live quote stored in a dict.
 
 
-{% highlight python %}
+```python
 livequote = r.json()
-{% endhighlight %}
+```
 
 
-{% highlight python %}
+```python
 # livequote
 {u'privacy': u'https://currencylayer.com/privacy',
  u'quotes': {u'USDCNY': 6.653204,
@@ -86,15 +86,15 @@ livequote = r.json()
  u'success': True,
  u'terms': u'https://currencylayer.com/terms',
  u'timestamp': 1507467546}
-{% endhighlight %}
+```
 
 
 We can easily access our stored data using Python dict methods.
 
 
-{% highlight python %}
+```python
 livequote['quotes']['USDCNY']
-{% endhighlight %}
+```
 
 
 
@@ -105,26 +105,26 @@ It's equally easy to get a historical quote with our API key.
 The request URL is changed as below. We just need to change the url and pass an extra parameter of date to our request.
 
 
-{% highlight python %}
+```python
 http://apilayer.net/api/historical
 
     ? access_key = YOUR_ACCESS_KEY
     & date = YYYY-MM-DD
     & currencies = USD,AUD,CAD,PLN,MXN
     & format = 1
-{% endhighlight %}
+```
 
 We use the same requests method to get the JSON-encoded dict of the exchange rate on a historical date.
 
 
-{% highlight python %}
+```python
 params = {'access_key': api, 'date': '2017-10-01', 'currencies': 'USD,EUR,CNY,HKD', 'format': 1}
 r = requests.get('http://apilayer.net/api/historical', params = params)
 histquote = r.json()
-{% endhighlight %}
+```
 
 
-{% highlight python %}
+```python
 # histquote
 {u'date': u'2017-10-01',
  u'historical': True,
@@ -137,4 +137,4 @@ histquote = r.json()
  u'success': True,
  u'terms': u'https://currencylayer.com/terms',
  u'timestamp': 1506902399}
-{% endhighlight %}
+```

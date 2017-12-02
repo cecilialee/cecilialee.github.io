@@ -192,7 +192,8 @@
 
 <p>To access the API in python, we need to import the <a href="http://docs.python-requests.org/">Requests</a> library.</p>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">requests</span></code></pre></figure>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">requests</span>
+</code></pre></div></div>
 
 <p>For those who are new to Requests, it is a simple and elegant Python HTTP library to grab, post, stream, and connect to secure web pages. If you don’t have it installed, you may easily install it with the <code class="highlighter-rouge">pip install requests</code> command.</p>
 
@@ -218,17 +219,20 @@
 
 <p>First, we store all the values of the required parameters in a dict. We should input all our target currencies as a string, seperated by a ‘<code class="highlighter-rouge">,</code>’.</p>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">params</span> <span class="o">=</span> <span class="p">{</span><span class="s">'access_key'</span><span class="p">:</span> <span class="n">api</span><span class="p">,</span> <span class="s">'currencies'</span><span class="p">:</span> <span class="s">'USD,EUR,CNY,HKD'</span><span class="p">,</span> <span class="s">'format'</span><span class="p">:</span> <span class="mi">1</span><span class="p">}</span></code></pre></figure>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">params</span> <span class="o">=</span> <span class="p">{</span><span class="s">'access_key'</span><span class="p">:</span> <span class="n">api</span><span class="p">,</span> <span class="s">'currencies'</span><span class="p">:</span> <span class="s">'USD,EUR,CNY,HKD'</span><span class="p">,</span> <span class="s">'format'</span><span class="p">:</span> <span class="mi">1</span><span class="p">}</span>
+</code></pre></div></div>
 
 <p>We create a response object <code class="highlighter-rouge">r</code> using <code class="highlighter-rouge">requests.get</code>.</p>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'http://apilayer.net/api/live'</span><span class="p">,</span> <span class="n">params</span> <span class="o">=</span> <span class="n">params</span><span class="p">)</span></code></pre></figure>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'http://apilayer.net/api/live'</span><span class="p">,</span> <span class="n">params</span> <span class="o">=</span> <span class="n">params</span><span class="p">)</span>
+</code></pre></div></div>
 
 <p>We encode our response in json using the <code class="highlighter-rouge">r.json</code> method. And here we get our live quote stored in a dict.</p>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">livequote</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()</span></code></pre></figure>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">livequote</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+</code></pre></div></div>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># livequote</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># livequote</span>
 <span class="p">{</span><span class="s">u'privacy'</span><span class="p">:</span> <span class="s">u'https://currencylayer.com/privacy'</span><span class="p">,</span>
  <span class="s">u'quotes'</span><span class="p">:</span> <span class="p">{</span><span class="s">u'USDCNY'</span><span class="p">:</span> <span class="mf">6.653204</span><span class="p">,</span>
   <span class="s">u'USDEUR'</span><span class="p">:</span> <span class="mf">0.852304</span><span class="p">,</span>
@@ -237,11 +241,13 @@
  <span class="s">u'source'</span><span class="p">:</span> <span class="s">u'USD'</span><span class="p">,</span>
  <span class="s">u'success'</span><span class="p">:</span> <span class="bp">True</span><span class="p">,</span>
  <span class="s">u'terms'</span><span class="p">:</span> <span class="s">u'https://currencylayer.com/terms'</span><span class="p">,</span>
- <span class="s">u'timestamp'</span><span class="p">:</span> <span class="mi">1507467546</span><span class="p">}</span></code></pre></figure>
+ <span class="s">u'timestamp'</span><span class="p">:</span> <span class="mi">1507467546</span><span class="p">}</span>
+</code></pre></div></div>
 
 <p>We can easily access our stored data using Python dict methods.</p>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">livequote</span><span class="p">[</span><span class="s">'quotes'</span><span class="p">][</span><span class="s">'USDCNY'</span><span class="p">]</span></code></pre></figure>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">livequote</span><span class="p">[</span><span class="s">'quotes'</span><span class="p">][</span><span class="s">'USDCNY'</span><span class="p">]</span>
+</code></pre></div></div>
 
 <h2 id="4-get-historical-quote">4. Get Historical Quote</h2>
 
@@ -249,20 +255,22 @@
 
 <p>The request URL is changed as below. We just need to change the url and pass an extra parameter of date to our request.</p>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">apilayer</span><span class="o">.</span><span class="n">net</span><span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">historical</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">apilayer</span><span class="o">.</span><span class="n">net</span><span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">historical</span>
 
     <span class="err">?</span> <span class="n">access_key</span> <span class="o">=</span> <span class="n">YOUR_ACCESS_KEY</span>
     <span class="o">&amp;</span> <span class="n">date</span> <span class="o">=</span> <span class="n">YYYY</span><span class="o">-</span><span class="n">MM</span><span class="o">-</span><span class="n">DD</span>
     <span class="o">&amp;</span> <span class="n">currencies</span> <span class="o">=</span> <span class="n">USD</span><span class="p">,</span><span class="n">AUD</span><span class="p">,</span><span class="n">CAD</span><span class="p">,</span><span class="n">PLN</span><span class="p">,</span><span class="n">MXN</span>
-    <span class="o">&amp;</span> <span class="n">format</span> <span class="o">=</span> <span class="mi">1</span></code></pre></figure>
+    <span class="o">&amp;</span> <span class="n">format</span> <span class="o">=</span> <span class="mi">1</span>
+</code></pre></div></div>
 
 <p>We use the same requests method to get the JSON-encoded dict of the exchange rate on a historical date.</p>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">params</span> <span class="o">=</span> <span class="p">{</span><span class="s">'access_key'</span><span class="p">:</span> <span class="n">api</span><span class="p">,</span> <span class="s">'date'</span><span class="p">:</span> <span class="s">'2017-10-01'</span><span class="p">,</span> <span class="s">'currencies'</span><span class="p">:</span> <span class="s">'USD,EUR,CNY,HKD'</span><span class="p">,</span> <span class="s">'format'</span><span class="p">:</span> <span class="mi">1</span><span class="p">}</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">params</span> <span class="o">=</span> <span class="p">{</span><span class="s">'access_key'</span><span class="p">:</span> <span class="n">api</span><span class="p">,</span> <span class="s">'date'</span><span class="p">:</span> <span class="s">'2017-10-01'</span><span class="p">,</span> <span class="s">'currencies'</span><span class="p">:</span> <span class="s">'USD,EUR,CNY,HKD'</span><span class="p">,</span> <span class="s">'format'</span><span class="p">:</span> <span class="mi">1</span><span class="p">}</span>
 <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'http://apilayer.net/api/historical'</span><span class="p">,</span> <span class="n">params</span> <span class="o">=</span> <span class="n">params</span><span class="p">)</span>
-<span class="n">histquote</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()</span></code></pre></figure>
+<span class="n">histquote</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+</code></pre></div></div>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># histquote</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># histquote</span>
 <span class="p">{</span><span class="s">u'date'</span><span class="p">:</span> <span class="s">u'2017-10-01'</span><span class="p">,</span>
  <span class="s">u'historical'</span><span class="p">:</span> <span class="bp">True</span><span class="p">,</span>
  <span class="s">u'privacy'</span><span class="p">:</span> <span class="s">u'https://currencylayer.com/privacy'</span><span class="p">,</span>
@@ -273,7 +281,8 @@
  <span class="s">u'source'</span><span class="p">:</span> <span class="s">u'USD'</span><span class="p">,</span>
  <span class="s">u'success'</span><span class="p">:</span> <span class="bp">True</span><span class="p">,</span>
  <span class="s">u'terms'</span><span class="p">:</span> <span class="s">u'https://currencylayer.com/terms'</span><span class="p">,</span>
- <span class="s">u'timestamp'</span><span class="p">:</span> <span class="mi">1506902399</span><span class="p">}</span></code></pre></figure>
+ <span class="s">u'timestamp'</span><span class="p">:</span> <span class="mi">1506902399</span><span class="p">}</span>
+</code></pre></div></div>
 
 </div>
 
@@ -283,10 +292,6 @@
     
     <li>
       <span>20 Oct 2017 &raquo;</span> <a href="/blog/2017/10/20/quick-fix-github-gh001-large-files-detected-with-bfg-repo-cleaner.html">Fix Github 'GH001: Large files detected' with BFG Repo-Cleaner</a>
-    </li>
-    
-    <li>
-      <span>08 Oct 2017 &raquo;</span> <a href="/blog/2017/10/08/get-currency-exhange-rates-with-currenylayerapi-in-python-2.html">Backticks Testing</a>
     </li>
     
   </ul>

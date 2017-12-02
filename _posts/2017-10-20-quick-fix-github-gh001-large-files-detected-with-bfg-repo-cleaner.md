@@ -10,12 +10,12 @@ Recently I’ve accidentally committed a large data file to Git while working on
 
 Here’s a view of the full error code:
 
-{% highlight text %}
+```bash
 remote: error: GH001: Large files detected. You may want to try Git Large File Storage — https://git-lfs.github.com.
 remote: error: Trace: s9116d865251981c96d8dd2cdf7ef464
 remote: error: See http://git.io/iEPt8g for more information.
 remote: error: File sample/large/data/file/path.json is 679.95 MB; this exceeds GitHub’s file size limit of 100.00 MB
-{% endhighlight %}
+```
 
 I can’t solve this by simply deleting the large file repository, as it has already been commited. The situation was even worsen since I’ve made few more commits ahead of the origin after this faultful commit.
 
