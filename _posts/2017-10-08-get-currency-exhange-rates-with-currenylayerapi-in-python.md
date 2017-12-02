@@ -33,9 +33,9 @@ For those who are new to Requests, it is a simple and elegant Python HTTP librar
 
 We also store our currenclayer API key as a variable for easier access.
 
-{% highlight python %}
+```python
 api = '2639ccac02d7c15359d45f9a2bc9d8ea'
-{% endhighlight %}
+```
 
 ## 3. Get Live Quote
 
@@ -43,13 +43,13 @@ Now we're all set. Let's try to get a live quote with our API key.
 
 This is the "live" request URL as documented on currencylayer's website.
 
-{% highlight python %}
+```python
 http://apilayer.net/api/live
 
     ? access_key = YOUR_ACCESS_KEY
     & currencies = USD,AUD,CAD,PLN,MXN
     & format = 1
-{% endhighlight %}
+```
 
 We'll use the `requests.get` method to get the JSON response. 
 

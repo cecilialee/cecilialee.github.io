@@ -1,23 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
- 
- <title>The blog of Cecilia Lee</title>
- <link href="http://localhost:4000/atom.xml" rel="self"/>
- <link href="http://localhost:4000"/>
- <updated>2017-12-02T13:45:55+08:00</updated>
- <id>http://localhost:4000</id>
- <author>
-   <name>Cecilia Lee</name>
-   <email>ceciliahslee@gmail.com</email>
- </author>
-
- 
- <entry>
-   <title>Fix Github 'GH001: Large files detected' with BFG Repo-Cleaner</title>
-   <link href="http://localhost:4000/blog/2017/10/20/quick-fix-github-gh001-large-files-detected-with-bfg-repo-cleaner.html"/>
-   <updated>2017-10-20T00:00:00+08:00</updated>
-   <id>http://localhost:4000/blog/2017/10/20/quick-fix-github-gh001-large-files-detected-with-bfg-repo-cleaner</id>
-   <content type="html">&lt;p&gt;Recently I’ve accidentally committed a large data file to Git while working on a data wrangling project. When I tried to push it to Github using &lt;code class=&quot;highlighter-rouge&quot;&gt;push -u origin master&lt;/code&gt;, it failed of &lt;code class=&quot;highlighter-rouge&quot;&gt;remote error: GH001: Large files detected&lt;/code&gt; because the large data file exceeded Github’s 100MB file size limit.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-12-02T13:45:55+08:00</updated><id>http://localhost:4000/</id><entry><title type="html">Fix Github ‘GH001: Large files detected’ with BFG Repo-Cleaner</title><link href="http://localhost:4000/blog/2017/10/20/quick-fix-github-gh001-large-files-detected-with-bfg-repo-cleaner.html" rel="alternate" type="text/html" title="Fix Github 'GH001: Large files detected' with BFG Repo-Cleaner" /><published>2017-10-20T00:00:00+08:00</published><updated>2017-10-20T00:00:00+08:00</updated><id>http://localhost:4000/blog/2017/10/20/quick-fix-github-gh001-large-files-detected-with-bfg-repo-cleaner</id><content type="html" xml:base="http://localhost:4000/blog/2017/10/20/quick-fix-github-gh001-large-files-detected-with-bfg-repo-cleaner.html">&lt;p&gt;Recently I’ve accidentally committed a large data file to Git while working on a data wrangling project. When I tried to push it to Github using &lt;code class=&quot;highlighter-rouge&quot;&gt;push -u origin master&lt;/code&gt;, it failed of &lt;code class=&quot;highlighter-rouge&quot;&gt;remote error: GH001: Large files detected&lt;/code&gt; because the large data file exceeded Github’s 100MB file size limit.&lt;/p&gt;
 
 &lt;p&gt;Here’s a view of the full error code:&lt;/p&gt;
 
@@ -39,17 +20,7 @@ remote: error: File sample/large/data/file/path.json is 679.95 MB; this exceeds 
   &lt;li&gt;Now we can clean our Git repository history by running &lt;code class=&quot;highlighter-rouge&quot;&gt;java -jar bfg.jar --strip-blobs-bigger-than 100M some-big-repo.git&lt;/code&gt;.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;Viola! Problem fixed. We should now be able to push our commits to Github again.&lt;/p&gt;
-
-</content>
- </entry>
- 
- <entry>
-   <title>Get Exchange Rates with currencylayer API in Python</title>
-   <link href="http://localhost:4000/blog/2017/10/08/get-currency-exhange-rates-with-currenylayerapi-in-python.html"/>
-   <updated>2017-10-08T00:00:00+08:00</updated>
-   <id>http://localhost:4000/blog/2017/10/08/get-currency-exhange-rates-with-currenylayerapi-in-python</id>
-   <content type="html">&lt;p&gt;There’re a fairly large number of APIs offering real-time and historical currency exchange rate out there. &lt;a href=&quot;https://currencylayer.com/&quot;&gt;currencylayer API&lt;/a&gt; is one of the best. It’s an easy-to-use JSON API supporting 168 currencies, delivering accurate, reliable and consistent currency exchange rates.&lt;/p&gt;
+&lt;p&gt;Viola! Problem fixed. We should now be able to push our commits to Github again.&lt;/p&gt;</content><author><name></name></author><category term="git" /><category term="github" /><summary type="html">Recently I’ve accidentally committed a large data file to Git while working on a data wrangling project. When I tried to push it to Github using push -u origin master, it failed of remote error: GH001: Large files detected because the large data file exceeded Github’s 100MB file size limit.</summary></entry><entry><title type="html">Get Exchange Rates with currencylayer API in Python</title><link href="http://localhost:4000/blog/2017/10/08/get-currency-exhange-rates-with-currenylayerapi-in-python.html" rel="alternate" type="text/html" title="Get Exchange Rates with currencylayer API in Python" /><published>2017-10-08T00:00:00+08:00</published><updated>2017-10-08T00:00:00+08:00</updated><id>http://localhost:4000/blog/2017/10/08/get-currency-exhange-rates-with-currenylayerapi-in-python</id><content type="html" xml:base="http://localhost:4000/blog/2017/10/08/get-currency-exhange-rates-with-currenylayerapi-in-python.html">&lt;p&gt;There’re a fairly large number of APIs offering real-time and historical currency exchange rate out there. &lt;a href=&quot;https://currencylayer.com/&quot;&gt;currencylayer API&lt;/a&gt; is one of the best. It’s an easy-to-use JSON API supporting 168 currencies, delivering accurate, reliable and consistent currency exchange rates.&lt;/p&gt;
 
 &lt;p&gt;This article aims to share the basics of using the currencylayer API in Python with the Requests library to get live and historical quotes.&lt;/p&gt;
 
@@ -148,20 +119,6 @@ remote: error: File sample/large/data/file/path.json is 679.95 MB; this exceeds 
  &lt;span class=&quot;s&quot;&gt;u'source'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;u'USD'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
  &lt;span class=&quot;s&quot;&gt;u'success'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
  &lt;span class=&quot;s&quot;&gt;u'terms'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;u'https://currencylayer.com/terms'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
- &lt;span class=&quot;s&quot;&gt;u'timestamp'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1506902399&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>Backticks Testing</title>
-   <link href="http://localhost:4000/blog/2017/10/08/get-currency-exhange-rates-with-currenylayerapi-in-python-2.html"/>
-   <updated>2017-10-08T00:00:00+08:00</updated>
-   <id>http://localhost:4000/blog/2017/10/08/get-currency-exhange-rates-with-currenylayerapi-in-python 2</id>
-   <content type="html">&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+ &lt;span class=&quot;s&quot;&gt;u'timestamp'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1506902399&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name></name></author><category term="api" /><category term="python" /><category term="requests" /><summary type="html">There’re a fairly large number of APIs offering real-time and historical currency exchange rate out there. currencylayer API is one of the best. It’s an easy-to-use JSON API supporting 168 currencies, delivering accurate, reliable and consistent currency exchange rates.</summary></entry><entry><title type="html">Backticks Testing</title><link href="http://localhost:4000/blog/2017/10/08/get-currency-exhange-rates-with-currenylayerapi-in-python-2.html" rel="alternate" type="text/html" title="Backticks Testing" /><published>2017-10-08T00:00:00+08:00</published><updated>2017-10-08T00:00:00+08:00</updated><id>http://localhost:4000/blog/2017/10/08/get-currency-exhange-rates-with-currenylayerapi-in-python%202</id><content type="html" xml:base="http://localhost:4000/blog/2017/10/08/get-currency-exhange-rates-with-currenylayerapi-in-python-2.html">&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
   &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-</content>
- </entry>
- 
- 
-</feed>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="api" /><category term="python" /><category term="requests" /><summary type="html">for i in range(1, 10): print i</summary></entry></feed>
