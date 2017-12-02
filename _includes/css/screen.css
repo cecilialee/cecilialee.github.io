@@ -47,6 +47,10 @@ ul {
   list-style: disc;
 }
 
+li {
+  line-height: 22px;
+}
+
 a {
   color: {{ site.data.theme.highlight_color }};
   text-decoration: none;
