@@ -716,7 +716,8 @@ nav h1, nav h2 {
 }
 
 #post {
-  padding-top: 10px;
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 #post pre {    
@@ -740,6 +741,14 @@ nav h1, nav h2 {
 
 #post pre code {
   border: none;
+}
+
+#section-title {
+  color: #E84A42;
+}
+
+#related {
+  margin-bottom: 15px;
 }
 
 .sidebar {

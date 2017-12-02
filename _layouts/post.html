@@ -29,7 +29,8 @@ layout: default
 </div>
 
 <div id="related">
-  <h3>Related Posts</h3>
+  <h2 id="section-title"><i class="fa fa-bookmark"></i> Related Posts</h2> 
+  <!--<h3>Related Posts</h3>-->
   <ul class="posts">
     {% for post in site.related_posts limit:3 %}
     <li>
@@ -43,7 +44,8 @@ layout: default
 
 {% if site.data.theme.comments %}
 <div id="disqus">
-  <h3>Comments</h3>
+  <!--<h3>Comments</h3>-->
+  <h2 id="section-title"><i class="fa fa-bookmark"></i> Comments</h2> 
   <div id="disqus_thread"></div>
   <script>
 
