@@ -1,16 +1,16 @@
 // Dynamic display of search results
 
 const searchInput = document.getElementById('search-input');
-const content = document.getElementById('content');
-const results = document.getElementById('results');
+const contentV = document.getElementById('content');
+const resultsV = document.getElementById('results');
 
 searchInput.addEventListener('input', function() {
     if (this.value) {
-        content.style.display = 'none';
-        results.style.display = 'inline';
-    } else if (!this.value && content.style.display === 'none') {
-      content.style.display = 'block';
-      results.style.display = 'none';
+        contentV.style.display = 'none';
+        resultsV.style.display = 'inline';
+    } else if (!this.value && contentV.style.display === 'none') {
+      contentV.style.display = 'block';
+      resultsV.style.display = 'none';
     }
 });
 
