@@ -11,15 +11,20 @@
       {% include sidebar.html %}
     </div>
 
-    <div class="eleven columns content">
-      {{ content }}
-
-      <div class="footer">
-        {% include footer.html %}
+      <div class="eleven columns content">
+        <div id="results">
+          <h2 class="section-title"><i class="fa fa-bookmark"></i> Search</h2>
+          <ul id="results-container"></ul>
+        </div>
+        <div id="content">
+          {{ content }}
+        </div>
+        <div class="footer">
+          {% include footer.html %}
+        </div>
       </div>
     </div>
-  </div>
-
+  
 {% include analytics.html %}
 </body>
 </html>
