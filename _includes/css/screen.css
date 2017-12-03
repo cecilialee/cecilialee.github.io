@@ -5,6 +5,7 @@
 
 html, body {
   height: 100%;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 body {
@@ -354,15 +355,16 @@ sup {
 
 #search-input {
   text-indent: 30px;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
-  height: 40px;
-  padding:4px 4px;
+  height: 38px;
+  line-height: 22px;
+  padding: 0px;
+  padding-left: 10px;
   margin: auto 0;
   background: #f6f6f6;
   border: 0px;
   color: #aaa;
-  padding:10px;
   font-family: FontAwesome, "Open Sans", Verdana, sans-serif; 
   -webkit-box-shadow: 0 4px 2px -2px #ccc;
    -moz-box-shadow: 0 4px 2px -2px #ccc;
