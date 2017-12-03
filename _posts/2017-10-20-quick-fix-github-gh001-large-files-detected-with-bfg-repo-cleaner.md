@@ -10,7 +10,7 @@ Recently I’ve accidentally committed a large data file to Git while working on
 
 Here’s a view of the full error code:
 
-```bash
+```
 remote: error: GH001: Large files detected. You may want to try Git Large File Storage — https://git-lfs.github.com.
 remote: error: Trace: s9116d865251981c96d8dd2cdf7ef464
 remote: error: See http://git.io/iEPt8g for more information.

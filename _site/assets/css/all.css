@@ -578,12 +578,12 @@
 
 html, body {
   height: 100%;
-  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
   font-size: 16px;
-  background-color: white;
+  background-color: #fff;
   color: #222222;
   line-height: 22px;
   margin: 0;
@@ -598,6 +598,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1.title {
   font-weight: 800;
+  letter-spacing: -0.5px;
 }
 
 h1 {
@@ -608,12 +609,13 @@ h1 {
 h2 {
   font-size: 24px;
   line-height: 24px;
+  font-weight: 700;
 }
 
 h3 {
   font-size: 21px;
-  line-height: 24px;
-  margin: 1em 0;
+  line-height: 21px;
+  font-weight: 700;
 }
 
 ul {
@@ -659,20 +661,23 @@ ul.posts {
 ul.posts li {
   line-height: 22px;
   font-size: 16px;
-  margin-bottom: 0px;
+  margin-bottom: 1px;
 }
 
-ul.posts span {
-  font-family: 'Lucida Console', 'Andale Mono', monospace;
-  color: #aaa;
-  padding-right: 10px;
-  font-size:15px;
-  letter-spacing: -0.5px;
+.date {
+  font-family: 'Roboto Mono', 'Lucida Console', 'Andale Mono', monospace;
+  color: #bbb;
+  font-size:13px;
+  background-color: #f9f9f9;
+  border-radius: 4px; 
+  padding-left: 6px;
+  padding-right: 6px;
+  border: 1px solid #e2e2e2;
 }
 
 .meta {
   color: #aaa;
-  margin: 0 0 10px 0;
+  margin: 0;
 }
 
 .site .footer {
@@ -683,32 +688,37 @@ ul.posts span {
 }
 
 nav h1, nav h2 {
-  text-align: center;
+  //text-align: center;
+  font-weight: 800;
+  letter-spacing: -0.5px;
 }
 
 nav h1 {
-  line-height: 30px;
+  font-size: 34px;
+  line-height: 32px;
   margin-bottom: 8px;
 }
 
+nav h2 a {
+  font-weight: 800;
+}
+
 #bio {
-  color: #777;
   margin-top: 10px;
   margin-bottom: 10px;
-  //border-top: dotted #ddd;
+  //border: solid #eaeaea;
   //border-width: 1px 0;
-  border: solid #eee;
-  border-width: 2px 0;
 }
 
 #bio p {
   margin-top: 10px;
   margin-bottom: 10px;
+  font-weight: 600;
 }
 
 #social {
   margin-top: 10px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   font-size: 13px;
 }
 
@@ -717,8 +727,8 @@ nav h1 {
   margin-bottom: 10px;
   font-size: 13px;
   padding-top: 10px;
-  border-top: solid #eee;
-  border-width: 2px 0;
+  //border-top: solid #eaeaea;
+  //border-width: 1px 0;
 }
 
 #post {
@@ -726,11 +736,17 @@ nav h1 {
   margin-bottom: 15px;
 }
 
+#post .highlight {
+  background-color: #f2f2f2;
+  border-radius: 4px;
+}
+
 #post pre {    
   border: 1px solid #ddd;
-  background-color: #eee;
-  padding: 0 .4em;
+  padding: 10px;
   margin-bottom: 20px !important;
+  line-height: 20px;
+  font-size: 14px;
 }
 
 #post ul,
@@ -739,10 +755,15 @@ nav h1 {
 }
 
 #post code {
+  font-family: 'Roboto Mono', 'Lucida Console', 'Andale Mono', monospace;
+  line-height: 16px;
   border: 1px solid #ddd;
-  background-color: #eee;
-  font-size: 85%;
-  padding: 0 .2em;
+  background-color: #f2f2f2;
+  color: #a1a1a1;
+  font-size: 14px;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-radius: 4px;
 }
 
 #post pre code {
@@ -750,7 +771,15 @@ nav h1 {
 }
 
 .section-title {
-  color: #E84A42;
+  color: #111;
+  font-size: 21px;
+  line-height: 24px;
+  display: none;
+}
+
+.section-title .fa-bookmark {
+  padding-right: 5px;
+  color: #111;
 }
 
 #related {
@@ -762,17 +791,9 @@ nav h1 {
   font-family: "open sans", sans-serif;
 }
 
-.sidebar p {
-  font-weight: 200;
-}
-
-.sidebar a {
-  font-weight: 600;
-}
-
 .content {
-  font: 400 16px/22px "open sans", sans-serif;
-  //border-left: 1px solid #DDD;
+  font: 400 16px/22px "Open Sans", sans-serif;
+  //border-left: 1px solid #eee;
   padding-left: 40px;
   padding-top: 25px;
   min-height: 400px;
@@ -794,10 +815,6 @@ nav h1 {
 .aside {
   font-size: 75%;
   color: #666;
-}
-
-#home h2 {
-  color: #E84A42;
 }
 
 #logo, #gravatar {
@@ -839,6 +856,10 @@ i.fa-hn {
   font-size: 18px !important;
   position: relative;
   color: white;
+}
+
+i.fa-home {
+  font-size: 24px;
 }
 
 .home {
@@ -883,36 +904,6 @@ sup {
   font-size: smaller;
 }
 
-#results {
-  display: none;
-  color: #aaa;
-}
-
-#results-container {
-  margin-top: 0;
-  list-style-type: none;
-  margin-bottom: 10px;
-}
-
-#search-result {
-  list-style-type: none;
-  font-size: 16px;
-  line-height: 22px;
-  margin-bottom: 0px;
-}
-
-#search-date {
-  font-family: 'Lucida Console', 'Andale Mono', monospace;
-  color: #aaa;
-  padding-right: 10px;
-  font-size:15px;
-  letter-spacing: -0.5px;
-}
-
-#search-result-tags {
-  color: #aaa;
-}
-
 #search-container {
   position: relative;
   color: #aaa;
@@ -927,9 +918,10 @@ sup {
 }
 
 #search-input {
-  text-indent: 30px;
+  text-indent: 10px;
   font-size: 15px;
-  font-weight: 600;
+  font-family: "Open Sans";
+  font-weight: 700;
   height: 38px;
   line-height: 22px;
   padding: 0px;
@@ -938,10 +930,16 @@ sup {
   background: #f6f6f6;
   border: 0px;
   color: #aaa;
-  font-family: FontAwesome, "Open Sans", Verdana, sans-serif; 
-  -webkit-box-shadow: 0 4px 2px -2px #ccc;
-   -moz-box-shadow: 0 4px 2px -2px #ccc;
-        box-shadow: 0 4px 2px -2px #ccc;
+}
+
+#search-input {
+    border: 1px solid #e2e2e2;
+    border-radius: 4px;
+    padding-left: 26px;
+    background: url(//qsf.ec.quoracdn.net/-3-images.new_grid.QuoraSearch.png-26-56e8792e88146693.png) no-repeat 8px center;
+    background-size: 13px;
+    box-shadow: inset 0 1px 1px rgba(200,200,200,0.3);
+    outline: 0;
 }
 
 input[type="text"] {
@@ -963,6 +961,80 @@ color: #aaa !important;
  
 input:-ms-input-placeholder {  
 color: #aaa !important;  
+}
+
+#results {
+  display: none;
+}
+
+#results-container {
+  margin-top: 0;
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+.tag {
+  border: 1px solid #e2e2e2;
+  font-family: 'Roboto Mono', 'Lucida Console', 'Andale Mono', monospace;
+  font-weight: 400;
+  font-size: 13px;
+  background-color: none;
+  border-radius: 4px;
+  padding: 0 .4em;
+  display: inline;
+}
+
+.tag a {
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.tag:hover {
+  border-color: #E84A42;
+  text-decoration: none;
+}
+
+.post-list {
+  padding-bottom: 10px;
+}
+
+#post-list-title {
+  color: #111;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+#search-result li {
+  margin-bottom: 1px;
+}
+
+#search-result .date {
+  border: none;
+  background-color: white;
+  color: #bbb;
+  padding-left: 0;
+}
+
+#search-result .tag {
+  border: none;
+  color: #bbb;
+}
+
+#search-result #post-list-title {
+  color: #555;
+}
+
+#no-result {
+  color: #555;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+#disqus {
+  margin-top: 30px;
+  padding-left: 1px;
+  padding-right: 1px;
 }
 /*
 * Skeleton V1.1

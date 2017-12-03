@@ -10,13 +10,19 @@
   <meta name="author" content="Cecilia Lee" />
   <meta name="description" content="The blog of Cecilia Lee" />
   <link rel="canonical" href="http://localhost:4000/404.html" />
-
-  <link href="//fonts.googleapis.com/css?family=Open+Sans:600,800" rel="stylesheet" type="text/css">
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:600,700,800" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:500,500i,700,700i" rel="stylesheet">
   <link rel="shortcut icon" href="/favicon.png">
   <link rel="alternate" type="application/atom+xml" title="Cecilia Lee" href="http://localhost:4000/atom.xml" />
-
   <link rel="stylesheet" href="/assets/css/all.css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('#social a').attr('target', '_blank');
+      $('#post a').attr('target', '_blank');
+    });
+  </script>
 </head>
 
 <body>
@@ -95,40 +101,50 @@
   
   
   
-    <a href="/tag/api.html" rel="tag">
-      api 
+    <span class="tag"><a href="/tag/api.html" rel="tag">
+      api</a></span>
+  <!--
   
     ,
   
-    </a>
+-->
+    
   
-    <a href="/tag/git.html" rel="tag">
-      git 
-  
-    ,
-  
-    </a>
-  
-    <a href="/tag/github.html" rel="tag">
-      github 
+    <span class="tag"><a href="/tag/git.html" rel="tag">
+      git</a></span>
+  <!--
   
     ,
   
-    </a>
+-->
+    
   
-    <a href="/tag/python.html" rel="tag">
-      python 
+    <span class="tag"><a href="/tag/github.html" rel="tag">
+      github</a></span>
+  <!--
   
     ,
   
-    </a>
+-->
+    
   
-    <a href="/tag/requests.html" rel="tag">
-      requests 
+    <span class="tag"><a href="/tag/python.html" rel="tag">
+      python</a></span>
+  <!--
+  
+    ,
+  
+-->
+    
+  
+    <span class="tag"><a href="/tag/requests.html" rel="tag">
+      requests</a></span>
+  <!--
   
     
     
-    </a>
+-->
+    
   
 
 </span>
@@ -136,7 +152,6 @@
 
   
   <div id="search-container">
-    <span class="fa fa-search"></span>
     <input type="text" id="search-input" placeholder="Search">
   </div>
 
@@ -151,7 +166,7 @@
         </div>
         <div id="content">
           <div id="home">
-  <h2><i class="fa fa-frown-o"></i> Whoah, that's a 404 Error</h2>
+  <h3><i class="fa fa-frown-o"></i> Whoah, that's a 404 Error</h3>
   <ul id="blog-posts" class="posts">
     <p>Hey, sorry, but the page you're trying to access doesn't exist. Try <a href="/">going back to the homepage.</a></p>
   <br /></ul>

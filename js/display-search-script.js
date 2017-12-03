@@ -20,5 +20,9 @@ SimpleJekyllSearch({
 searchInput: document.getElementById('search-input'),
 resultsContainer: document.getElementById('results-container'),
 json: '/search.json',
-searchResultTemplate: '<li id="search-result"><span id="search-date">{date} &raquo;</span><a href="{url}""> {title}</a></li>'
+searchResultTemplate: '<div class="post-list" id="search-result"><li><a href="{url}" id="post-list-title">{title}</a></li><li><span class="date">{date}</span><span class="tag">{tags}</span></li></div>',
+noResultsText: '<p id="no-result"><i class="fa fa-frown-o"></i> No results found</p>'
 })
+
+
+
