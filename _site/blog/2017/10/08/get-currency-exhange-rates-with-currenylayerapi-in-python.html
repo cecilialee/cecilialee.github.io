@@ -4,7 +4,6 @@
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Get Exchange Rates with currencylayer API in Python</title>
@@ -135,24 +134,10 @@
 </span>
   </div>
 
-  <!-- Html Elements for Search -->
+  
   <div id="search-container">
   <input type="text" id="search-input" placeholder="search">
-  <ul id="results-container"></ul>
   </div>
-
-  <!-- Script pointing to search-script.js -->
-  <script src="/js/search-script.js" type="text/javascript"></script>
-
-  <!-- Configuration -->
-  <script>
-  SimpleJekyllSearch({
-    searchInput: document.getElementById('search-input'),
-    resultsContainer: document.getElementById('results-container'),
-    json: '/search.json',
-    searchResultTemplate: '<p id="search-result"><a href="{url}">{title}</a><br><span id="search-result-tags">{tags}</span></p>'
-  })
-  </script>
 
 </nav>
 
@@ -307,7 +292,7 @@
 </div>
 
 <div id="related">
-  <h2 id="section-title"><i class="fa fa-bookmark"></i> Related Posts</h2> 
+  <h2 class="section-title"><i class="fa fa-bookmark"></i> Related Posts</h2> 
   <!--<h3>Related Posts</h3>-->
   <ul class="posts">
     
@@ -323,7 +308,7 @@
 
 <div id="disqus">
   <!--<h3>Comments</h3>-->
-  <h2 id="section-title"><i class="fa fa-bookmark"></i> Comments</h2> 
+  <h2 class="section-title"><i class="fa fa-bookmark"></i> Comments</h2> 
   <div id="disqus_thread"></div>
   <script>
 
@@ -357,8 +342,9 @@
   </p>
 </div>
 
-
-
+<!-- search js -->
+<script src="/js/search-script.js" type="text/javascript"></script>
+<script src="/js/display-search-script.js" type="text/javascript"></script>
       </div>
     </div>
   </div>

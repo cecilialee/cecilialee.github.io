@@ -743,7 +743,7 @@ nav h1, nav h2 {
   border: none;
 }
 
-#section-title {
+.section-title {
   color: #E84A42;
 }
 
@@ -877,18 +877,34 @@ sup {
   font-size: smaller;
 }
 
+#results {
+  display: none;
+}
+
+#results-container {
+  margin-top: 0;
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
 #search-result {
   list-style-type: none;
-  font-size: 13px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 0px;
+}
+
+#search-date {
+  font-family: 'Lucida Console', 'Andale Mono', monospace;
+  color: #aaa;
+  padding-right: 10px;
+  font-size:15px;
+  letter-spacing: -0.5px;
 }
 
 #search-result-tags {
   color: #aaa;
 }
-
-
-
 /*
 * Skeleton V1.1
 * Copyright 2011, Dave Gamache
