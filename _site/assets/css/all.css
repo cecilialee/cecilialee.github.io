@@ -618,6 +618,10 @@ h3 {
   font-weight: 700;
 }
 
+p {
+  margin-bottom: 15px;
+}
+
 ul {
   margin: 1em 0;
   list-style: disc;
@@ -733,6 +737,10 @@ nav h2 a {
 
 #post {
   margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+#post h1, h2, h3, p {
   margin-bottom: 15px;
 }
 
