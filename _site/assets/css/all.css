@@ -591,7 +591,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color: #181818;
-  font-family: "open sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 600;
 }
 
@@ -685,14 +685,19 @@ nav h1, nav h2 {
   text-align: center;
 }
 
+nav h1 {
+  line-height: 30px;
+  margin-bottom: 8px;
+}
+
 #bio {
   color: #777;
   margin-top: 10px;
   margin-bottom: 10px;
   //border-top: dotted #ddd;
   //border-width: 1px 0;
-  border: dotted #ddd;
-  border-width: 1px 0;
+  border: solid #eee;
+  border-width: 2px 0;
 }
 
 #bio p {
@@ -711,8 +716,8 @@ nav h1, nav h2 {
   margin-bottom: 10px;
   font-size: 13px;
   padding-top: 10px;
-  border-top: dotted #ddd;
-  border-width: 1px 0;
+  border-top: solid #eee;
+  border-width: 2px 0;
 }
 
 #post {
@@ -879,6 +884,7 @@ sup {
 
 #results {
   display: none;
+  color: #aaa;
 }
 
 #results-container {
@@ -904,6 +910,57 @@ sup {
 
 #search-result-tags {
   color: #aaa;
+}
+
+#search-container {
+  position: relative;
+  color: #aaa;
+}
+
+#search-container .fa-search { 
+  position: absolute;
+  top: 13px;
+  left: 12px;
+  font-size: 15px;
+  color: #aaa;
+}
+
+#search-input {
+  text-indent: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  height: 40px;
+  padding:8px 8px;
+  margin: auto 0;
+  background: #f6f6f6;
+  border: 0px;
+  color: #aaa;
+  padding:10px;
+  font-family: FontAwesome, "Open Sans", Verdana, sans-serif; 
+  -webkit-box-shadow: 0 4px 2px -2px #ccc;
+   -moz-box-shadow: 0 4px 2px -2px #ccc;
+        box-shadow: 0 4px 2px -2px #ccc;
+}
+
+input[type="text"] {
+     width: 100%; 
+     box-sizing: border-box;
+}
+
+input::-webkit-input-placeholder {
+color: #aaa !important;
+}
+ 
+input:-moz-placeholder { /* Firefox 18- */
+color: #aaa !important;  
+}
+ 
+input::-moz-placeholder {  /* Firefox 19+ */
+color: #aaa !important;  
+}
+ 
+input:-ms-input-placeholder {  
+color: #aaa !important;  
 }
 /*
 * Skeleton V1.1
