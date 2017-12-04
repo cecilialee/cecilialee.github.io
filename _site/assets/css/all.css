@@ -599,6 +599,7 @@ h1, h2, h3, h4, h5, h6 {
 h1.title {
   font-weight: 800;
   letter-spacing: -0.5px;
+  margin-bottom: 15px;
 }
 
 h1 {
@@ -655,8 +656,8 @@ table {
 }
 
 hr {
-  margin-top: 22px;
-  margin-bottom: 22px;
+  margin-top: 22.5px;
+  margin-bottom: 22.5px;
 }
 
 sup {
@@ -731,8 +732,8 @@ nav h2 a {
 }
 
 #bio p {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  //margin-top: 10px;
+  margin-bottom: 15px;
   font-weight: 600;
 }
 
@@ -741,22 +742,22 @@ nav h2 a {
 }
 
 #social {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  //margin-top: 10px;
+  margin-bottom: 15px;
   font-size: 13px;
 }
 
 #tags {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  //margin-top: 10px;
+  margin-bottom: 15px;
   font-size: 13px;
-  padding-top: 10px;
+  //padding-top: 10px;
   //border-top: solid #eaeaea;
   //border-width: 1px 0;
 }
 
 #post {
-  margin-top: 10px;
+  margin-top: 15px;
   margin-bottom: 15px;
 }
 
