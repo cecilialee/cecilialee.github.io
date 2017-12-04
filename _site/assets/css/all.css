@@ -1082,6 +1082,32 @@ color: #aaa !important;
   padding-left: 1px;
   padding-right: 1px;
 }
+
+/** ======================================== **/
+
+@media only screen and (max-width: 767px) {
+        .container { width: 280px; }
+        .columns, .column { margin: 0; }
+
+        .container .one.column,
+        .container .two.columns,
+        .container .three.columns,
+        .container .four.columns,
+        .container .five.columns,
+        .container .six.columns,
+        .container .seven.columns,
+        .container .eight.columns,
+        .container .nine.columns,
+        .container .ten.columns,
+        .container .eleven.columns,
+        .container .twelve.columns,
+        .container .thirteen.columns,
+        .container .fourteen.columns,
+        .container .fifteen.columns,
+        .container .sixteen.columns,
+        .container .one-third.column,
+        .container .two-thirds.column  { width: 280px; }
+}
 /*
 * Skeleton V1.1
 * Copyright 2011, Dave Gamache
