@@ -512,7 +512,7 @@ color: #aaa !important;
 
 /** ======================================== **/
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 375px) {
         .container { width: 260px; }
         .columns, .column { margin: 0;}
 
