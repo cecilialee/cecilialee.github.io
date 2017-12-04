@@ -81,6 +81,18 @@ table {
   font: 100%;
 }
 
+hr {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+sup {
+  vertical-align: super;
+  font-size: 9;
+  font-weight: 800;
+  line-height: 0px;
+}
+
 img {
   display: block;
   margin-left: auto;
@@ -324,7 +336,18 @@ i.fa-home {
 
 .footnotes {
   font-size: 14px;
-  font-style: italic;
+  color: #777;
+  //font-style: italic;
+}
+
+.footnotes li {
+  font-weight: 800; 
+  font-size: 13px;
+}
+
+.footnotes p {
+  font-weight: 600;
+  font-size: 14px;
 }
 
 .icon-overlay {
@@ -344,7 +367,7 @@ i.fa-home {
 
 sup {
   vertical-align: super;
-  font-size: smaller;
+  font-size: 13px;
 }
 
 #search-container {

@@ -4,13 +4,38 @@
  <title>The blog of Cecilia Lee</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000"/>
- <updated>2017-12-04T09:11:13+08:00</updated>
+ <updated>2017-12-04T19:38:59+08:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Cecilia Lee</name>
    <email>ceciliahslee@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Testing</title>
+   <link href="http://localhost:4000/blog/2017/12/04/testing.html"/>
+   <updated>2017-12-04T00:00:00+08:00</updated>
+   <id>http://localhost:4000/blog/2017/12/04/testing</id>
+   <content type="html">&lt;p&gt;R and Python, both solid and robust for data analytics and machine learning, are the most popular languages to start with in Data Science.&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, an industry-wide survey by Kaggle.) I embarked my learning journey with Python (indeed my first-ever programming language), and fell in love immediately with the graceful language for its elegant syntax, extensive flexibility, and powerful data science packages: &lt;a href=&quot;http://www.numpy.org/&quot;&gt;Numpy&lt;/a&gt;, &lt;a href=&quot;https://pandas.pydata.org/&quot;&gt;Pandas&lt;/a&gt;, &lt;a href=&quot;https://matplotlib.org/&quot;&gt;Matplolib&lt;/a&gt;, &lt;a href=&quot;https://seaborn.pydata.org/&quot;&gt;Seaborn&lt;/a&gt;, and more. It enables me to navigate the world in a way that I’ve never imagined.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;There’re a lot of discussion regarding the choice of first language in Data Science running around for people who have completely no experience in the field. I’m incompetent in makeing detail comparisons with legitimate justifications. (For comparison of Data Science in a nutshell, read &lt;a href=&quot;https://medium.freecodecamp.org/which-languages-should-you-learn-for-data-science-e806ba55a81f&quot;&gt;Which language should you learn for Data Science?&lt;/a&gt;) However, to my personal experience&lt;/p&gt;
+
+&lt;p&gt;I’ve always heard advices to beginners to become an exceptional expert of one language, then proceed to learn the other one. It is important to learn one of the two languages extremely well to sharpen the essential swiss-army knife in one’s Data Science toolbox.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;See &lt;a href=&quot;https://www.kaggle.com/surveys/2017&quot;&gt;The State of Data Science &amp;amp; Machine Learning 2017&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Fix Github 'GH001: Large files detected' with BFG Repo-Cleaner</title>

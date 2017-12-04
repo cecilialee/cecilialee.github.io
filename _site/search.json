@@ -2,6 +2,16 @@
   
     {
     
+      "title"    : "Testing",
+      "url"      : "/blog/2017/12/04/testing.html",
+      "category" : "",
+      "tags"     : "git, github",
+      "date"     : "2017-12-04 00:00:00 +0800"
+      
+    } ,
+  
+    {
+    
       "title"    : "Fix Github &#39;GH001: Large files detected&#39; with BFG Repo-Cleaner",
       "url"      : "/blog/2017/10/20/quick-fix-github-gh001-large-files-detected-with-bfg-repo-cleaner.html",
       "category" : "",
