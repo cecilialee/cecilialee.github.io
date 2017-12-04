@@ -513,7 +513,7 @@ color: #aaa !important;
 /** ======================================== **/
 
 @media only screen and (max-width: 767px) {
-        .container { width: 270px; }
+        .container { width: 265px; }
         .columns, .column { margin: 0;}
 
         .container .one.column,
@@ -533,5 +533,5 @@ color: #aaa !important;
         .container .fifteen.columns,
         .container .sixteen.columns,
         .container .one-third.column,
-        .container .two-thirds.column  { width: 270px; }
+        .container .two-thirds.column  { width: 265px; }
 }
