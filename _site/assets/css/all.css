@@ -599,7 +599,7 @@ h1, h2, h3, h4, h5, h6 {
 h1.title {
   font-weight: 800;
   letter-spacing: -0.5px;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 h1 {
@@ -620,7 +620,7 @@ h3 {
 }
 
 p {
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 strong {
@@ -656,8 +656,8 @@ table {
 }
 
 hr {
-  margin-top: 22.5px;
-  margin-bottom: 22.5px;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 sup {
@@ -733,7 +733,7 @@ nav h2 a {
 
 #bio p {
   //margin-top: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   font-weight: 600;
 }
 
@@ -743,13 +743,13 @@ nav h2 a {
 
 #social {
   //margin-top: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   font-size: 13px;
 }
 
 #tags {
   //margin-top: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   font-size: 13px;
   //padding-top: 10px;
   //border-top: solid #eaeaea;
@@ -757,12 +757,12 @@ nav h2 a {
 }
 
 #post {
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 #post h1, h2, h3, p {
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 }
 
 #post .highlight {
@@ -780,7 +780,7 @@ nav h2 a {
 
 #post ul,
 #post ol {
-  margin-left: 1em;
+  margin-left: 0em;
 }
 
 #post code {
@@ -860,7 +860,7 @@ nav h2 a {
 #stalker {
   display: inline-block;
   height: 18px;
-  margin-left: 5px;
+  //margin-left: 5px;
 }
 
 #stalker a {
@@ -888,7 +888,8 @@ i.fa-hn {
 }
 
 i.fa-home {
-  font-size: 24px;
+  font-size: 28px;
+  //margin-right: 12px;
 }
 
 .home {
@@ -915,7 +916,6 @@ i.fa-home {
 }
 
 .footnotes li {
-  margin-left: -15px;
   font-weight: 800; 
   font-size: 13px;
 }
@@ -1041,7 +1041,7 @@ color: #aaa !important;
 }
 
 .post-list {
-  padding-bottom: 10px;
+  padding-bottom: 12px;
 }
 
 #post-list-title {
