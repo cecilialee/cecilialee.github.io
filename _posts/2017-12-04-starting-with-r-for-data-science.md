@@ -16,6 +16,7 @@ I haven't been learning Python and its Data Science packages for long, but R was
 
 I always enjoy writing programming notes, and I reckon writing is an incredible way to consolidate knowledge and to enhance understanding of a domain. Hence, despite a myriad of R tutorials out there, I hope to share my notes and journey here to other passionate Data Science learners.
 
+---
 
 [^1]: From ["The State of Data Science & Machine Learning 2017"](https://www.kaggle.com/surveys/2017), an industry-wide survey by [Kaggle](https://kaggle.com/), within 7,955 valid responses, 76.3% voted Python, while 59.2% voted R as the tool most used at work. 
 

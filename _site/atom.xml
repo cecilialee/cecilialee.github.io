@@ -4,7 +4,7 @@
  <title>The blog of Cecilia Lee</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000"/>
- <updated>2017-12-04T22:08:38+08:00</updated>
+ <updated>2017-12-04T22:24:19+08:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Cecilia Lee</name>
@@ -26,6 +26,8 @@
 &lt;p&gt;I haven’t been learning Python and its Data Science packages for long, but R was definitely on my future roadmap. However, due to a recent change of events, I’m preparing myself to land a junior data scientist position, and the work requires the application of R. Thus, I begin my study of R with the reputed interactive courses at &lt;a href=&quot;https://www.datacamp.com/&quot;&gt;DataCamp&lt;/a&gt; and the notorious book &lt;a href=&quot;http://r4ds.had.co.nz/&quot;&gt;R for Data Science&lt;/a&gt; written by Hadley Wickham, one of the best R programmer in the world.&lt;/p&gt;
 
 &lt;p&gt;I always enjoy writing programming notes, and I reckon writing is an incredible way to consolidate knowledge and to enhance understanding of a domain. Hence, despite a myriad of R tutorials out there, I hope to share my notes and journey here to other passionate Data Science learners.&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
