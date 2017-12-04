@@ -4,7 +4,7 @@
  <title>The blog of Cecilia Lee</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000"/>
- <updated>2017-12-05T07:31:17+08:00</updated>
+ <updated>2017-12-05T07:52:51+08:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Cecilia Lee</name>
@@ -23,7 +23,7 @@
 
 &lt;p&gt;We’ve always heard programming advice for beginners to first become an expert of one language, then to proceed in studying another one, and soon for more. In Data Science, it is important to learn one of the two essential languages extremely well to sharpen the swiss-army knife in one’s analytic toolbox.&lt;/p&gt;
 
-&lt;p&gt;I haven’t been learning Python and its Data Science packages for long, but R was definitely on my future roadmap. However, due to a recent change of events, I’m preparing myself to land a junior data scientist position, and the work requires the application of R. Thus, I begin my study of R with the reputed interactive courses at &lt;a href=&quot;https://www.datacamp.com/&quot;&gt;DataCamp&lt;/a&gt; and the notorious book &lt;a href=&quot;http://r4ds.had.co.nz/&quot;&gt;R for Data Science&lt;/a&gt; written by Hadley Wickham, one of the best R programmer in the world.&lt;/p&gt;
+&lt;p&gt;I haven’t been learning Python and its Data Science packages for long, but R was definitely on my future roadmap. However, due to a recent change of events, I’m preparing myself to land a junior data scientist position, and the work requires the application of R. Thus, I begin my study of R with the reputed interactive courses at &lt;a href=&quot;https://www.datacamp.com/&quot;&gt;DataCamp&lt;/a&gt; and the notorious book &lt;a href=&quot;http://r4ds.had.co.nz/&quot;&gt;R for Data Science&lt;/a&gt; written by Hadley Wickham, one of the best R programmers in the world.&lt;/p&gt;
 
 &lt;p&gt;I always enjoy writing programming notes, and I reckon writing is an incredible way to consolidate knowledge and to enhance understanding of a domain. Hence, despite a myriad of R tutorials out there, I hope to share my notes and journey here to other passionate Data Science learners.&lt;/p&gt;
 
@@ -35,7 +35,7 @@
       &lt;p&gt;From &lt;a href=&quot;https://www.kaggle.com/surveys/2017&quot;&gt;“The State of Data Science &amp;amp; Machine Learning 2017”&lt;/a&gt;, an industry-wide survey by &lt;a href=&quot;https://kaggle.com/&quot;&gt;Kaggle&lt;/a&gt;, within 7,955 valid responses, 76.3% voted Python, while 59.2% voted R as the tool most used at work. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:2&quot;&gt;
-      &lt;p&gt;“Everyone data scientist has an opinions on what language you should learn first. As it turns out, people who solely use Python or R feel like they made the right choice. But if you ask people that use both R and Python, they are twice as likely to recommend Python.”, quoted from &lt;a href=&quot;https://www.kaggle.com/surveys/2017&quot;&gt;“The State of Data Science &amp;amp; Machine Learning 2017”&lt;/a&gt;. For comparison of Data Science languages in a nutshell, read &lt;a href=&quot;https://medium.freecodecamp.org/which-languages-should-you-learn-for-data-science-e806ba55a81f&quot;&gt;“Which language should you learn for Data Science?””&lt;/a&gt;. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;“Everyone data scientist has an opinions on what language you should learn first. As it turns out, people who solely use Python or R feel like they made the right choice. But if you ask people that use both R and Python, they are twice as likely to recommend Python.”, quoted from &lt;a href=&quot;https://www.kaggle.com/surveys/2017&quot;&gt;“The State of Data Science &amp;amp; Machine Learning 2017”&lt;/a&gt;. For comparison of Data Science languages in a nutshell, read &lt;a href=&quot;https://medium.freecodecamp.org/which-languages-should-you-learn-for-data-science-e806ba55a81f&quot;&gt;“Which language should you learn for Data Science?”&lt;/a&gt;. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;

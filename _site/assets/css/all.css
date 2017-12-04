@@ -578,7 +578,7 @@
 
 html, body {
   height: 100%;
-  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 body {
@@ -590,7 +590,7 @@ body {
   border-top: 7px solid #E84A42;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
   color: #181818;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
@@ -1086,7 +1086,7 @@ color: #aaa !important;
 /** ======================================== **/
 
 @media only screen and (max-width: 767px) {
-        .container { width: 270px; }
+        .container { width: 260px; }
         .columns, .column { margin: 0;}
 
         .container .one.column,
@@ -1106,7 +1106,7 @@ color: #aaa !important;
         .container .fifteen.columns,
         .container .sixteen.columns,
         .container .one-third.column,
-        .container .two-thirds.column  { width: 270px; }
+        .container .two-thirds.column  { width: 260px; }
 }
 /*
 * Skeleton V1.1

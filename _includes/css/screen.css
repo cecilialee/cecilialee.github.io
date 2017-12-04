@@ -5,7 +5,7 @@
 
 html, body {
   height: 100%;
-  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 body {
@@ -17,7 +17,7 @@ body {
   border-top: 7px solid {{ site.data.theme.highlight_color }};
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
   color: #181818;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
