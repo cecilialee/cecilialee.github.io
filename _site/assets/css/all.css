@@ -622,6 +622,10 @@ p {
   margin-bottom: 15px;
 }
 
+strong {
+  font-weight: 800;
+}
+
 ul {
   margin: 1em 0;
   list-style: disc;
