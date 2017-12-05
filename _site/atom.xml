@@ -4,7 +4,7 @@
  <title>The blog of Cecilia Lee</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000"/>
- <updated>2017-12-05T10:57:58+08:00</updated>
+ <updated>2017-12-05T23:57:43+08:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Cecilia Lee</name>
@@ -86,7 +86,7 @@ remote: error: File sample/large/data/file/path.json is 679.95 MB; this exceeds 
 
 &lt;p&gt;(For comparisons in currency exchange rate APIs, see &lt;a href=&quot;http://www.freecurrencyconverterapi.com/&quot;&gt;Free and Paid Currency Converter API Comparison&lt;/a&gt;.)&lt;/p&gt;
 
-&lt;h2 id=&quot;1-get-currencylayer-api&quot;&gt;1. Get currencylayer API&lt;/h2&gt;
+&lt;h2 id=&quot;get-currencylayer-api&quot;&gt;Get currencylayer API&lt;/h2&gt;
 
 &lt;p&gt;To get started, we first need to get our currencylayer API access key from its website.&lt;/p&gt;
 
@@ -94,7 +94,7 @@ remote: error: File sample/large/data/file/path.json is 679.95 MB; this exceeds 
 
 &lt;p&gt;After creating an account, we log in to our &lt;a href=&quot;https://currencylayer.com/dashboard&quot;&gt;Account Dashboard&lt;/a&gt; and there we find our API Access Key.&lt;/p&gt;
 
-&lt;h2 id=&quot;2-import-requests-library&quot;&gt;2. Import Requests Library&lt;/h2&gt;
+&lt;h2 id=&quot;import-requests-library&quot;&gt;Import Requests Library&lt;/h2&gt;
 
 &lt;p&gt;To access the API in python, we need to import the &lt;a href=&quot;http://docs.python-requests.org/&quot;&gt;Requests&lt;/a&gt; library.&lt;/p&gt;
 
@@ -108,7 +108,7 @@ remote: error: File sample/large/data/file/path.json is 679.95 MB; this exceeds 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;api&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'2639ccac02d7c15359d45f9a2bc9d8ea'&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;3-get-live-quote&quot;&gt;3. Get Live Quote&lt;/h2&gt;
+&lt;h2 id=&quot;get-live-quote&quot;&gt;Get Live Quote&lt;/h2&gt;
 
 &lt;p&gt;Now we’re all set. Let’s try to get a live quote with our API key.&lt;/p&gt;
 
@@ -155,7 +155,7 @@ remote: error: File sample/large/data/file/path.json is 679.95 MB; this exceeds 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;livequote&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'quotes'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'USDCNY'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;4-get-historical-quote&quot;&gt;4. Get Historical Quote&lt;/h2&gt;
+&lt;h2 id=&quot;get-historical-quote&quot;&gt;Get Historical Quote&lt;/h2&gt;
 
 &lt;p&gt;It’s equally easy to get a historical quote with our API key.&lt;/p&gt;
 

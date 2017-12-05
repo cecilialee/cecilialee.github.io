@@ -585,7 +585,7 @@ body {
   font-size: 16px;
   background-color: #fff;
   color: #222222;
-  line-height: 22px;
+  line-height: 21px;
   margin: 0;
   border-top: 7px solid #E84A42;
 }
@@ -604,17 +604,20 @@ h1.title {
 
 h1 {
   font-size: 32px;
+  letter-spacing: -0.5px;
   line-height: 32px;
 }
 
 h2 {
   font-size: 24px;
+  letter-spacing: -0.5px;
   line-height: 24px;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 h3 {
   font-size: 21px;
+  letter-spacing: -0.5px;
   line-height: 21px;
   font-weight: 700;
 }
@@ -625,6 +628,8 @@ p {
 
 strong {
   font-weight: 800;
+  letter-spacing: -0.5px;
+  color: #222;
 }
 
 ul {
@@ -633,7 +638,7 @@ ul {
 }
 
 li {
-  line-height: 22px;
+  line-height: 21px;
 }
 
 a {
@@ -667,10 +672,15 @@ sup {
   line-height: 0px;
 }
 
-img {
+#post img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  //margin-left: auto;
+  //margin-right: auto;
+  width: 100%;
+  height: auto;
+  color: #fff;
+  background-color: #fff;
+  border-width: 0px;
 }
 
 ul.posts {
@@ -680,9 +690,9 @@ ul.posts {
 }
 
 ul.posts li {
-  line-height: 22px;
+  line-height: 21px;
   font-size: 16px;
-  margin-bottom: 1px;
+  margin-bottom: 0px;
 }
 
 .date {
@@ -780,7 +790,7 @@ nav h2 a {
 
 #post ul,
 #post ol {
-  margin-left: 0em;
+  margin-left: 1em;
 }
 
 #post code {
@@ -788,15 +798,17 @@ nav h2 a {
   line-height: 16px;
   border: 1px solid #ddd;
   background-color: #f2f2f2;
-  color: #a1a1a1;
+  color: #555;
   font-size: 14px;
+  border-radius: 4px;
   padding-left: 4px;
   padding-right: 4px;
-  border-radius: 4px;
 }
 
 #post pre code {
   border: none;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .section-title {
@@ -821,7 +833,7 @@ nav h2 a {
 }
 
 .content {
-  font: 400 16px/22px "Open Sans", sans-serif;
+  font: 400 16px/21px "Open Sans", sans-serif;
   //border-left: 1px solid #eee;
   padding-left: 40px;
   padding-top: 25px;
@@ -912,20 +924,20 @@ i.fa-home {
 .footnotes {
   font-size: 14px;
   color: #777;
-  line-height: 19px;
+  line-height: 18px;
   //font-style: italic;
 }
 
 .footnotes li {
   font-weight: 800; 
   font-size: 13px;
-  line-height: 19px;
+  line-height: 18px;
 }
 
 .footnotes p {
   font-weight: 600;
   font-size: 14px;
-  line-height: 19px;  
+  line-height: 18px;  
   color: #777;
 }
 
@@ -972,7 +984,7 @@ sup {
   font-family: "Open Sans";
   font-weight: 700;
   height: 38px;
-  line-height: 22px;
+  line-height: 21px;
   padding: 0px;
   padding-left: 10px;
   margin: auto 0;
@@ -1052,6 +1064,7 @@ color: #aaa !important;
   font-size: 21px;
   font-weight: 700;
   line-height: 21px;
+  letter-spacing: -0.5px;
 }
 
 #search-result li {
@@ -1081,18 +1094,7 @@ color: #aaa !important;
 }
 
 #disqus {
-  margin-top: 30px;
-  padding-left: 1px;
-  padding-right: 1px;
-}
-
-/** ======================================== **/
-
-@media only screen and (max-width: 375px) {
-  #post ul,
-  #post ol {
-    margin-left: 1em;
-  }
+  margin-top: 36px;
 }
 /*
 * Skeleton V1.1
@@ -1169,11 +1171,15 @@ color: #aaa !important;
 	//}
 }
 .highlight{background-color:#073642;color:#93a1a1}
-.highlight .c{color:#586e75 !important;font-style:italic !important}
-.highlight .cm{color:#586e75 !important;font-style:italic !important}
-.highlight .cp{color:#586e75 !important;font-style:italic !important}
-.highlight .c1{color:#586e75 !important;font-style:italic !important}
-.highlight .cs{color:#586e75 !important;font-weight:bold !important;font-style:italic !important}
+//.highlight .c{color:#586e75 !important;font-style:italic !important}
+.highlight .c{color:#bbb !important;font-style:italic !important}
+//.highlight .cm{color:#586e75 !important;font-style:italic !important}
+.highlight .cm{color:#bbb !important;font-style:italic !important}
+//.highlight .cp{color:#586e75 !important;font-style:italic !important}
+.highlight .cp{color:#bbb !important;font-style:italic !important}
+//.highlight .c1{color:#586e75 !important;font-style:italic !important}
+.highlight .c1{color:#bbb !important;font-style:italic !important}
+.highlight .cs{color:#bbb !important;font-weight:bold !important;font-style:italic !important}
 .highlight .err{color:#dc322f !important;background:none !important}
 .highlight .k{color:#cb4b16 !important}
 .highlight .o{color:#93a1a1 !important;font-weight:bold !important}

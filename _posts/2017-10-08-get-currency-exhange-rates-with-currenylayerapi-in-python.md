@@ -12,7 +12,7 @@ This article aims to share the basics of using the currencylayer API in Python w
 
 (For comparisons in currency exchange rate APIs, see [Free and Paid Currency Converter API Comparison](http://www.freecurrencyconverterapi.com/).)
 
-## 1. Get currencylayer API
+## Get currencylayer API
 
 To get started, we first need to get our currencylayer API access key from its website. 
 
@@ -20,7 +20,7 @@ The sign up procedure is very simple. From currencylayer's homepage, we navigate
 
 After creating an account, we log in to our [Account Dashboard](https://currencylayer.com/dashboard) and there we find our API Access Key. 
 
-## 2. Import Requests Library
+## Import Requests Library
 
 To access the API in python, we need to import the [Requests](http://docs.python-requests.org/) library.
 
@@ -37,7 +37,7 @@ We also store our currenclayer API key as a variable for easier access.
 api = '2639ccac02d7c15359d45f9a2bc9d8ea'
 ```
 
-## 3. Get Live Quote
+## Get Live Quote
 
 Now we're all set. Let's try to get a live quote with our API key.
 
@@ -98,7 +98,7 @@ livequote['quotes']['USDCNY']
 
 
 
-## 4. Get Historical Quote
+## Get Historical Quote
 
 It's equally easy to get a historical quote with our API key.
 

@@ -1,9 +1,13 @@
 .highlight{background-color:#073642;color:#93a1a1}
-.highlight .c{color:#586e75 !important;font-style:italic !important}
-.highlight .cm{color:#586e75 !important;font-style:italic !important}
-.highlight .cp{color:#586e75 !important;font-style:italic !important}
-.highlight .c1{color:#586e75 !important;font-style:italic !important}
-.highlight .cs{color:#586e75 !important;font-weight:bold !important;font-style:italic !important}
+//.highlight .c{color:#586e75 !important;font-style:italic !important}
+.highlight .c{color:#bbb !important;font-style:italic !important}
+//.highlight .cm{color:#586e75 !important;font-style:italic !important}
+.highlight .cm{color:#bbb !important;font-style:italic !important}
+//.highlight .cp{color:#586e75 !important;font-style:italic !important}
+.highlight .cp{color:#bbb !important;font-style:italic !important}
+//.highlight .c1{color:#586e75 !important;font-style:italic !important}
+.highlight .c1{color:#bbb !important;font-style:italic !important}
+.highlight .cs{color:#bbb !important;font-weight:bold !important;font-style:italic !important}
 .highlight .err{color:#dc322f !important;background:none !important}
 .highlight .k{color:#cb4b16 !important}
 .highlight .o{color:#93a1a1 !important;font-weight:bold !important}
