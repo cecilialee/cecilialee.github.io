@@ -912,12 +912,14 @@ i.fa-home {
 .footnotes {
   font-size: 14px;
   color: #777;
+  line-height: 19px;
   //font-style: italic;
 }
 
 .footnotes li {
   font-weight: 800; 
   font-size: 13px;
+  line-height: 19px;
 }
 
 .footnotes p {
