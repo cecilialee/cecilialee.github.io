@@ -5,7 +5,7 @@ tags: [r]
 categories:
 - blog
 author: "Cecilia Lee"
-description: "This is a detailed step-by-step introduction to R programming. Starting with the two major reasons to learn R for Data Science, it guides you through the installation process, and prepare you for the basics of R: arithmetics, variables assignment, data types, functions, and documentations."
+description: "This is a detailed step-by-step introduction to R programming. Starting with the two major reasons to learn R for Data Science, it will guide you through the installation process, and prepare you for the basics of R: arithmetics, variables assignment, data types, functions, and documentations."
 image: "/assets/images/2017/12/2.png"
 ---
 
