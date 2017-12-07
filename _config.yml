@@ -2,3 +2,6 @@
 url: http://cecilialee.github.io/
 lsi: false
 exclude: [LICENSE, CNAME, README.md, .gitignore, Gemfile, Gemfile.lock]
+
+plugins:
+  - jekyll-seo-tag
