@@ -43,11 +43,11 @@ You also need a hefty tool to write and compile R codes. And **RStudio** is the 
 
 Now you have everything ready. Let's have a brief overview at RStudio. Fire up RStudio, the interface looks as such:
 
-![RStudio](/assets/images/2017/12/1.png)
+![RStudio interface](/assets/images/2017/12/1.png)
 
 Go to **File > New File > R Script** to open a new script file. You'll see a new section appear at the top left side of your interface. A typical RStudio workspace composes of the 4 panels you're seeing right now:
 
-![RStudio](/assets/images/2017/12/2.png)
+![RStudio interface with 4 panels annotated](/assets/images/2017/12/2.png)
 
 ### RStudio Interface
 
@@ -69,13 +69,13 @@ After knowing your IDE, the first thing you want to do is to write some codes.
 
 You can use the **console** panel directly to write your codes. Hit **Enter**, the output of your codes will be returned and displayed immediately after. However, codes entered in the console cannot be traced later. (i.e. you can't save your codes) This is where script comes to use. But console is good for quick experiment before formatting your codes in script.
 
-![RStudio](/assets/images/2017/12/3.png)
+![RStudio console panel](/assets/images/2017/12/3.png)
 
 #### Using the Script Panel
 
 To write proper R codes, you start with a new script by going to **File > New File > R Script**, or hit **Shift + Ctrl + N**. You can then write your codes in the **script** panel. Select the line(s) to run and press **Ctrl + Enter**. The output will be shown in the **console** section beneath. You can also click on little **Run** button located at the top right corner of this panel. Codes written in script can be saved for later review (**File > Save** or **Ctrl + S**).
 
-![RStudio](/assets/images/2017/12/4.png)
+![RStudio script panel](/assets/images/2017/12/4.png)
 
 ## Basics of R Programming
 
@@ -334,7 +334,7 @@ RStudio has a handy tool `?` to help you in recalling the use of the functions:
 
 Look how magical it is to show the R documentation directly at the **output** panel for quick reference:
 
-![RStudio](/assets/images/2017/12/5.png)
+![RStudio documentation](/assets/images/2017/12/5.png)
 
 Last but not least, if you get stuck, Google it! For beginners like us, our confusions must have been gone through by numerous R learners before and there will always be something helpful and insightful on the web.
 
