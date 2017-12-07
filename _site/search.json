@@ -2,6 +2,16 @@
   
     {
     
+      "title"    : "Introduction to R Programming",
+      "url"      : "/blog/2017/12/05/intro-to-r-programming.html",
+      "category" : "",
+      "tags"     : "r",
+      "date"     : "2017-12-05 00:00:00 +0800"
+      
+    } ,
+  
+    {
+    
       "title"    : "Starting with R for Data Science",
       "url"      : "/blog/2017/12/04/starting-with-r-for-data-science.html",
       "category" : "",

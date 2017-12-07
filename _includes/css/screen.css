@@ -30,22 +30,29 @@ h1.title {
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 34px;
   letter-spacing: -0.5px;
-  line-height: 32px;
+  line-height: 34px;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 29px;
   letter-spacing: -0.5px;
-  line-height: 24px;
+  line-height: 29px;
   font-weight: 800;
 }
 
 h3 {
-  font-size: 21px;
+  font-size: 24px;
   letter-spacing: -0.5px;
-  line-height: 21px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 19px;
+  letter-spacing: -0.5px;
+  line-height: 19px;
   font-weight: 700;
 }
 
@@ -55,8 +62,13 @@ p {
 
 strong {
   font-weight: 800;
-  letter-spacing: -0.5px;
+  //letter-spacing: -0.5px;
   color: #222;
+}
+
+small {
+  font-size: 12px;
+  line-height: 16px;
 }
 
 ul {
@@ -84,8 +96,31 @@ a:visited {
 
 table {
   font-size: inherit;
-  font: 100%;
-}
+  font-size: 15px;
+  padding: 0; }
+  table tr {
+    border-top: 1px solid #cacaca;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      //background-color: #f8f8f8; }
+    table tr th {
+      font-weight: 700;
+      background-color: #f8f8f8;
+      border: 1px solid #cacaca;
+      text-align: left;
+      margin: 0;
+      padding: 5px 12px; }
+    table tr td {
+      border: 1px solid #cacaca;
+      text-align: left;
+      margin: 0;
+      padding: 5px 12px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
 
 hr {
   margin-top: 24px;
@@ -95,7 +130,7 @@ hr {
 sup {
   vertical-align: super;
   font-size: 9;
-  font-weight: 800;
+  //font-weight: 800;
   line-height: 0px;
 }
 
@@ -103,7 +138,7 @@ sup {
   display: block;
   //margin-left: auto;
   //margin-right: auto;
-  width: 100%;
+  max-width: 100%;
   height: auto;
   color: #fff;
   background-color: #fff;
@@ -126,11 +161,11 @@ ul.posts li {
   font-family: 'Roboto Mono', 'Lucida Console', 'Andale Mono', monospace;
   color: #bbb;
   font-size:13px;
-  background-color: #f9f9f9;
+  background-color: #f8f8f8;
   border-radius: 4px; 
   padding-left: 6px;
   padding-right: 6px;
-  border: 1px solid #e2e2e2;
+  border: 1px solid #cacaca;
 }
 
 .meta {
@@ -153,11 +188,11 @@ nav h1, nav h2 {
 
 nav h1 {
   font-size: 34px;
-  line-height: 32px;
+  line-height: 34px;
   margin-bottom: 8px;
 }
 
-nav h2 a {
+nav h3 a {
   font-weight: 800;
 }
 
@@ -198,17 +233,17 @@ nav h2 a {
   margin-bottom: 12px;
 }
 
-#post h1, h2, h3, p {
+#post h1, h2, h3, h4, p, table, img {
   margin-bottom: 18px;
 }
 
 #post .highlight {
-  background-color: #f2f2f2;
+  background-color: #f8f8f8;
   border-radius: 4px;
 }
 
 #post pre {    
-  border: 1px solid #ddd;
+  border: 1px solid #cacaca;
   padding: 10px;
   margin-bottom: 20px !important;
   line-height: 20px;
@@ -220,12 +255,16 @@ nav h2 a {
   margin-left: 1em;
 }
 
+#post li {
+  margin-bottom: 0px;
+}
+
 #post code {
   font-family: 'Roboto Mono', 'Lucida Console', 'Andale Mono', monospace;
-  line-height: 16px;
-  border: 1px solid #ddd;
-  background-color: #f2f2f2;
-  color: #555;
+  line-height: 21px;
+  border: 1px solid #cacaca;
+  background-color: #f8f8f8;
+  color: #444;
   font-size: 14px;
   border-radius: 4px;
   padding-left: 4px;
@@ -349,23 +388,18 @@ i.fa-home {
 }
 
 .footnotes {
-  font-size: 14px;
+  font-size: 12px;
   color: #777;
-  line-height: 18px;
+  line-height: 16px;
   //font-style: italic;
-}
-
-.footnotes li {
-  font-weight: 800; 
-  font-size: 13px;
-  line-height: 18px;
 }
 
 .footnotes p {
   font-weight: 600;
-  font-size: 14px;
-  line-height: 18px;  
+  font-size: 12px;
+  line-height: 16px;  
   color: #777;
+  margin-bottom: 5px;
 }
 
 .reversefootnote {
@@ -409,7 +443,7 @@ sup {
   text-indent: 10px;
   font-size: 15px;
   font-family: "Open Sans";
-  font-weight: 700;
+  font-weight: 600;
   height: 38px;
   line-height: 21px;
   padding: 0px;
@@ -462,7 +496,7 @@ color: #aaa !important;
 }
 
 .tag {
-  border: 1px solid #e2e2e2;
+  border: 1px solid #cacaca;
   font-family: 'Roboto Mono', 'Lucida Console', 'Andale Mono', monospace;
   font-weight: 400;
   font-size: 13px;
@@ -488,9 +522,9 @@ color: #aaa !important;
 
 #post-list-title {
   color: #111;
-  font-size: 21px;
+  font-size: 24px;
   font-weight: 700;
-  line-height: 21px;
+  line-height: 24px;
   letter-spacing: -0.5px;
 }
 
@@ -522,4 +556,46 @@ color: #aaa !important;
 
 #disqus {
   margin-top: 36px;
+}
+
+dl {
+  font-family: "Roboto Mono";
+  margin: 0px;
+  display: block;
+  //-webkit-margin-before: 1em;
+  //-webkit-margin-after: 1em;
+  //-webkit-margin-start: 0px;
+  //-webkit-margin-end: 0px;
+  border: 1px solid #cacaca;
+  padding: 4px 10px 4px 10px;
+  border-radius: 4px;
+  margin-bottom: 18px;
+  font-size: 14px;  
+  line-height: 21px;
+  background-color: #FAF8F3;
+  color: #999;
+}
+
+dt {
+    font-weight: 500;
+    font-style: italic;
+    display: block;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    //border-bottom: 1px solid #cacaca;
+}
+
+dd {
+    display: block;
+    margin-bottom: 6px;
+    color: #b3b3b3;
+    -webkit-margin-start: 30px;
+}
+
+dd ul, ol {
+  margin: 0px;
+}
+
+dd li {
+  line-height: 21px;
 }

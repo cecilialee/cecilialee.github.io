@@ -1,12 +1,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.data.theme.name | escape }}{% endif %}</title>
+  <title>{% if page.title %}{{ page.title | escape }} | {{ site.data.theme.title | escape }} | {{ site.data.theme.name | escape }}{% else %}{{ site.data.theme.name | escape }} | {{ site.data.theme.title | escape }}{% endif %}</title>
   <meta name="author" content="{{ site.data.theme.name }}" />
-  <meta name="description" content="The blog of {{ site.data.theme.name }}" />
+  <meta name="description" content="{{ site.data.theme.description }}" />
   <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}" />
   <link href="//fonts.googleapis.com/css?family=Open+Sans:600,700,800" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,400i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,400i,500,500i" rel="stylesheet">
   <!--<link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:600,800" rel="stylesheet">-->

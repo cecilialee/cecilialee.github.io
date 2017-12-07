@@ -1,4 +1,366 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-12-05T23:57:43+08:00</updated><id>http://localhost:4000/</id><entry><title type="html">Starting with R for Data Science</title><link href="http://localhost:4000/blog/2017/12/04/starting-with-r-for-data-science.html" rel="alternate" type="text/html" title="Starting with R for Data Science" /><published>2017-12-04T00:00:00+08:00</published><updated>2017-12-04T00:00:00+08:00</updated><id>http://localhost:4000/blog/2017/12/04/starting-with-r-for-data-science</id><content type="html" xml:base="http://localhost:4000/blog/2017/12/04/starting-with-r-for-data-science.html">&lt;p&gt;R and Python, both solid and robust for data analytics and machine learning, are the most popular languages used in Data Science.&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; I embarked my learning journey with Python (indeed it’s my first programming language), and fell in love immediately with the graceful language for its elegant syntax, extensive flexibility, and powerful data science packages: &lt;a href=&quot;http://www.numpy.org/&quot;&gt;Numpy&lt;/a&gt;, &lt;a href=&quot;https://pandas.pydata.org/&quot;&gt;Pandas&lt;/a&gt;, &lt;a href=&quot;https://matplotlib.org/&quot;&gt;Matplolib&lt;/a&gt;, &lt;a href=&quot;https://seaborn.pydata.org/&quot;&gt;Seaborn&lt;/a&gt;, and more. It enables me to navigate the world in a way that I’ve never imagined.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-12-07T14:39:46+08:00</updated><id>http://localhost:4000/</id><entry><title type="html">Introduction to R Programming</title><link href="http://localhost:4000/blog/2017/12/05/intro-to-r-programming.html" rel="alternate" type="text/html" title="Introduction to R Programming" /><published>2017-12-05T00:00:00+08:00</published><updated>2017-12-05T00:00:00+08:00</updated><id>http://localhost:4000/blog/2017/12/05/intro-to-r-programming</id><content type="html" xml:base="http://localhost:4000/blog/2017/12/05/intro-to-r-programming.html">&lt;p&gt;For someone like me, who has only had some programming experience in Python, the syntax of R feels alienating initially. However, I believe it’s just a matter of time before adapting to the unique logicality of a new language. And indeed, the grammar of R flows more naturally to me after having to practice for a while, and I began to grasp its kind of remarkable beauty, that has captivated the heart of countless statisticians throughout the years.&lt;/p&gt;
+
+&lt;p&gt;If you don’t know what R is, it’s basically a programming language created for statistician by statistician. Hence, it easily becomes one of the most fluid and powerful tools in the field of Data Science.&lt;/p&gt;
+
+&lt;p&gt;Here I’d like to walk through my study notes with the most explicit step-by-step directions to introduce you to the world of R.&lt;/p&gt;
+
+&lt;h2 id=&quot;why-learn-r-for-data-science&quot;&gt;Why Learn R for Data Science?&lt;/h2&gt;
+
+&lt;p&gt;Before diving in, you might want to know why should you learn R for Data Science. There are two major reasons.&lt;/p&gt;
+
+&lt;h3 id=&quot;powerful-analytic-packages-for-data-science&quot;&gt;Powerful Analytic Packages for Data Science&lt;/h3&gt;
+
+&lt;p&gt;Firstly, R has an extremely vast package ecosystem. It provides robust tools to master all the core skill sets of Data Science, from data manipulation, data visualization, to machine learning. The vivid community keeps the R language’s functionalities growing and improving.&lt;/p&gt;
+
+&lt;h3 id=&quot;high-industry-popularity-and-demand&quot;&gt;High Industry Popularity and Demand&lt;/h3&gt;
+
+&lt;p&gt;With its great analytical power, R is becoming the lingua franca for data science. It is widely used in the industry and is in heavy use at several of the best companies who are hiring Data Scientists including Google and Facebook. It is one of the highly sought after skills for a Data Science job.&lt;/p&gt;
+
+&lt;h2 id=&quot;quickstart-installation-guide&quot;&gt;Quickstart Installation Guide&lt;/h2&gt;
+
+&lt;p&gt;To start programming with R on your computer, you need two things: &lt;strong&gt;R&lt;/strong&gt; and &lt;strong&gt;RStudio&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;install-r-language&quot;&gt;Install R Language&lt;/h3&gt;
+
+&lt;p&gt;You have to first install the R language itself to your computer (It doesn’t come by default). To download &lt;strong&gt;R&lt;/strong&gt;, go to CRAN, https://cloud.r-project.org/ (the comprehensive R archive network). Choose your system and select the latest version to install.&lt;/p&gt;
+
+&lt;h3 id=&quot;install-rstudio&quot;&gt;Install RStudio&lt;/h3&gt;
+
+&lt;p&gt;You also need a hefty tool to write and compile R codes. And &lt;strong&gt;RStudio&lt;/strong&gt; is the most robust and popular IDE (integrated development environment) for R programming. It is available on http://www.rstudio.com/download. (open source and for free!)&lt;/p&gt;
+
+&lt;h2 id=&quot;overview-of-rstudio&quot;&gt;Overview of RStudio&lt;/h2&gt;
+
+&lt;p&gt;Now you have everything ready. Let’s have a brief overview at RStudio. Fire up RStudio, the interface looks as such:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2017/12/1.png&quot; alt=&quot;RStudio&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Go to &lt;strong&gt;File &amp;gt; New File &amp;gt; R Script&lt;/strong&gt; to open a new script file. You’ll see a new section appear at the top left side of your interface. A typical RStudio workspace composes of the 4 panels you’re seeing right now:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2017/12/2.png&quot; alt=&quot;RStudio&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;rstudio-interface&quot;&gt;RStudio Interface&lt;/h3&gt;
+
+&lt;p&gt;Here’s a brief explanation of the use of the 4 panels in the RStudio interface:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Script&lt;/strong&gt;&lt;br /&gt;This is where your main R script located.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Console&lt;/strong&gt;&lt;br /&gt;This area shows the output of code you run from script. You can also directly write codes in the console.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Environment&lt;/strong&gt;&lt;br /&gt;This space displays the set of external elements added, including dataset, variables, vectors, functions etc.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;br /&gt;This space displays the graphs created during exploratory data analysis. You can also seek help with embedded R’s documentation here.&lt;/p&gt;
+
+&lt;h3 id=&quot;running-r-codes&quot;&gt;Running R Codes&lt;/h3&gt;
+
+&lt;p&gt;After knowing your IDE, the first thing you want to do is to write some codes.&lt;/p&gt;
+
+&lt;h4 id=&quot;using-the-console-panel&quot;&gt;Using the Console Panel&lt;/h4&gt;
+
+&lt;p&gt;You can use the &lt;strong&gt;console&lt;/strong&gt; panel directly to write your codes. Hit &lt;strong&gt;Enter&lt;/strong&gt;, the output of your codes will be returned and displayed immediately after. However, codes entered in the console cannot be traced later. (i.e. you can’t save your codes) This is where script comes to use. But console is good for quick experiment before formatting your codes in script.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2017/12/3.png&quot; alt=&quot;RStudio&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;using-the-script-panel&quot;&gt;Using the Script Panel&lt;/h4&gt;
+
+&lt;p&gt;To write proper R codes, you start with a new script by going to &lt;strong&gt;File &amp;gt; New File &amp;gt; R Script&lt;/strong&gt;, or hit &lt;strong&gt;Shift + Ctrl + N&lt;/strong&gt;. You can then write your codes in the &lt;strong&gt;script&lt;/strong&gt; panel. Select the line(s) to run and press &lt;strong&gt;Ctrl + Enter&lt;/strong&gt;. The output will be shown in the &lt;strong&gt;console&lt;/strong&gt; section beneath. You can also click on little &lt;strong&gt;Run&lt;/strong&gt; button located at the top right corner of this panel. Codes written in script can be saved for later review (&lt;strong&gt;File &amp;gt; Save&lt;/strong&gt; or &lt;strong&gt;Ctrl + S&lt;/strong&gt;).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2017/12/4.png&quot; alt=&quot;RStudio&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;basics-of-r-programming&quot;&gt;Basics of R Programming&lt;/h2&gt;
+
+&lt;p&gt;Finally, with all the set-ups, you can write our first piece of R script. The following paragraphs introduce you to the basics of R programming.&lt;/p&gt;
+
+&lt;p&gt;A quick tip before going: all lines after the symbol &lt;code class=&quot;highlighter-rouge&quot;&gt;#&lt;/code&gt; will be treated as a comment and will not be rendered in the output.&lt;/p&gt;
+
+&lt;h3 id=&quot;arithmetics&quot;&gt;Arithmetics&lt;/h3&gt;
+
+&lt;p&gt;Let’s start with some basic arithmetics. You can do some simple calculations with the &lt;strong&gt;arithmetic operators&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Operator&lt;/th&gt;
+      &lt;th&gt;Function&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;+&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Addition&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Subtraction&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;*&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Multiplication&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;/&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Division&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;^&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Exponentiation&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;%%&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Modulo&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;%/%&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Integer Division&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Addition &lt;code class=&quot;highlighter-rouge&quot;&gt;+&lt;/code&gt;, subtraction &lt;code class=&quot;highlighter-rouge&quot;&gt;-&lt;/code&gt;, multiplication &lt;code class=&quot;highlighter-rouge&quot;&gt;*&lt;/code&gt;, division &lt;code class=&quot;highlighter-rouge&quot;&gt;/&lt;/code&gt; should be intuitive.&lt;/p&gt;
+
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# Addition&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;#[1] 2&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;# Subtraction&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;#[1] 0&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;# Multiplication&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;#[1] 6&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;# Division&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;#[1] 2&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The exponentiation operator &lt;code class=&quot;highlighter-rouge&quot;&gt;^&lt;/code&gt; raises the number to its left to the power of the number to its right: for example &lt;code class=&quot;highlighter-rouge&quot;&gt;3 ^ 2&lt;/code&gt; is 9.&lt;/p&gt;
+
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# Exponentiation&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;#[1] 16&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The modulo operator &lt;code class=&quot;highlighter-rouge&quot;&gt;%%&lt;/code&gt; returns the remainder of the division of the number to the left by the number on its right, for example 5 modulo 3 or &lt;code class=&quot;highlighter-rouge&quot;&gt;5 %% 3&lt;/code&gt; is 2.&lt;/p&gt;
+
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# Modulo&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;#[1] 1&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Lastly, the integer division operator &lt;code class=&quot;highlighter-rouge&quot;&gt;%/%&lt;/code&gt; returns the maximum times the number on the left can be divided by the number on its right, the fractional part is discarded, for example, &lt;code class=&quot;highlighter-rouge&quot;&gt;9 %/% 4&lt;/code&gt; is 2.&lt;/p&gt;
+
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# Integer division&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%/%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;#[1] 2&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You can also add brackets &lt;code class=&quot;highlighter-rouge&quot;&gt;()&lt;/code&gt; to change the order of operation. Order of operations is the same as in mathematics (from highest to lowest precedence):&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Brackets&lt;/li&gt;
+  &lt;li&gt;Exponentiation&lt;/li&gt;
+  &lt;li&gt;Division&lt;/li&gt;
+  &lt;li&gt;Multiplication&lt;/li&gt;
+  &lt;li&gt;Addition&lt;/li&gt;
+  &lt;li&gt;Subtraction&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# Brackets&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;#[1] 16&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;variable-assignment&quot;&gt;Variable Assignment&lt;/h3&gt;
+
+&lt;p&gt;A basic concept in (statistical) programming is called a &lt;strong&gt;variable&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;A variable allows you to store a value (e.g. 4) or an object (e.g. a function description) in R. You can then later use this variable’s name to easily access the value or the object that is stored within this variable.&lt;/p&gt;
+
+&lt;h4 id=&quot;create-new-variables&quot;&gt;Create New Variables&lt;/h4&gt;
+
+&lt;p&gt;Create a new object with the &lt;strong&gt;assignment operator&lt;/strong&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;-&lt;/code&gt;. All R statements where you create objects and assignment statements have the same form: &lt;code class=&quot;highlighter-rouge&quot;&gt;object_name &amp;lt;- value&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;num_var&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;chr_var&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Ten&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;To access the &lt;em&gt;value&lt;/em&gt; of the variable, simply type the name of the variable in the console.&lt;/p&gt;
+
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;num_var&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;#[1] 10&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;chr_var&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;#[1] &quot;Ten&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You can access the value of the variable anywhere you call it in the R script, and perform further operations on them.&lt;/p&gt;
+
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;first_var&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;second_var&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;first_var&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;second_var&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;#[1] 3&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sum_var&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;first_var&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;second_var&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sum_var&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;#[1] 3&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;naming-variables&quot;&gt;Naming Variables&lt;/h4&gt;
+
+&lt;p&gt;Not all kinds of names are accepted in R. Variable names must start with a letter, and can only contain &lt;strong&gt;letters&lt;/strong&gt;, &lt;strong&gt;numbers&lt;/strong&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;.&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;_&lt;/code&gt;. Also, bear in mind that R is &lt;strong&gt;case-sensitive&lt;/strong&gt;, i.e. &lt;code class=&quot;highlighter-rouge&quot;&gt;Cat&lt;/code&gt; would not be identical to &lt;code class=&quot;highlighter-rouge&quot;&gt;cat&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Your object names should be descriptive, so you’ll need a convention for multiple words. It is recommended to &lt;code class=&quot;highlighter-rouge&quot;&gt;snake_case&lt;/code&gt; where you separate lowercase words with &lt;code class=&quot;highlighter-rouge&quot;&gt;_&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;i_use_snake_case&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;otherPeopleUseCamelCase&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;some.people.use.periods&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;And_aFew.People_RENOUNCEconvention&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;assignment-operators&quot;&gt;Assignment Operators&lt;/h4&gt;
+
+&lt;p&gt;If you’ve been programming in other languages before, you’ll notice that the assignment operator in R is quite strange as it uses &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;-&lt;/code&gt; instead of the commonly used equal sign &lt;code class=&quot;highlighter-rouge&quot;&gt;=&lt;/code&gt; to assign objects.&lt;/p&gt;
+
+&lt;p&gt;Indeed, using &lt;code class=&quot;highlighter-rouge&quot;&gt;=&lt;/code&gt; will still work in R, but it will cause confusion later. So you should always follow the convention and use &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;-&lt;/code&gt; for assignment.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;-&lt;/code&gt; is a pain to type as you’ll have to make lots of assignments. To make life easier, you should remember RStudio’s awesome keyboard shortcut &lt;strong&gt;Alt + -&lt;/strong&gt; (the minus sign) and incorporate it in your regular workflow.&lt;/p&gt;
+
+&lt;h4 id=&quot;environments&quot;&gt;Environments&lt;/h4&gt;
+
+&lt;p&gt;Look at the &lt;strong&gt;environment&lt;/strong&gt; panel at the upper right corner, you’ll find all of the objects that you’ve created.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2017/12/6.png&quot; alt=&quot;RStudio&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;basic-data-types&quot;&gt;Basic Data Types&lt;/h3&gt;
+
+&lt;p&gt;You’ll work with numerous data types in R. Here are some of the most basic ones:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Data Type&lt;/th&gt;
+      &lt;th&gt;Explanation&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Numerics&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Decimals values like &lt;code class=&quot;highlighter-rouge&quot;&gt;4.5&lt;/code&gt; are called numerics.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Integers&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Natural numbers like &lt;code class=&quot;highlighter-rouge&quot;&gt;4&lt;/code&gt; are called integers. Integers are also numerics.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Logical&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Boolean values (&lt;code class=&quot;highlighter-rouge&quot;&gt;TRUE&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;FALSE&lt;/code&gt;) are called logical.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Characters&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Text (or string) values like &lt;code class=&quot;highlighter-rouge&quot;&gt;'Dog'&lt;/code&gt; are called characters.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Knowing the data type of an object is important, as different data types work with different functions, and you perform different operations on them. For example, adding a numeric and a character together will throw an error.&lt;/p&gt;
+
+&lt;p&gt;To check an object’s data type, you can use the &lt;code class=&quot;highlighter-rouge&quot;&gt;class()&lt;/code&gt; function.&lt;/p&gt;
+
+&lt;dl&gt;
+  &lt;dt&gt;# usage&lt;/dt&gt;
+  &lt;dd&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;class(x)&lt;/code&gt;&lt;/dd&gt;
+  &lt;dt&gt;# description&lt;/dt&gt;
+  &lt;dd&gt;Prints the vector of names of classes an object inherits from.&lt;/dd&gt;
+  &lt;dt&gt;# arguments&lt;/dt&gt;
+  &lt;dd&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;x&lt;/code&gt; : An R object.&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p&gt;Here is an example:&lt;/p&gt;
+
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;int_var&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;int_var&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;#[1] &quot;numeric&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dbl_var&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10.11&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dbl_var&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;#[1] &quot;numeric&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lgl_var&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;TRUE&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lgl_var&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;#[1] &quot;logical&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;chr_var&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Hello&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;chr_var&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;#[1] &quot;character&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;functions&quot;&gt;Functions&lt;/h3&gt;
+
+&lt;p&gt;Functions are the fundamental building blocks of R. In programming, a named section of a program that performs a specific task is a &lt;strong&gt;function&lt;/strong&gt;. In this sense, a function is a type of procedure or routine.&lt;/p&gt;
+
+&lt;p&gt;R comes with a prewritten set of functions that are kept in a library. (&lt;code class=&quot;highlighter-rouge&quot;&gt;class()&lt;/code&gt; as demonstrated in the previous section is a built-in function.) You can use additional functions in other libraries by installing &lt;strong&gt;packages&lt;/strong&gt;. You can also write your own functions to perform specialized tasks.&lt;/p&gt;
+
+&lt;p&gt;Here is the typical form of an R function:&lt;/p&gt;
+
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;function_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;arg1&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;val1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;arg2&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;val2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;...&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;function_name&lt;/code&gt; is the name of the function. &lt;code class=&quot;highlighter-rouge&quot;&gt;arg1&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;arg2&lt;/code&gt; are &lt;strong&gt;arguments&lt;/strong&gt;. They’re variables to be passed into the function. The type and number of arguments depend on the definition of the function. &lt;code class=&quot;highlighter-rouge&quot;&gt;val1&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;val2&lt;/code&gt; are &lt;strong&gt;values&lt;/strong&gt; of the arguments correspondingly.&lt;/p&gt;
+
+&lt;h4 id=&quot;passing-arguments&quot;&gt;Passing Arguments&lt;/h4&gt;
+
+&lt;p&gt;R can match arguments both by &lt;strong&gt;position&lt;/strong&gt; and by &lt;strong&gt;name&lt;/strong&gt;. So you don’t necessarily have to supply the names of the arguments if you have the position of the argument placed correctly.&lt;/p&gt;
+
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nf&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;#[1] &quot;numeric&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;#[1] &quot;numeric&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Functions are always accompanied with loads of arguments for configurations. However, you don’t have to supply all of the arguments for a function to work.&lt;/p&gt;
+
+&lt;dl&gt;
+  &lt;dt&gt;# usage&lt;/dt&gt;
+  &lt;dd&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sum(..., na.rm = FALSE)&lt;/code&gt;&lt;/dd&gt;
+  &lt;dt&gt;# description&lt;/dt&gt;
+  &lt;dd&gt;Returns the sum of all the values present in its arguments.&lt;/dd&gt;
+  &lt;dt&gt;# arguments&lt;/dt&gt;
+  &lt;dd&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;...&lt;/code&gt; : Numeric or complex or logical vectors.&lt;/dd&gt;
+  &lt;dd&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;na.rm&lt;/code&gt; : Logical. Should missing values (including NaN) be removed?&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p&gt;From the documentation, we learned that there’re two arguments for the &lt;code class=&quot;highlighter-rouge&quot;&gt;sum()&lt;/code&gt; function: &lt;code class=&quot;highlighter-rouge&quot;&gt;...&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;na.rm&lt;/code&gt;. Notice that &lt;code class=&quot;highlighter-rouge&quot;&gt;na.rm&lt;/code&gt; contains a default value &lt;code class=&quot;highlighter-rouge&quot;&gt;FALSE&lt;/code&gt;. This makes it an &lt;strong&gt;optional argument&lt;/strong&gt;. If you don’t supply any values to the optional arguments, the function will automatically fill in the default value to proceed.&lt;/p&gt;
+
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nf&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;#[1] 12&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;NaN&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;#[1] NaN&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;NaN&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;na.rm&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;TRUE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;#[1] 12&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;getting-help&quot;&gt;Getting Help&lt;/h3&gt;
+
+&lt;p&gt;There are a large collection of functions in R and you’ll never remember all of them. Hence, knowing how to get help is important.&lt;/p&gt;
+
+&lt;p&gt;RStudio has a handy tool &lt;code class=&quot;highlighter-rouge&quot;&gt;?&lt;/code&gt; to help you in recalling the use of the functions:&lt;/p&gt;
+
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;function_name&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Look how magical it is to show the R documentation directly at the &lt;strong&gt;output&lt;/strong&gt; panel for quick reference:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2017/12/5.png&quot; alt=&quot;RStudio&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Last but not least, if you get stuck, Google it! For beginners like us, our confusions must have been gone through by numerous R learners before and there will always be something helpful and insightful on the web.&lt;/p&gt;
+
+&lt;p&gt;Happy learning!&lt;/p&gt;</content><author><name></name></author><category term="r" /><summary type="html">For someone like me, who has only had some programming experience in Python, the syntax of R feels alienating initially. However, I believe it’s just a matter of time before adapting to the unique logicality of a new language. And indeed, the grammar of R flows more naturally to me after having to practice for a while, and I began to grasp its kind of remarkable beauty, that has captivated the heart of countless statisticians throughout the years.</summary></entry><entry><title type="html">Starting with R for Data Science</title><link href="http://localhost:4000/blog/2017/12/04/starting-with-r-for-data-science.html" rel="alternate" type="text/html" title="Starting with R for Data Science" /><published>2017-12-04T00:00:00+08:00</published><updated>2017-12-04T00:00:00+08:00</updated><id>http://localhost:4000/blog/2017/12/04/starting-with-r-for-data-science</id><content type="html" xml:base="http://localhost:4000/blog/2017/12/04/starting-with-r-for-data-science.html">&lt;p&gt;R and Python, both solid and robust for data analytics and machine learning, are the most popular languages used in Data Science.&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; I embarked my learning journey with Python (indeed it’s my first programming language), and fell in love immediately with the graceful language for its elegant syntax, extensive flexibility, and powerful data science packages: &lt;a href=&quot;http://www.numpy.org/&quot;&gt;Numpy&lt;/a&gt;, &lt;a href=&quot;https://pandas.pydata.org/&quot;&gt;Pandas&lt;/a&gt;, &lt;a href=&quot;https://matplotlib.org/&quot;&gt;Matplolib&lt;/a&gt;, &lt;a href=&quot;https://seaborn.pydata.org/&quot;&gt;Seaborn&lt;/a&gt;, and more. It enables me to navigate the world in a way that I’ve never imagined.&lt;/p&gt;
 
 &lt;p&gt;There’re a lot of discussions regarding the choice of the first language in Data Science for people who have completely no experience in the field. I’m incompetent in making detail comparisons of the pros and cons of the languages with legitimate justifications.&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; However, in summary of what I’ve learnt, Python is ideal for programmers, as well as people without any programming experience (&lt;em&gt;like me!&lt;/em&gt;); while R is perfect for statistician, and also anyone with a solid mathematical background.&lt;/p&gt;
 

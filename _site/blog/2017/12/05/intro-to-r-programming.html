@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Introduction to R Programming | Data Science Journal | Cecilia Lee</title>
+  <meta name="author" content="Cecilia Lee" />
+  <meta name="description" content="A Data Science Journal by Cecilia Lee." />
+  <link rel="canonical" href="http://localhost:4000/blog/2017/12/05/intro-to-r-programming.html" />
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:600,700,800" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,400i,500,500i" rel="stylesheet">
+  <!--<link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:600,800" rel="stylesheet">-->
+  <link rel="shortcut icon" href="/favicon.png">
+  <link rel="alternate" type="application/atom+xml" title="Cecilia Lee" href="http://localhost:4000/atom.xml" />
+  <link rel="stylesheet" href="/assets/css/all.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="/js/target-blank.js" type="text/javascript"></script>
+<script src="http://127.0.0.1:35729/livereload.js"></script></head>
+
+<body>
+  <div class="container">
+    <div class="four columns sidebar">
+      <nav>
+  <h1>Data Science Journal</h1>
+  <!-- 
+  <a href="/">
+    
+    <img src="/logo.png" id="logo" alt="Blog logo"/>
+    
+  </a>
+  -->
+  <h3>by <a href="/">Cecilia Lee</a>.</h3>
+  <div id="bio">
+    <p>A blog to share my dedicated journey in learning Data Science.</p>
+    <p id="navlink"><a href="https://cecilialee.github.io/cv/" target="blank"><i class="fa fa-user fa-fw"></i> View Resume</a></p>
+  </div>
+  <div id="social">
+    <!--Follow me:-->
+<div id="stalker">
+  
+  <a title="ceciliahslee@gmail.com on Email" href="mailto:ceciliahslee@gmail.com">
+    <i class="fa fa-envelope"></i>
+  </a>
+  
+
+  
+  <a title="cecilialee on Github" href="https://github.com/cecilialee">
+    <i class="fa fa-github-alt"></i>
+  </a>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <a title="cecilialeehs on Twitter" href="https://twitter.com/cecilialeehs">
+    <i class="fa fa-twitter"></i>
+  </a>
+  
+
+    
+  <a title="ceciliahslee on Medium" href="https://medium.com/@ceciliahslee">
+    <i class="fa fa-medium"></i>
+  </a>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <a title="Atom feed" id="atom" href="/atom.xml">
+    <i class="fa fa-rss-square"></i>
+  </a>
+  
+</div>
+
+  </div>
+
+  <div id="tags">
+    <span>
+  
+  
+  
+    <span class="tag"><a href="/tag/api.html" rel="tag">
+      api</a></span>
+  <!--
+  
+    ,
+  
+-->
+    
+  
+    <span class="tag"><a href="/tag/git.html" rel="tag">
+      git</a></span>
+  <!--
+  
+    ,
+  
+-->
+    
+  
+    <span class="tag"><a href="/tag/github.html" rel="tag">
+      github</a></span>
+  <!--
+  
+    ,
+  
+-->
+    
+  
+    <span class="tag"><a href="/tag/python.html" rel="tag">
+      python</a></span>
+  <!--
+  
+    ,
+  
+-->
+    
+  
+    <span class="tag"><a href="/tag/r.html" rel="tag">
+      r</a></span>
+  <!--
+  
+    ,
+  
+-->
+    
+  
+    <span class="tag"><a href="/tag/requests.html" rel="tag">
+      requests</a></span>
+  <!--
+  
+    
+    
+-->
+    
+  
+
+</span>
+  </div>
+
+  
+  <div id="search-container">
+    <input type="text" id="search-input" placeholder="Search">
+  </div>
+
+</nav>
+
+    </div>
+
+      <div class="eleven columns content">
+        <div id="results">
+          <h2 class="section-title"><i class="fa fa-bookmark"></i> Search</h2>
+          <ul id="results-container"></ul>
+        </div>
+        <div id="content">
+          <p class="meta">
+  <a href="/">
+    <i class="home fa fa-home"></i>
+  </a>
+</p>
+
+<h1 class="title">Introduction to R Programming</h1>
+<span class="date">2017-12-05</span>
+<span>
+  
+    <span class="tag"><a href="/tag/r.html" rel="tag"> 
+       r</a></span>
+       <!--
+      
+      
+      
+    
+-->
+</span>
+
+<div id="post">
+  <p>For someone like me, who has only had some programming experience in Python, the syntax of R feels alienating initially. However, I believe it’s just a matter of time before adapting to the unique logicality of a new language. And indeed, the grammar of R flows more naturally to me after having to practice for a while, and I began to grasp its kind of remarkable beauty, that has captivated the heart of countless statisticians throughout the years.</p>
+
+<p>If you don’t know what R is, it’s basically a programming language created for statistician by statistician. Hence, it easily becomes one of the most fluid and powerful tools in the field of Data Science.</p>
+
+<p>Here I’d like to walk through my study notes with the most explicit step-by-step directions to introduce you to the world of R.</p>
+
+<h2 id="why-learn-r-for-data-science">Why Learn R for Data Science?</h2>
+
+<p>Before diving in, you might want to know why should you learn R for Data Science. There are two major reasons.</p>
+
+<h3 id="powerful-analytic-packages-for-data-science">Powerful Analytic Packages for Data Science</h3>
+
+<p>Firstly, R has an extremely vast package ecosystem. It provides robust tools to master all the core skill sets of Data Science, from data manipulation, data visualization, to machine learning. The vivid community keeps the R language’s functionalities growing and improving.</p>
+
+<h3 id="high-industry-popularity-and-demand">High Industry Popularity and Demand</h3>
+
+<p>With its great analytical power, R is becoming the lingua franca for data science. It is widely used in the industry and is in heavy use at several of the best companies who are hiring Data Scientists including Google and Facebook. It is one of the highly sought after skills for a Data Science job.</p>
+
+<h2 id="quickstart-installation-guide">Quickstart Installation Guide</h2>
+
+<p>To start programming with R on your computer, you need two things: <strong>R</strong> and <strong>RStudio</strong>.</p>
+
+<h3 id="install-r-language">Install R Language</h3>
+
+<p>You have to first install the R language itself to your computer (It doesn’t come by default). To download <strong>R</strong>, go to CRAN, https://cloud.r-project.org/ (the comprehensive R archive network). Choose your system and select the latest version to install.</p>
+
+<h3 id="install-rstudio">Install RStudio</h3>
+
+<p>You also need a hefty tool to write and compile R codes. And <strong>RStudio</strong> is the most robust and popular IDE (integrated development environment) for R programming. It is available on http://www.rstudio.com/download. (open source and for free!)</p>
+
+<h2 id="overview-of-rstudio">Overview of RStudio</h2>
+
+<p>Now you have everything ready. Let’s have a brief overview at RStudio. Fire up RStudio, the interface looks as such:</p>
+
+<p><img src="/assets/images/2017/12/1.png" alt="RStudio" /></p>
+
+<p>Go to <strong>File &gt; New File &gt; R Script</strong> to open a new script file. You’ll see a new section appear at the top left side of your interface. A typical RStudio workspace composes of the 4 panels you’re seeing right now:</p>
+
+<p><img src="/assets/images/2017/12/2.png" alt="RStudio" /></p>
+
+<h3 id="rstudio-interface">RStudio Interface</h3>
+
+<p>Here’s a brief explanation of the use of the 4 panels in the RStudio interface:</p>
+
+<p><strong>Script</strong><br />This is where your main R script located.</p>
+
+<p><strong>Console</strong><br />This area shows the output of code you run from script. You can also directly write codes in the console.</p>
+
+<p><strong>Environment</strong><br />This space displays the set of external elements added, including dataset, variables, vectors, functions etc.</p>
+
+<p><strong>Output</strong><br />This space displays the graphs created during exploratory data analysis. You can also seek help with embedded R’s documentation here.</p>
+
+<h3 id="running-r-codes">Running R Codes</h3>
+
+<p>After knowing your IDE, the first thing you want to do is to write some codes.</p>
+
+<h4 id="using-the-console-panel">Using the Console Panel</h4>
+
+<p>You can use the <strong>console</strong> panel directly to write your codes. Hit <strong>Enter</strong>, the output of your codes will be returned and displayed immediately after. However, codes entered in the console cannot be traced later. (i.e. you can’t save your codes) This is where script comes to use. But console is good for quick experiment before formatting your codes in script.</p>
+
+<p><img src="/assets/images/2017/12/3.png" alt="RStudio" /></p>
+
+<h4 id="using-the-script-panel">Using the Script Panel</h4>
+
+<p>To write proper R codes, you start with a new script by going to <strong>File &gt; New File &gt; R Script</strong>, or hit <strong>Shift + Ctrl + N</strong>. You can then write your codes in the <strong>script</strong> panel. Select the line(s) to run and press <strong>Ctrl + Enter</strong>. The output will be shown in the <strong>console</strong> section beneath. You can also click on little <strong>Run</strong> button located at the top right corner of this panel. Codes written in script can be saved for later review (<strong>File &gt; Save</strong> or <strong>Ctrl + S</strong>).</p>
+
+<p><img src="/assets/images/2017/12/4.png" alt="RStudio" /></p>
+
+<h2 id="basics-of-r-programming">Basics of R Programming</h2>
+
+<p>Finally, with all the set-ups, you can write our first piece of R script. The following paragraphs introduce you to the basics of R programming.</p>
+
+<p>A quick tip before going: all lines after the symbol <code class="highlighter-rouge">#</code> will be treated as a comment and will not be rendered in the output.</p>
+
+<h3 id="arithmetics">Arithmetics</h3>
+
+<p>Let’s start with some basic arithmetics. You can do some simple calculations with the <strong>arithmetic operators</strong>:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Operator</th>
+      <th>Function</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">+</code></td>
+      <td>Addition</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">-</code></td>
+      <td>Subtraction</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">*</code></td>
+      <td>Multiplication</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">/</code></td>
+      <td>Division</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">^</code></td>
+      <td>Exponentiation</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">%%</code></td>
+      <td>Modulo</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">%/%</code></td>
+      <td>Integer Division</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Addition <code class="highlighter-rouge">+</code>, subtraction <code class="highlighter-rouge">-</code>, multiplication <code class="highlighter-rouge">*</code>, division <code class="highlighter-rouge">/</code> should be intuitive.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Addition</span><span class="w">
+</span><span class="m">1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="c1">#[1] 2</span><span class="w">
+
+</span><span class="c1"># Subtraction</span><span class="w">
+</span><span class="m">2</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="c1">#[1] 0</span><span class="w">
+
+</span><span class="c1"># Multiplication</span><span class="w">
+</span><span class="m">3</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="c1">#[1] 6</span><span class="w">
+
+</span><span class="c1"># Division</span><span class="w">
+</span><span class="m">4</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="c1">#[1] 2</span><span class="w">
+</span></code></pre></div></div>
+
+<p>The exponentiation operator <code class="highlighter-rouge">^</code> raises the number to its left to the power of the number to its right: for example <code class="highlighter-rouge">3 ^ 2</code> is 9.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Exponentiation</span><span class="w">
+</span><span class="m">2</span><span class="w"> </span><span class="o">^</span><span class="w"> </span><span class="m">4</span><span class="w">
+</span><span class="c1">#[1] 16</span><span class="w">
+</span></code></pre></div></div>
+
+<p>The modulo operator <code class="highlighter-rouge">%%</code> returns the remainder of the division of the number to the left by the number on its right, for example 5 modulo 3 or <code class="highlighter-rouge">5 %% 3</code> is 2.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Modulo</span><span class="w">
+</span><span class="m">5</span><span class="w"> </span><span class="o">%%</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="c1">#[1] 1</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Lastly, the integer division operator <code class="highlighter-rouge">%/%</code> returns the maximum times the number on the left can be divided by the number on its right, the fractional part is discarded, for example, <code class="highlighter-rouge">9 %/% 4</code> is 2.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Integer division</span><span class="w">
+</span><span class="m">5</span><span class="w"> </span><span class="o">%/%</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="c1">#[1] 2</span><span class="w">
+</span></code></pre></div></div>
+
+<p>You can also add brackets <code class="highlighter-rouge">()</code> to change the order of operation. Order of operations is the same as in mathematics (from highest to lowest precedence):</p>
+
+<ul>
+  <li>Brackets</li>
+  <li>Exponentiation</li>
+  <li>Division</li>
+  <li>Multiplication</li>
+  <li>Addition</li>
+  <li>Subtraction</li>
+</ul>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Brackets</span><span class="w">
+</span><span class="p">(</span><span class="m">3</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="m">5</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="c1">#[1] 16</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="variable-assignment">Variable Assignment</h3>
+
+<p>A basic concept in (statistical) programming is called a <strong>variable</strong>.</p>
+
+<p>A variable allows you to store a value (e.g. 4) or an object (e.g. a function description) in R. You can then later use this variable’s name to easily access the value or the object that is stored within this variable.</p>
+
+<h4 id="create-new-variables">Create New Variables</h4>
+
+<p>Create a new object with the <strong>assignment operator</strong> <code class="highlighter-rouge">&lt;-</code>. All R statements where you create objects and assignment statements have the same form: <code class="highlighter-rouge">object_name &lt;- value</code>.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">num_var</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">10</span><span class="w">
+
+</span><span class="n">chr_var</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s2">"Ten"</span><span class="w">
+</span></code></pre></div></div>
+
+<p>To access the <em>value</em> of the variable, simply type the name of the variable in the console.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">num_var</span><span class="w">
+</span><span class="c1">#[1] 10</span><span class="w">
+
+</span><span class="n">chr_var</span><span class="w">
+</span><span class="c1">#[1] "Ten"</span><span class="w">
+</span></code></pre></div></div>
+
+<p>You can access the value of the variable anywhere you call it in the R script, and perform further operations on them.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">first_var</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="n">second_var</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">2</span><span class="w">
+
+</span><span class="n">first_var</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">second_var</span><span class="w">
+</span><span class="c1">#[1] 3</span><span class="w">
+
+</span><span class="n">sum_var</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">first_var</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">second_var</span><span class="w">
+</span><span class="n">sum_var</span><span class="w">
+</span><span class="c1">#[1] 3</span><span class="w">
+</span></code></pre></div></div>
+
+<h4 id="naming-variables">Naming Variables</h4>
+
+<p>Not all kinds of names are accepted in R. Variable names must start with a letter, and can only contain <strong>letters</strong>, <strong>numbers</strong>, <code class="highlighter-rouge">.</code> and <code class="highlighter-rouge">_</code>. Also, bear in mind that R is <strong>case-sensitive</strong>, i.e. <code class="highlighter-rouge">Cat</code> would not be identical to <code class="highlighter-rouge">cat</code>.</p>
+
+<p>Your object names should be descriptive, so you’ll need a convention for multiple words. It is recommended to <code class="highlighter-rouge">snake_case</code> where you separate lowercase words with <code class="highlighter-rouge">_</code>.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">i_use_snake_case</span><span class="w">
+</span><span class="n">otherPeopleUseCamelCase</span><span class="w">
+</span><span class="n">some.people.use.periods</span><span class="w">
+</span><span class="n">And_aFew.People_RENOUNCEconvention</span><span class="w">
+</span></code></pre></div></div>
+
+<h4 id="assignment-operators">Assignment Operators</h4>
+
+<p>If you’ve been programming in other languages before, you’ll notice that the assignment operator in R is quite strange as it uses <code class="highlighter-rouge">&lt;-</code> instead of the commonly used equal sign <code class="highlighter-rouge">=</code> to assign objects.</p>
+
+<p>Indeed, using <code class="highlighter-rouge">=</code> will still work in R, but it will cause confusion later. So you should always follow the convention and use <code class="highlighter-rouge">&lt;-</code> for assignment.</p>
+
+<p><code class="highlighter-rouge">&lt;-</code> is a pain to type as you’ll have to make lots of assignments. To make life easier, you should remember RStudio’s awesome keyboard shortcut <strong>Alt + -</strong> (the minus sign) and incorporate it in your regular workflow.</p>
+
+<h4 id="environments">Environments</h4>
+
+<p>Look at the <strong>environment</strong> panel at the upper right corner, you’ll find all of the objects that you’ve created.</p>
+
+<p><img src="/assets/images/2017/12/6.png" alt="RStudio" /></p>
+
+<h3 id="basic-data-types">Basic Data Types</h3>
+
+<p>You’ll work with numerous data types in R. Here are some of the most basic ones:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Data Type</th>
+      <th>Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Numerics</strong></td>
+      <td>Decimals values like <code class="highlighter-rouge">4.5</code> are called numerics.</td>
+    </tr>
+    <tr>
+      <td><strong>Integers</strong></td>
+      <td>Natural numbers like <code class="highlighter-rouge">4</code> are called integers. Integers are also numerics.</td>
+    </tr>
+    <tr>
+      <td><strong>Logical</strong></td>
+      <td>Boolean values (<code class="highlighter-rouge">TRUE</code> or <code class="highlighter-rouge">FALSE</code>) are called logical.</td>
+    </tr>
+    <tr>
+      <td><strong>Characters</strong></td>
+      <td>Text (or string) values like <code class="highlighter-rouge">'Dog'</code> are called characters.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Knowing the data type of an object is important, as different data types work with different functions, and you perform different operations on them. For example, adding a numeric and a character together will throw an error.</p>
+
+<p>To check an object’s data type, you can use the <code class="highlighter-rouge">class()</code> function.</p>
+
+<dl>
+  <dt># usage</dt>
+  <dd><code class="highlighter-rouge">class(x)</code></dd>
+  <dt># description</dt>
+  <dd>Prints the vector of names of classes an object inherits from.</dd>
+  <dt># arguments</dt>
+  <dd><code class="highlighter-rouge">x</code> : An R object.</dd>
+</dl>
+
+<p>Here is an example:</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">int_var</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">10</span><span class="w">
+</span><span class="nf">class</span><span class="p">(</span><span class="n">int_var</span><span class="p">)</span><span class="w">
+</span><span class="c1">#[1] "numeric"</span><span class="w">
+
+</span><span class="n">dbl_var</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">10.11</span><span class="w">
+</span><span class="nf">class</span><span class="p">(</span><span class="n">dbl_var</span><span class="p">)</span><span class="w">
+</span><span class="c1">#[1] "numeric"</span><span class="w">
+
+</span><span class="n">lgl_var</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="kc">TRUE</span><span class="w">
+</span><span class="nf">class</span><span class="p">(</span><span class="n">lgl_var</span><span class="p">)</span><span class="w">
+</span><span class="c1">#[1] "logical"</span><span class="w">
+
+</span><span class="n">chr_var</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s2">"Hello"</span><span class="w">
+</span><span class="nf">class</span><span class="p">(</span><span class="n">chr_var</span><span class="p">)</span><span class="w">
+</span><span class="c1">#[1] "character"</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="functions">Functions</h3>
+
+<p>Functions are the fundamental building blocks of R. In programming, a named section of a program that performs a specific task is a <strong>function</strong>. In this sense, a function is a type of procedure or routine.</p>
+
+<p>R comes with a prewritten set of functions that are kept in a library. (<code class="highlighter-rouge">class()</code> as demonstrated in the previous section is a built-in function.) You can use additional functions in other libraries by installing <strong>packages</strong>. You can also write your own functions to perform specialized tasks.</p>
+
+<p>Here is the typical form of an R function:</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">function_name</span><span class="p">(</span><span class="n">arg1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">val1</span><span class="p">,</span><span class="w"> </span><span class="n">arg2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">val2</span><span class="p">,</span><span class="w"> </span><span class="n">...</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<p><code class="highlighter-rouge">function_name</code> is the name of the function. <code class="highlighter-rouge">arg1</code> and <code class="highlighter-rouge">arg2</code> are <strong>arguments</strong>. They’re variables to be passed into the function. The type and number of arguments depend on the definition of the function. <code class="highlighter-rouge">val1</code> and <code class="highlighter-rouge">val2</code> are <strong>values</strong> of the arguments correspondingly.</p>
+
+<h4 id="passing-arguments">Passing Arguments</h4>
+
+<p>R can match arguments both by <strong>position</strong> and by <strong>name</strong>. So you don’t necessarily have to supply the names of the arguments if you have the position of the argument placed correctly.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">class</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">)</span><span class="w">
+</span><span class="c1">#[1] "numeric"</span><span class="w">
+
+</span><span class="nf">class</span><span class="p">(</span><span class="m">1</span><span class="p">)</span><span class="w">
+</span><span class="c1">#[1] "numeric"</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Functions are always accompanied with loads of arguments for configurations. However, you don’t have to supply all of the arguments for a function to work.</p>
+
+<dl>
+  <dt># usage</dt>
+  <dd><code class="highlighter-rouge">sum(..., na.rm = FALSE)</code></dd>
+  <dt># description</dt>
+  <dd>Returns the sum of all the values present in its arguments.</dd>
+  <dt># arguments</dt>
+  <dd><code class="highlighter-rouge">...</code> : Numeric or complex or logical vectors.</dd>
+  <dd><code class="highlighter-rouge">na.rm</code> : Logical. Should missing values (including NaN) be removed?</dd>
+</dl>
+
+<p>From the documentation, we learned that there’re two arguments for the <code class="highlighter-rouge">sum()</code> function: <code class="highlighter-rouge">...</code> and <code class="highlighter-rouge">na.rm</code>. Notice that <code class="highlighter-rouge">na.rm</code> contains a default value <code class="highlighter-rouge">FALSE</code>. This makes it an <strong>optional argument</strong>. If you don’t supply any values to the optional arguments, the function will automatically fill in the default value to proceed.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">sum</span><span class="p">(</span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="m">10</span><span class="p">)</span><span class="w">
+</span><span class="c1">#[1] 12</span><span class="w">
+
+</span><span class="nf">sum</span><span class="p">(</span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="m">10</span><span class="p">,</span><span class="w"> </span><span class="kc">NaN</span><span class="p">)</span><span class="w">
+</span><span class="c1">#[1] NaN</span><span class="w">
+
+</span><span class="nf">sum</span><span class="p">(</span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="m">10</span><span class="p">,</span><span class="w"> </span><span class="kc">NaN</span><span class="p">,</span><span class="w"> </span><span class="n">na.rm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span><span class="w">
+</span><span class="c1">#[1] 12</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="getting-help">Getting Help</h3>
+
+<p>There are a large collection of functions in R and you’ll never remember all of them. Hence, knowing how to get help is important.</p>
+
+<p>RStudio has a handy tool <code class="highlighter-rouge">?</code> to help you in recalling the use of the functions:</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">?</span><span class="n">function_name</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Look how magical it is to show the R documentation directly at the <strong>output</strong> panel for quick reference:</p>
+
+<p><img src="/assets/images/2017/12/5.png" alt="RStudio" /></p>
+
+<p>Last but not least, if you get stuck, Google it! For beginners like us, our confusions must have been gone through by numerous R learners before and there will always be something helpful and insightful on the web.</p>
+
+<p>Happy learning!</p>
+
+</div>
+
+<!--
+
+<div id="related">
+  <h2 class="section-title"><i class="fa fa-bookmark"></i> Related Posts</h2> 
+  <ul class="posts">
+    
+    <li>
+      <span class="date">2017-12-04</span><a href="/blog/2017/12/04/starting-with-r-for-data-science.html">Starting with R for Data Science</a>
+    </li>
+    
+    <li>
+      <span class="date">2017-10-20</span><a href="/blog/2017/10/20/quick-fix-github-gh001-large-files-detected-with-bfg-repo-cleaner.html">Fix Github 'GH001: Large files detected' with BFG Repo-Cleaner</a>
+    </li>
+    
+    <li>
+      <span class="date">2017-10-08</span><a href="/blog/2017/10/08/get-currency-exhange-rates-with-currenylayerapi-in-python.html">Get Exchange Rates with currencylayer API in Python</a>
+    </li>
+    
+  </ul>
+
+</div>
+-->
+
+
+
+<div id="disqus">
+  <!--<h3>Comments</h3>-->
+  <h2 class="section-title"><i class="fa fa-bookmark"></i> Comments</h2> 
+  <div id="disqus_thread"></div>
+  <script>
+
+  /**
+  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+  /*
+  var disqus_config = function () {
+  this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+  this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+  };
+  */
+  (function() { // DON'T EDIT BELOW THIS LINE
+  var d = document, s = d.createElement('script');
+  s.src = 'https://cecilialee.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>     
+</div>                       
+
+
+        </div>
+        <div class="footer">
+          <div class="disclaimer">
+  
+
+  <p>
+    © Cecilia Lee, 2017 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/swanson/lagom">Lagom theme</a>
+  </p>
+</div>
+
+<!-- search js -->
+<script src="/js/search-script.js" type="text/javascript"></script>
+<script src="/js/display-search-script.js" type="text/javascript"></script>
+        </div>
+      </div>
+    </div>
+  
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-xxxx-x']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>
