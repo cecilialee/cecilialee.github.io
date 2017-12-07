@@ -5,6 +5,7 @@ exclude: [LICENSE, CNAME, README.md, .gitignore, Gemfile, Gemfile.lock]
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 # Jekyll SEO Tag plugin
 title: Data Science Journal
