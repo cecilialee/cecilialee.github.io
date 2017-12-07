@@ -4,6 +4,9 @@ title: "Introduction to R Programming"
 tags: [r]
 categories:
 - blog
+author: "Cecilia Lee"
+description: "This is a detailed step-by-step introduction to R programming. Starting with the two major reasons to learn R for Data Science, it guides you through the installation process, and prepare you for the basics of R programming: arithmetics, variables assignment, data types, functions, and documentations."
+image: "/assets/images/2017/12/2.png"
 ---
 
 For someone like me, who has only had some programming experience in Python, the syntax of R feels alienating initially. However, I believe it's just a matter of time before adapting to the unique logicality of a new language. And indeed, the grammar of R flows more naturally to me after having to practice for a while, and I began to grasp its kind of remarkable beauty, that has captivated the heart of countless statisticians throughout the years.
@@ -14,7 +17,7 @@ Here I'd like to walk through my study notes with the most explicit step-by-step
 
 ## Why Learn R for Data Science?
 
-Before diving in, you might want to know why should you learn R for Data Science. There are two major reasons.
+Before diving in, you might want to know why should you learn R for Data Science. There are two major reasons:
 
 ### Powerful Analytic Packages for Data Science
 
