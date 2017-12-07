@@ -297,7 +297,9 @@ class(1)
 #[1] "numeric"
 ```
 
-Functions are always accompanied with loads of arguments for configurations. However, you don't have to supply all of the arguments for a function to work.
+Functions are always accompanied with loads of arguments for configurations. However, you don't have to supply all of the arguments for a function to work. 
+
+Here is the documentation of the `sum()` function:
 
 \# usage
 : `sum(..., na.rm = FALSE)`
