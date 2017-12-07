@@ -79,7 +79,7 @@ To write proper R codes, you start with a new script by going to **File > New Fi
 
 ## Basics of R Programming
 
-Finally, with all the set-ups, you can write our first piece of R script. The following paragraphs introduce you to the basics of R programming.
+Finally, with all the set-ups, you can write your first piece of R script. The following paragraphs introduce you to the basics of R programming.
 
 A quick tip before going: all lines after the symbol `#` will be treated as a comment and will not be rendered in the output.
 
