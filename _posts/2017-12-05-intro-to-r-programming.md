@@ -287,7 +287,7 @@ function_name(arg1 = val1, arg2 = val2, ...)
 
 #### Passing Arguments
 
-R can match arguments both by **position** and by **name**. So you don't necessarily have to supply the names of the arguments if you have the position of the argument placed correctly.
+R can match arguments both by **position** and by **name**. So you don't necessarily have to supply the names of the arguments if you have the positions of the arguments placed correctly.
 
 ```r
 class(x = 1)
