@@ -326,7 +326,7 @@ sum(2, 10, NaN, na.rm = TRUE)
 
 ### Getting Help
 
-There are a large collection of functions in R and you'll never remember all of them. Hence, knowing how to get help is important. 
+There is a large collection of functions in R and you'll never remember all of them. Hence, knowing how to get help is important. 
 
 RStudio has a handy tool `?` to help you in recalling the use of the functions:
 
