@@ -9,7 +9,7 @@ plugins:
 
 # Jekyll SEO Tag plugin
 title: Data Science Journal
-description: A Data Science Journal by Cecilia Lee, a Junior Data Scientist in Hong Kong. From Python, Numpy, Pandas, Matplotlib, Seaborn, R, ggplot, dplyr, to SQL, from Data Wrangling, Data Visualization, to Machine Learning, this is a blog to share her dedicated journey in learning Data Science.
+description: A Data Science Journal by Cecilia Lee, a Data Scientist in Hong Kong. From Python, Numpy, Pandas, Matplotlib, Seaborn, R, ggplot, dplyr, to SQL, from Data Wrangling, Data Visualization, to Machine Learning, this is a blog to share her dedicated journey in learning Data Science.
 author: Cecilia Lee
 
 twitter:
