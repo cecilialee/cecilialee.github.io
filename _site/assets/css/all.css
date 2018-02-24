@@ -597,34 +597,34 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 h1.title {
-  font-weight: 800;
-  letter-spacing: -0.5px;
+  font-weight: 700;
+  /*letter-spacing: -0.5px*/;
   margin-bottom: 12px;
 }
 
 h1 {
   font-size: 34px;
-  letter-spacing: -0.5px;
+  /*letter-spacing: -0.5px*/;
   line-height: 34px;
 }
 
 h2 {
   font-size: 29px;
-  letter-spacing: -0.5px;
+  /*letter-spacing: -0.5px*/;
   line-height: 29px;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 h3 {
   font-size: 24px;
-  letter-spacing: -0.5px;
+  /*letter-spacing: -0.5px*/;
   line-height: 24px;
   font-weight: 700;
 }
 
 h4 {
   font-size: 19px;
-  letter-spacing: -0.5px;
+  /*letter-spacing: -0.5px*/;
   line-height: 19px;
   font-weight: 700;
 }
@@ -634,8 +634,8 @@ p {
 }
 
 strong {
-  font-weight: 800;
-  //letter-spacing: -0.5px;
+  font-weight: 700;
+  ///*letter-spacing: -0.5px*/;
   color: #222;
 }
 
@@ -703,7 +703,7 @@ hr {
 sup {
   vertical-align: super;
   font-size: 9;
-  //font-weight: 800;
+  //font-weight: 700;
   line-height: 0px;
 }
 
@@ -755,8 +755,8 @@ ul.posts li {
 
 nav h1, nav h2 {
   //text-align: center;
-  font-weight: 800;
-  letter-spacing: -0.5px;
+  font-weight: 700;
+  /*letter-spacing: -0.5px*/;
 }
 
 nav h1 {
@@ -766,7 +766,7 @@ nav h1 {
 }
 
 nav h3 a {
-  font-weight: 800;
+  font-weight: 600;
 }
 
 #bio {
@@ -1097,7 +1097,7 @@ color: #aaa !important;
   font-size: 24px;
   font-weight: 700;
   line-height: 24px;
-  letter-spacing: -0.5px;
+  /*letter-spacing: -0.5px*/;
 }
 
 #search-result li {
