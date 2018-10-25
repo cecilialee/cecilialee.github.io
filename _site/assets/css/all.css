@@ -584,20 +584,21 @@ html, body {
 body {
   font-size: 16px;
   background-color: #fff;
-  color: #222222;
+  color: #444;
   line-height: 21px;
   margin: 0;
-  border-top: 7px solid #E84A42;
+  padding-top: 20px;
+  /*border-top: 7px solid #AAAAAA;*/
 }
 
 h1, h2, h3, h4, h5, h6, p {
-  color: #181818;
   font-family: "Work Sans", sans-serif;
+  color: #444;
   font-weight: 400;
 }
 
 h1.title {
-  font-weight: 700;
+  font-weight: 700;  
   /*letter-spacing: -0.5px*/;
   margin-bottom: 12px;
 }
@@ -654,17 +655,17 @@ li {
 }
 
 a {
-  color: #E84A42;
+  color: #AAAAAA;
   text-decoration: none;
 }
 
 a:hover {
-  color: #E84A42;
+  color: #AAAAAA;
   text-decoration: underline;
 }
 
 a:visited {
-  color: #E84A42;
+  color: #AAAAAA;
 }
 
 table {
@@ -672,21 +673,21 @@ table {
   font-size: 15px;
   padding: 0; }
   table tr {
-    border-top: 1px solid #cacaca;
+    border-top: 1px solid #cfcfcf;
     background-color: white;
     margin: 0;
     padding: 0; }
     table tr:nth-child(2n) {
-      //background-color: #f8f8f8; }
+      //background-color: #fafafa; }
     table tr th {
       font-weight: 700;
-      background-color: #f8f8f8;
-      border: 1px solid #cacaca;
+      background-color: #fafafa;
+      border: 1px solid #cfcfcf;
       text-align: left;
       margin: 0;
       padding: 5px 12px; }
     table tr td {
-      border: 1px solid #cacaca;
+      border: 1px solid #cfcfcf;
       text-align: left;
       margin: 0;
       padding: 5px 12px; }
@@ -732,13 +733,13 @@ ul.posts li {
 
 .date {
   font-family: 'Roboto Mono', 'Lucida Console', 'Andale Mono', monospace;
-  color: #bbb;
+  color: #AAAAAA;
   font-size:13px;
-  background-color: #f8f8f8;
+  /*background-color: #fafafa;*/
   border-radius: 4px; 
   padding-left: 6px;
   padding-right: 6px;
-  border: 1px solid #cacaca;
+  /*border: 1px solid #cfcfcf;*/
 }
 
 .meta {
@@ -810,12 +811,12 @@ nav h3 a {
 }
 
 #post .highlight {
-  background-color: #f8f8f8;
+  background-color: #fafafa;
   border-radius: 4px;
 }
 
 #post pre {    
-  border: 1px solid #cacaca;
+  border: 1px solid #cfcfcf;
   padding: 10px;
   margin-bottom: 20px !important;
   line-height: 20px;
@@ -834,8 +835,8 @@ nav h3 a {
 #post code {
   font-family: 'Roboto Mono', 'Lucida Console', 'Andale Mono', monospace;
   line-height: 21px;
-  border: 1px solid #cacaca;
-  background-color: #f8f8f8;
+  border: 1px solid #cfcfcf;
+  background-color: #fafafa;
   color: #444;
   font-size: 14px;
   border-radius: 4px;
@@ -926,7 +927,7 @@ nav h3 a {
 
 #stalker a:hover {
   text-decoration: none;
-  color: #E84A42;
+  color: #AAAAAA;
 }
 
 i.fa-hn {
@@ -1068,7 +1069,7 @@ color: #aaa !important;
 }
 
 .tag {
-  border: 1px solid #cacaca;
+  /*border: 1px solid #DDDDDD;*/
   font-family: 'Roboto Mono', 'Lucida Console', 'Andale Mono', monospace;
   font-weight: 400;
   font-size: 13px;
@@ -1079,13 +1080,13 @@ color: #aaa !important;
 }
 
 .tag a {
-  text-decoration: none;
+  text-decoration: a;
   font-weight: 400;
 }
 
 .tag:hover {
-  border-color: #E84A42;
-  text-decoration: none;
+  /*border-color: #AAAAAA;*/
+  text-decoration: underline;
 }
 
 .post-list {
@@ -1093,7 +1094,7 @@ color: #aaa !important;
 }
 
 #post-list-title {
-  color: #111;
+  color: #444;
   font-size: 24px;
   font-weight: 700;
   line-height: 24px;
@@ -1138,14 +1139,15 @@ dl {
   //-webkit-margin-after: 1em;
   //-webkit-margin-start: 0px;
   //-webkit-margin-end: 0px;
-  border: 1px solid #cacaca;
+  border: 1px solid #cfcfcf;
   padding: 4px 10px 4px 10px;
   border-radius: 4px;
   margin-bottom: 18px;
   font-size: 14px;  
   line-height: 21px;
-  background-color: #FAF8F3;
-  color: #999;
+  /*background-color: #FAF8F3;*/
+  background-color: #FAF9F5;
+  color: #8E8E8E;
 }
 
 dt {
@@ -1154,7 +1156,6 @@ dt {
     display: block;
     margin-top: 6px;
     margin-bottom: 6px;
-    //border-bottom: 1px solid #cacaca;
 }
 
 dd {

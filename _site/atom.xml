@@ -4,7 +4,7 @@
  <title>The blog of Cecilia Lee</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000"/>
- <updated>2018-02-24T17:03:11+08:00</updated>
+ <updated>2018-10-25T21:34:47+08:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Cecilia Lee</name>
@@ -442,8 +442,6 @@ remote: error: File sample/large/data/file/path.json is 679.95 MB; this exceeds 
   &lt;li&gt;Before cleaning, we make a backup of our repository to ensure we don’t lose anything by running &lt;code class=&quot;highlighter-rouge&quot;&gt;git clone --mirror git://example.com/some-big-repo.git&lt;/code&gt;. This is a bare repo, which means our normal files won’t be visible, but it’s a full copy of the Git database of our repository.&lt;/li&gt;
   &lt;li&gt;Now we can clean our Git repository history by running &lt;code class=&quot;highlighter-rouge&quot;&gt;java -jar bfg.jar --strip-blobs-bigger-than 100M some-big-repo.git&lt;/code&gt;.&lt;/li&gt;
 &lt;/ol&gt;
-
-&lt;p&gt;Viola! Problem fixed. We should now be able to push our commits to Github again.&lt;/p&gt;
 
 </content>
  </entry>

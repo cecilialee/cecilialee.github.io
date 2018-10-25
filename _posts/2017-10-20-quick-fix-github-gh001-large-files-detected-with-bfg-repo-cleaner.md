@@ -28,6 +28,3 @@ Here is a step by step guide:
 3. Before cleaning, we make a backup of our repository to ensure we don’t lose anything by running `git clone --mirror git://example.com/some-big-repo.git`. This is a bare repo, which means our normal files won't be visible, but it’s a full copy of the Git database of our repository.
 4. Now we can clean our Git repository history by running `java -jar bfg.jar --strip-blobs-bigger-than 100M some-big-repo.git`.
 
-Viola! Problem fixed. We should now be able to push our commits to Github again.
-
-
